@@ -1,0 +1,225 @@
+<template>
+  <div class="upper" id="upper">
+      <img src="@/assets/Vector_1.png" alt="" class="vector_1">
+      <img src="@/assets/Vector_2.png" alt="" class="vector_2">
+      <img src="@/assets/rocket_1.png" alt="" class="rocket">
+       <img src="@/assets/Blue_1.png" alt="" class="blue_1">
+        <img src="@/assets/bluegem_1.png" alt="" class="bluegem_1">
+        <img src="@/assets/Yellow_1.png" alt="" class="yellow_1">
+    <div class="div1">
+      <h1>Get In Line For SilverLine</h1>
+      <h4>
+        SilverLine Token will be released in the Binance Smart Chain at the
+        event of the Presale. Grab the SilverLine Token at just $0.0013 for an
+        undeniable scope for growth.
+      </h4>
+      <button class="buy-sln">BUY SLN</button>
+    </div>
+    <div class="div2">
+      <h1>PRE-SALE</h1>
+      <div class="div-input">
+        <input
+          type="number"
+          class="input-box"
+          placeholder="0.0"
+          v-model="this.usdt_amount"
+        />
+        <span class="usdt_span">
+            <img src="@/assets/usdt_logo.png" class="usdt_logo">USDT
+            </span>
+        <span class="arrow">
+             <img src="@/assets/arrow.png" alt="" />
+             </span>
+        <input
+          type="number"
+          class="input-box"
+          placeholder="0.0"
+          id="sln-amount"
+          v-model="this.sln_amt"
+        />
+        <span class="sln_span">
+            <img src="@/assets/sl_logo.png" class="usdt_logo"> SLN
+        </span>
+        <button class="input-box-button" @click="buy">BUY SLN</button>
+      </div>
+    </div>
+  </div>
+</template>
+<script lang="ts">
+import { Options, Vue } from "vue-class-component";
+import transactions from "@/mixins/transactions";
+@Options({
+  data() {
+    return {
+      usdt_amount: null,
+      sln_amt:null,
+    };
+  },
+  watch: {
+    usdt_amount(newvalue, oldvalue) {
+     this.sln_amt=newvalue/0.0013
+    }
+  },
+  methods: {
+    buy() {
+      transactions.prototype.buying_Sln(this.usdt_amount);
+    },
+  },
+})
+export default class Upper extends Vue {}
+</script>
+<style>
+.bluegem_1{
+    position: absolute;
+left: 13.12%;
+right: 80.77%;
+top: 550px;
+bottom: 2.48%;
+}
+.blue_1{
+    position: absolute;
+width: 43px;
+height: 55px;
+left: 50%;
+top: 332px;
+
+}
+.yellow_1{
+    position: absolute;
+width: 69px;
+height: 40px;
+left: 834px;
+}
+.vector_2{
+    position: absolute;
+top: 500px;
+width: 100%;
+left:-1.53%;
+right:1.53%;
+/* background: radial-gradient(38.47% 89.66% at 50% 50%, #F128C5 8.15%, #C11BB9 100%); */
+mix-blend-mode: soft-light;
+opacity: 1;
+}
+.vector_1{
+    position: absolute;
+left: 0%;
+right: 10%;
+top: 18%;
+
+width: 30%;
+opacity: 0.1;
+/* background: radial-gradient(42.21% 64.7% at 50% 50%, #F128C5 8.15%, #C11BB9 100%); */
+transform: rotate(-10.83deg);
+
+}
+.rocket{
+    position: relative;
+width: 63.02px;
+height: 63.02px;
+left: 45%;
+top: 343px;
+}
+.sln_span{
+   position: relative;
+  width: 80.56px;
+  height: 27.23px;
+  top: -39px;
+  left: 130px;
+  color: black;
+  padding: 10px;
+  background: #d9a9ff;
+  border-radius: 30px; 
+  padding-right: 20px;
+  font-weight: 600;
+}
+.usdt_logo{
+position: relative;
+width: 19.29px;
+height: 19.29px;
+top:4px
+
+}
+.usdt_span {
+  position: relative;
+  width: 80.56px;
+  height: 27.23px;
+  top: -42px;
+  left: 145px;
+  color: black;
+  padding: 10px;
+  background: #d9a9ff;
+  border-radius: 30px;
+   font-weight: 600;
+}
+.arrow {
+  width: 35.08px;
+  position: relative;
+  height: 35.08px;
+  align-self: center;
+ background: rgba(142, 0, 255, 1);
+right: 30px;
+  z-index: 2;
+  padding: 8px;
+  border-radius: 30px;
+}
+.input-box-button {
+  width: 342.8px;
+  height: 53.3px;
+  background: rgba(142, 0, 255, 0.7);
+  border-radius: 10px;
+  margin-top: 10px;
+  border: 0px;
+  color: white;
+}
+.input-box {
+  width: 342.8px;
+  height: 53.3px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 0px;
+}
+.buy-sln {
+  width: 136.74px;
+  height: 42.78px;
+  border: 0px;
+  background: linear-gradient(93.62deg, #3c0b63 1.06%, #c11bb9 147.09%);
+  border-radius: 6.11111px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 19.0972px;
+  line-height: 23px;
+  color: white;
+}
+.div1 {
+  float: left;
+  margin-left: 10%;
+  width: 440px;
+  text-align: left;
+  margin-top: 10%;
+}
+.div2 {
+  float: right;
+  margin-right: 10%;
+  box-sizing: border-box;
+  width: 391.02px;
+  height: 281.46px;
+  margin-top: 5%;
+  padding: 10px;
+}
+.div-input {
+  background: linear-gradient(
+    179.84deg,
+    rgba(204, 204, 204, 0.5) 0.14%,
+    rgba(122, 122, 122, 0) 141.17%
+  );
+  border-radius: 10px;
+  border: 1px, solid,
+    linear-gradient(179.84deg, rgba(182, 91, 255, 1) rgba(255, 161, 234, 1));
+  padding: 10px;
+  padding-top: 20px;
+}.upper{
+    position: relative;
+    width: 100%;
+}
+</style>
