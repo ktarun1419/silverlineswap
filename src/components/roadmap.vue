@@ -80,7 +80,7 @@ border-radius: 15.2778px;
     width: 380.42px;
 height: 354.44px;
 float: right;
-right: -20%;
+right: -25%;
 top: 350px;
 }
 .roadmap-div4{
@@ -91,7 +91,7 @@ width: 490.42px;
 height: auto;
 float: left;
 top: -100px;
-left: 10%;
+left: 8%;
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(142, 0, 255, 0.2) 137.15%);
 border-radius: 15.2778px;
 }
