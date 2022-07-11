@@ -19,22 +19,22 @@
           <a @click="tofeature">Features </a>
         </li>
         <li>
-          <a href="https://www.silverlineswap.org/Docs/WHITEPAPER_0522.pdf">Whitepaper</a>
+          <a href="https://www.silverlineswap.org/Docs/WHITEPAPER_0522.pdf" target="_blank">Whitepaper</a>
         </li>
         <li>
           <a>Audit Report</a>
         </li>
         <li>
-          <a>Tokenomics</a>
+          <a @click="totokenomics">Tokenomics</a>
         </li>
         <li>
-          <a>Team</a>
+          <a @click="toteam">Team</a>
         </li>
         <li>
-          <a>FAQ</a>
+          <a @click="tofaq">FAQ</a>
         </li>
         <li>
-          <a>Blog</a>
+          <a href="https://www.silverlineswap.org/blog/" target="_blank">Blog</a>
         </li>
         <li>
           <button class="connect-button" @click="connect">
@@ -71,6 +71,30 @@ import store from "@/store";
     ,
     tohome(){
         let ele=document.getElementById("upper")
+        if (ele!=null) {
+            console.log(ele)
+            ele.scrollIntoView()
+        }
+    }
+    ,
+    totokenomics(){
+        let ele=document.getElementById("tokenomics")
+        if (ele!=null) {
+            console.log(ele)
+            ele.scrollIntoView()
+        }
+    }
+    ,
+    tofaq(){
+        let ele=document.getElementById("faq")
+        if (ele!=null) {
+            console.log(ele)
+            ele.scrollIntoView()
+        }
+    }
+    ,
+    toteam(){
+        let ele=document.getElementById("team")
         if (ele!=null) {
             console.log(ele)
             ele.scrollIntoView()

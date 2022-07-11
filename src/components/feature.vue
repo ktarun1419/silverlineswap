@@ -1,29 +1,39 @@
 <template>
+<div class="featurenew">
     <div class="feature" id="feature">
         <span class="feature-heading">Features</span>
         <div class="feature-div1">
             <img src="@/assets/gun_1.png" alt="" class="feature-img">
+            <img src="@/assets/gun-elipse.png" alt="" class="feature-img2">
+            <img src="@/assets/gun-border.png" alt="" class="feature-img3">
             <h2 class="feature-text">GUN</h2>
             <h5 class="feature-text">Global Unique Number, a global unique Identity that will protect you and your future.</h5>
         </div>
          <div class="feature-div4">
             <img src="@/assets/cryptoloan.png" alt="" class="feature-img">
+            <img src="@/assets/home_elipse.png" alt="" class="feature-img2">
+            <img src="@/assets/cryptoload-border.png" alt="" class="feature-img3">
             <h2 class="feature-text">CRYPTO LOAN</h2>
             <h5 class="feature-text">Global Unique Number, a global unique Identity that will protect you and your future.</h5>
         </div>
         <div class="feature-div3">
             <img src="@/assets/silverpay.png" alt="" class="feature-img">
+            <img src="@/assets/silverpay-elipse.png" alt="" class="feature-img2">
+            <img src="@/assets/silverpay-border.png" alt="" class="feature-img3">
             <h2 class="feature-text">SILVERPAY</h2>
             <h5 class="feature-text">A space to enjoy your day-to-day shopping experience with cryptocurrency.</h5>
         </div>
         <div class="feature-div2">
             <img src="@/assets/nobu.png" alt="" class="feature-img">
+            <img src="@/assets/nobu-elipse.png" alt="" class="feature-img2">
+            <img src="@/assets/nobu-border.png" alt="" class="feature-img3">
             <h2 class="feature-text">NOBU</h2>
             <h5 class="feature-text">An Artificial Intelligent personal assistant who will guide you through your crypto journey.</h5>
         </div>
         
        
 
+    </div>
     </div>
 </template>
 <script lang="ts">
@@ -35,6 +45,24 @@ export default class Features extends Vue{
 }
 </script>
 <style>
+.featurenew{
+    position: static;
+}
+.feature-img3{
+    position: absolute;
+    z-index: 0;
+width: 221.53px;
+height: 287.99px;
+left: 0%;
+}
+.feature-img2{
+    position: absolute;
+width: 112.29px;
+height: 112.29px;
+left: 25%;
+top: 5%;
+
+}
 .feature-text{
     position: relative;
     top: 40px;
@@ -42,14 +70,12 @@ export default class Features extends Vue{
 .feature-img{
     top: 40px;
     position: relative;
-
 }.feature-div3{
      position: absolute;
 width: 221.53px;
 height: 287.99px;
 right: 30%;
 top: 100px;
-
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(142, 0, 255, 0.1) 137.15%);
 border-radius: 30.5556px 15.2778px;
 }
@@ -59,14 +85,6 @@ width: 221.53px;
 height: 287.99px;
 left: 30%;
 top: 100px;
-border-width: 1px;
-  border-style: solid;
-  border-image: 
-    linear-gradient(
-      -10deg, 
-      rgba(16, 140, 255, 1),
-rgba(255, 255, 255, 0)
-    ) 1 80%;
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(142, 0, 255, 0.1) 137.15%);
 border-radius: 30.5556px 15.2778px;
 }
@@ -76,7 +94,6 @@ width: 221.53px;
 height: 287.99px;
 right: 5%;
 top: 100px;
-
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(142, 0, 255, 0.1) 137.15%);
 border-radius: 30.5556px 15.2778px;
 }
@@ -86,13 +103,12 @@ width: 221.53px;
 height: 287.99px;
 margin-left: 5%;
 top: 100px;
-
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(142, 0, 255, 0.1) 137.15%);
 border-radius: 30.5556px 15.2778px;
 }
 .feature{
     position: relative;
-     top: 900px;
+     top: 100px;
 }.feature-heading{
 position: absolute;
 width: 136.74px;

@@ -20,10 +20,11 @@ export default class App extends Vue{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  
   position: absolute;
 width: 100%;
 scroll-behavior:auto;
-height: 7891.74px;
+height:auto;
 color: white;
 left: 0px;
 top: 0px;

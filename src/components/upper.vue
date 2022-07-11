@@ -1,11 +1,11 @@
 <template>
   <div class="upper" id="upper">
-      <img src="@/assets/Vector_1.png" alt="" class="vector_1">
-      <img src="@/assets/Vector_2.png" alt="" class="vector_2">
-      <img src="@/assets/rocket_1.png" alt="" class="rocket">
-       <img src="@/assets/Blue_1.png" alt="" class="blue_1">
-        <img src="@/assets/bluegem_1.png" alt="" class="bluegem_1">
-        <img src="@/assets/Yellow_1.png" alt="" class="yellow_1">
+    <img src="@/assets/Vector_1.png" alt="" class="vector_1" />
+    <img src="@/assets/Vector_2.png" alt="" class="vector_2" />
+    <img src="@/assets/rocket_1.png" alt="" class="rocket" />
+    <img src="@/assets/Blue_1.png" alt="" class="blue_1" />
+    <img src="@/assets/bluegem_1.png" alt="" class="bluegem_1" />
+    <img src="@/assets/Yellow_1.png" alt="" class="yellow_1" />
     <div class="div1">
       <h1>Get In Line For SilverLine</h1>
       <h4>
@@ -13,7 +13,7 @@
         event of the Presale. Grab the SilverLine Token at just $0.0013 for an
         undeniable scope for growth.
       </h4>
-      <button class="buy-sln">BUY SLN</button>
+      <button class="buy-sln">JOIN OUR COMMUNITY</button>
     </div>
     <div class="div2">
       <h1>PRE-SALE</h1>
@@ -25,11 +25,11 @@
           v-model="this.usdt_amount"
         />
         <span class="usdt_span">
-            <img src="@/assets/usdt_logo.png" class="usdt_logo">USDT
-            </span>
+          <img src="@/assets/usdt_logo.png" class="usdt_logo" />USDT
+        </span>
         <span class="arrow">
-             <img src="@/assets/arrow.png" alt="" />
-             </span>
+          <img src="@/assets/arrow.png" alt="" />
+        </span>
         <input
           type="number"
           class="input-box"
@@ -38,7 +38,7 @@
           v-model="this.sln_amt"
         />
         <span class="sln_span">
-            <img src="@/assets/sl_logo.png" class="usdt_logo"> SLN
+          <img src="@/assets/sl_logo.png" class="usdt_logo" /> SLN
         </span>
         <button class="input-box-button" @click="buy">BUY SLN</button>
       </div>
@@ -52,13 +52,13 @@ import transactions from "@/mixins/transactions";
   data() {
     return {
       usdt_amount: null,
-      sln_amt:null,
+      sln_amt: null,
     };
   },
   watch: {
     usdt_amount(newvalue, oldvalue) {
-     this.sln_amt=newvalue/0.0013
-    }
+      this.sln_amt = newvalue / 0.0013;
+    },
   },
   methods: {
     buy() {
@@ -69,58 +69,57 @@ import transactions from "@/mixins/transactions";
 export default class Upper extends Vue {}
 </script>
 <style>
-.bluegem_1{
-    position: absolute;
-left: 13.12%;
-right: 80.77%;
-top: 550px;
-bottom: 2.48%;
+.bluegem_1 {
+  position: absolute;
+  left: 13.12%;
+  right: 80.77%;
+  top: 550px;
+  bottom: 2.48%;
 }
-.blue_1{
-    position: absolute;
-width: 43px;
-height: 55px;
-left: 50%;
-top: 332px;
+.blue_1 {
+  position: absolute;
+  width: 43px;
+  height: 55px;
+  left: 50%;
+  top: 332px;
+}
+.yellow_1 {
+  position: absolute;
+  width: 69px;
+  height: 40px;
+  left: 80%;
+  top: 80px;
+}
+.vector_2 {
+  position: absolute;
+  top: 500px;
+  width: 100%;
+  left: -1.53%;
+  right: 1.53%;
+  /* background: radial-gradient(38.47% 89.66% at 50% 50%, #F128C5 8.15%, #C11BB9 100%); */
+  mix-blend-mode: soft-light;
+  opacity: 0.3;
+}
+.vector_1 {
+  position: absolute;
+  left: 0%;
+  right: 10%;
+  top: 800px;
 
+  width: 20%;
+  opacity: 0.05;
+  /* background: radial-gradient(42.21% 64.7% at 50% 50%, #F128C5 8.15%, #C11BB9 100%); */
+  transform: rotate(-10.83deg);
 }
-.yellow_1{
-    position: absolute;
-width: 69px;
-height: 40px;
-left: 834px;
+.rocket {
+  position: relative;
+  width: 63.02px;
+  height: 63.02px;
+  left: 45%;
+  top: 343px;
 }
-.vector_2{
-    position: absolute;
-top: 500px;
-width: 100%;
-left:-1.53%;
-right:1.53%;
-/* background: radial-gradient(38.47% 89.66% at 50% 50%, #F128C5 8.15%, #C11BB9 100%); */
-mix-blend-mode: soft-light;
-opacity: 1;
-}
-.vector_1{
-    position: absolute;
-left: 0%;
-right: 10%;
-top: 18%;
-
-width: 30%;
-opacity: 0.1;
-/* background: radial-gradient(42.21% 64.7% at 50% 50%, #F128C5 8.15%, #C11BB9 100%); */
-transform: rotate(-10.83deg);
-
-}
-.rocket{
-    position: relative;
-width: 63.02px;
-height: 63.02px;
-left: 45%;
-top: 343px;
-}
-.sln_span{
-   position: relative;
+.sln_span {
+  position: relative;
   width: 80.56px;
   height: 27.23px;
   top: -39px;
@@ -128,16 +127,15 @@ top: 343px;
   color: black;
   padding: 10px;
   background: #d9a9ff;
-  border-radius: 30px; 
+  border-radius: 30px;
   padding-right: 20px;
   font-weight: 600;
 }
-.usdt_logo{
-position: relative;
-width: 19.29px;
-height: 19.29px;
-top:4px
-
+.usdt_logo {
+  position: relative;
+  width: 19.29px;
+  height: 19.29px;
+  top: 4px;
 }
 .usdt_span {
   position: relative;
@@ -149,15 +147,15 @@ top:4px
   padding: 10px;
   background: #d9a9ff;
   border-radius: 30px;
-   font-weight: 600;
+  font-weight: 600;
 }
 .arrow {
   width: 35.08px;
   position: relative;
   height: 35.08px;
   align-self: center;
- background: rgba(142, 0, 255, 1);
-right: 30px;
+  background: rgba(142, 0, 255, 1);
+  right: 30px;
   z-index: 2;
   padding: 8px;
   border-radius: 30px;
@@ -179,7 +177,7 @@ right: 30px;
   border: 0px;
 }
 .buy-sln {
-  width: 136.74px;
+  width: auto;
   height: 42.78px;
   border: 0px;
   background: linear-gradient(93.62deg, #3c0b63 1.06%, #c11bb9 147.09%);
@@ -218,8 +216,9 @@ right: 30px;
     linear-gradient(179.84deg, rgba(182, 91, 255, 1) rgba(255, 161, 234, 1));
   padding: 10px;
   padding-top: 20px;
-}.upper{
-    position: relative;
-    width: 100%;
+}
+.upper {
+  position: static;
+  width: 100%;
 }
 </style>

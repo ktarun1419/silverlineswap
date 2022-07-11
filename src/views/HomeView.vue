@@ -1,11 +1,17 @@
 <template>
   <div>
-    <Topbar />
-    <Upper/>
-    <About/>
+    <Topbar  />
+    <Upper />
+    <About />
     <Launching/>
     <Features/>
-    <Roadmap />
+     <Roadmap />
+    <Tokenomics />
+    <Totalsupply/>
+    <Teams/>
+    <Partners/>
+    <Faq/>
+    <Footer/>
   </div>
 </template>
 
@@ -17,6 +23,12 @@ import About from "@/components/about.vue";
 import Launching from "@/components/launching.vue";
 import Features from "@/components/feature.vue";
 import Roadmap from "@/components/roadmap.vue";
+import Tokenomics from "@/components/tokenomics.vue";
+import Totalsupply from "@/components/totalsupply.vue";
+import Teams from "@/components/teams.vue";
+import Partners from "@/components/partners.vue";
+import Faq from "@/components/faq.vue";
+import Footer from "@/components/footer.vue";
 @Options({
   components: {
     Topbar,
@@ -24,9 +36,31 @@ import Roadmap from "@/components/roadmap.vue";
     About,
     Launching,
     Features,
-    Roadmap
+    Roadmap,
+    Tokenomics,
+    Totalsupply,
+    Teams,
+    Partners,
+    Faq,
+    Footer
 
   },
 })
 export default class HomeView extends Vue {}
 </script>
+<style>
+.tag {
+}
+
+.tag {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+</style>

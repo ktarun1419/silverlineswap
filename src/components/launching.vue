@@ -2,7 +2,7 @@
     <div class="launch">
         <img src="@/assets/dots_1.png" alt="" class="dots_1">
         <img src="@/assets/stone_1.png" alt="" class="stone_1">
-        <span class="launch-text">LAUNCHING NOW</span>
+        <span class="launch-text">LAUNCHING NOW</span><br>
         <div class="launch-div1">
             <img src="@/assets/sln-coin.png" alt="" class="launch-coin">
             <h3>SILVERLINE TOKEN</h3>
@@ -11,6 +11,7 @@
             <img src="@/assets/sl-token-coin.png" alt="" class="launch-coin">
             <h3>SILVERLINESWAP-DEX</h3>
         </div>
+        <img src="@/assets/stone_1.png" alt="" class="stonel-1">
     </div>
 </template>
 <script lang="ts">
@@ -22,6 +23,13 @@ export default class Launching extends Vue{
 }
 </script>
 <style>
+.stonel-1{
+    position:relative;
+width: 84.03px;
+height: 86.32px;
+left: 104.65px;
+top: 179.58px;
+}
 .stone_1{
     position: absolute;
 width: 84.03px;
@@ -31,13 +39,16 @@ top: 300.58px;
 
 }
 .launch-div2{
-    border:1px solid linear-gradient(180deg,rgba(143, 77, 196, 1),rgba(0, 0, 0, 0));
-position: absolute;
+    border-width: 2px;
+  border-style: solid;
+  border-color:
+rgba(142, 0, 255, 0.5);
+position: static;
 width: 351.39px;
 height: 326.94px;
-right: 20%;
-top: 100px;
-opacity: 0.8;
+display: inline-block;
+margin-top: 200px;
+
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(142, 0, 255, 0.15) 137.15%);
 border-radius: 15.2778px;
 }
@@ -45,15 +56,14 @@ border-radius: 15.2778px;
     margin-top: 30px;
 }
 .launch{
-    position: relative;
-    top: 350px;
-    
+    position: static;
+    margin-top: 150px;
 }
 .launch-text{
-    position: absolute;
+    position: static;
 width: 245.97px;
 height: 27.5px;
-right: 40%;
+
 /* top: 1199.31px; */
 
 font-family: 'Poppins';
@@ -66,12 +76,15 @@ text-transform: uppercase;
 color: #FFFFFF;
 }.launch-div1{
     box-sizing: border-box;
-
-position: absolute;
+position: static;
 width: 351.39px;
 height: 326.94px;
-left: 20%;
-top: 100px;
+border-width: 2px;
+margin: 100px;
+  border-style: solid;
+  border-color:
+rgba(142, 0, 255, 0.5);
+display: inline-block;
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(142, 0, 255, 0.15) 137.15%);
 border-radius: 15.2778px;
 }
