@@ -6,9 +6,11 @@
          
         <span class="total-supply-text">total supply</span>
         <div class="token-supply-div">
+            <img src="@/assets/tokensupply.png" alt="" width="100%">
         </div>
         <span class="total-distribution-text">token distribution</span>
          <div class="token-supply-div2">
+             <img src="@/assets/tokendistribution.png" alt="" width="100%">
         </div>
         <img src="@/assets/Vector_2.png" alt="" class="vector2-totalsupply" />
     </div>
@@ -35,11 +37,7 @@ width: 420.9px;
 height: 324.65px;
 left: 55%;
 top: -212.57px;
-border-width: 2px;
-  border-style: solid;
-  border-color:
-rgba(142, 0, 255, 0.5);
-background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(142, 0, 255, 0.15) 137.15%);
+
 border-radius: 15.2778px;
 
 }
@@ -66,12 +64,9 @@ text-transform: uppercase;
 width: 451.46px;
 height: 324.65px;
 left: 12%;
-border-width: 2px;
-  border-style: solid;
-  border-color:
-rgba(142, 0, 255, 0.5);
+
 top: 150.57px;
-background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(142, 0, 255, 0.15) 137.15%);
+
 border-radius: 15.2778px;
 }
 .total-supply-text{

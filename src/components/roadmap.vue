@@ -113,7 +113,7 @@ border-radius: 15.2778px;
 height: 354.44px;
 top: 0px;
 float: right;
-margin-right: 20%;
+margin-right: 10%;
 }
 .roadmap-div4{
     margin-left: 10%;
@@ -126,8 +126,8 @@ rgba(142, 0, 255, 0.5);
     position:relative;
 width: 490.42px;
 height: 550px;
-top: -200px;
-/* left: 10%; */
+top: -100px;
+
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(142, 0, 255, 0.2) 137.15%);
 border-radius: 15.2778px;
 }.roadmap-div5{
@@ -135,7 +135,7 @@ border-radius: 15.2778px;
     width: 380.42px;
 height: 354.44px;
 /* left: 10%; */
-top: -100px;
+top: 00px;
 margin-left: 10%;
 }
 .roadmap-div6{
@@ -149,7 +149,7 @@ rgba(142, 0, 255, 0.5);
 width: 490.42px;
 height: 100px;
 float: right;
-top: -300px;
+top: -200px;
 margin-right:10% ;
 /* right: 10%; */
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(142, 0, 255, 0.2) 137.15%);
@@ -160,9 +160,10 @@ border-radius: 15.2778px;
     width: 380.42px;
 height: 354.44px;
 left: 60%; 
-top: 00px;
+top: 100px;
 }
 .roadmap-div8{
+    border-radius: 15.2778px;
     border-width: 2px;
   border-style: solid;
   border-color:
@@ -173,7 +174,7 @@ rgba(142, 0, 255, 0.5);
 width: 543.89px;
 height: 268.89px;
 /* left: 94.73px; */
-top: -250px;
+top: -150px;
 margin-left: 10%;
 
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(142, 0, 255, 0.2) 137.15%);
