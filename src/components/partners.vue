@@ -95,10 +95,6 @@ border-radius: 15.2778px;
     text-align: center;
     align-content: center;
 }.partners-text{
-    position: relative;
-width: 96.25px;
-height: 27.5px;
-top: 10.97px;
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 800;
@@ -108,14 +104,11 @@ text-transform: uppercase;
 color: #FFFFFF;
 }
 .partners-text2{
-    position: relative;
-width: 156.25px;
-height: 27.5px;
-top: 30.97px;
+  
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
-
+padding: 20px;
 font-size: 19.0972px;
 line-height: 22px;
 text-align: center;
