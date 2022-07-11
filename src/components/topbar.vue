@@ -22,7 +22,7 @@
           <a href="https://www.silverlineswap.org/Docs/WHITEPAPER_0522.pdf" target="_blank">Whitepaper</a>
         </li>
         <li>
-          <a>Audit Report</a>
+          <a href="https://github.com/TechRate/Smart-Contract-Audits/blob/main/March/SilverLine.pdf" target="_blank"> Audit Report</a>
         </li>
         <li>
           <a @click="totokenomics">Tokenomics</a>
@@ -117,7 +117,7 @@ export default class Topbar extends Vue {
 <style>
 
 .sl-container {
-  margin-top: 10px;
+  margin-top: 30px;
 }
 .sl-logo {
   margin-top: 0px;
@@ -164,7 +164,7 @@ width: 100%;
 #menu li {
   display: inline-block;
   position: relative;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-left: 3.5%;
   z-index: 2;
 }

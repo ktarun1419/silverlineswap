@@ -291,7 +291,7 @@ export default class Faq extends Vue {}
   position: static;
   top: 2600px;
   align-content: center;
-  margin-top: 400px;
+  margin-top: 200px;
 }
 .faq-text {
   width: 59.58px;

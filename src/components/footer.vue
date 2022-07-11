@@ -3,11 +3,11 @@
     <img src="@/assets/Vector_1.png" alt="" class="vector_1" />
 
     <footer class="footer-div">
-      <img src="@/assets/twitter.png" alt="" class="footer-twitter" />
-      <img src="@/assets/facebook.png" alt="" class="footer-twitter" />
-      <img src="@/assets/telegram.png" alt="" class="footer-twitter" />
-      <img src="@/assets/instagram.png" alt="" class="footer-twitter" />
-      <img src="@/assets/youtube.png" alt="" class="footer-twitter" />
+     <a href="https://www.twitter.com/SilverLineSwap_" target="_blank"><img src="@/assets/twitter.png" alt="" class="footer-twitter" /></a> 
+      <a href="https://www.facebook.com/SilverLineSwap/" target="_blank"><img src="@/assets/facebook.png" alt="" class="footer-twitter" /></a>
+    <a href="https://www.t.me/SilverLineSwap" target="_blank"> <img src="@/assets/telegram.png" alt="" class="footer-twitter" /></a> 
+     <a href="https://www.instagram.com/silverlineswap/" target="_blank"><img src="@/assets/instagram.png" alt="" class="footer-twitter" /></a> 
+     <a href="https://www.youtube.com/channel/UCJHQq8Eor178K9Jn4aR-91Q" target="_blank"><img src="@/assets/youtube.png" alt="" class="footer-twitter" /></a> 
       <span class="footer-text">2021 Silverline. All rights reserved. </span>
     </footer>
   </div>

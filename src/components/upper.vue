@@ -13,7 +13,15 @@
         event of the Presale. Grab the SilverLine Token at just $0.0013 for an
         undeniable scope for growth.
       </h4>
-      <button class="buy-sln">JOIN OUR COMMUNITY</button>
+      <button class="buy-sln" @click="joincommunity">JOIN OUR COMMUNITY →</button><br>
+      <div class="logo-div" id="logo-div">
+        <a href="https://www.t.me/SilverLineSwap" target="_blank"> <img src="@/assets/telegram1.png" alt="" class="logo"></a>   
+     <a href="https://discord.gg/DYDd29ywmM" target="_blank"> <img src="@/assets/discord1.png" alt="" class="logo"></a> 
+     <a href="https://www.twitter.com/SilverLineSwap_" target="_blank"><img src="@/assets/twitter1.png" alt="" class="logo"></a>  
+      <a href="https://medium.com/@silverlineswap" target="_blank">  <img src="@/assets/medium1.png" alt="" class="logo"></a>
+         
+      </div>
+    
     </div>
     <div class="div2">
       <h1>PRE-SALE</h1>
@@ -64,11 +72,28 @@ import transactions from "@/mixins/transactions";
     buy() {
       transactions.prototype.buying_Sln(this.usdt_amount);
     },
+    joincommunity(){
+        let logo=document.getElementById('logo-div')
+        if (logo!=null) {
+            logo.style.display='block'
+        }
+    }
   },
 })
 export default class Upper extends Vue {}
 </script>
 <style>
+.logo-div{
+    display: none;
+}
+.logo{
+    width: 40px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+    border: 2px solid black;
+    
+}
 .bluegem_1 {
   position: absolute;
   left: 13.12%;
@@ -188,6 +213,7 @@ export default class Upper extends Vue {}
   font-size: 19.0972px;
   line-height: 23px;
   color: white;
+  cursor: pointer;
 }
 .div1 {
   float: left;
@@ -221,4 +247,5 @@ export default class Upper extends Vue {}
   position: static;
   width: 100%;
 }
+
 </style>
