@@ -277,7 +277,7 @@ export default class Upper extends Vue {}
         margin-right: auto;
         position: relative;
         margin-bottom: 200px;
-        width: 80%;
+        width: 90%;
     }.div-input{
         position: static;
         max-height: 400px;
