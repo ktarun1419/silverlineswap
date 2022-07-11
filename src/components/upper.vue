@@ -186,7 +186,7 @@ export default class Upper extends Vue {}
   border-radius: 30px;
 }
 .input-box-button {
-  width: 342.8px;
+  width: 100%;
   height: 53.3px;
   background: rgba(142, 0, 255, 0.7);
   border-radius: 10px;

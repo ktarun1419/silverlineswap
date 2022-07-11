@@ -87,7 +87,7 @@ export default class Roadmap extends Vue{
     width: 380.42px;
 height: 354.44px;
 /* left: 10%; */
-top: 0px;
+top: 50px;
 margin-left: 10%;
 }
 
@@ -160,7 +160,7 @@ border-radius: 15.2778px;
     width: 380.42px;
 height: 354.44px;
 left: 60%; 
-top: 100px;
+top: 150px;
 }
 .roadmap-div8{
     border-radius: 15.2778px;
@@ -172,7 +172,7 @@ rgba(142, 0, 255, 0.5);
     text-align: left;
    position: relative;
 width: 543.89px;
-height: 268.89px;
+height: auto;
 /* left: 94.73px; */
 top: -150px;
 margin-left: 10%;
@@ -185,7 +185,7 @@ border-radius: 15
 width: 440.76px;
 height: 481.25px;
 margin-left: 10%;
-top: -100.64px;
+top: -00.64px;
 }
 .roadmap-div10{
     border-width: 2px;
@@ -194,9 +194,9 @@ top: -100.64px;
 rgba(142, 0, 255, 0.5);
   position: relative;
 width: 495px;
-height: 212.36px;
+height: auto;
 left: 50%;
-top: -500px;
+top: -350px;
 text-align: left;
 padding: 30px;
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(142, 0, 255, 0.2) 137.15%);

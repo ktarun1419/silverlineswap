@@ -109,7 +109,7 @@ rgba(142, 0, 255, 0.5);
 }
 .tokenomics {
   position: static;
-  margin-top: 300px;
+  margin-top: 500px;
   text-align: center;
 }
 @media screen and (max-width: 800px){
