@@ -198,7 +198,7 @@ export default class Faq extends Vue {}
   line-height: 22px;
   text-transform: capitalize;
   color: #ffffff;
-  left: 100px;
+  left: 5%;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .plus-png {
@@ -273,7 +273,8 @@ export default class Faq extends Vue {}
   position: relative;
   width: 60%;
   height: auto;
-  left: 20%;
+   margin-right: auto;
+        margin-left: auto;
   top: 100px;
   padding-bottom: 30px;
   border-width: 2px;
@@ -307,5 +308,21 @@ export default class Faq extends Vue {}
   text-transform: uppercase;
 
   color: #ffffff;
+}
+@media screen and (max-width: 800px){
+    .email-box{
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        left: 0;
+        right: 0;
+    }.email-box-text{
+        width: 60%;
+        font-size: 10px;
+    }.faq-div{
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 </style>

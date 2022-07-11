@@ -127,5 +127,23 @@ rgba(142, 0, 255, 0.15);
   /* or 23px */
 
   text-align: justify;
+}@media screen and (max-width: 800px){
+    .vector_3{
+        display: none;
+    }.vector2-about{
+         display: none;
+    }.vector_4{
+         display: none;
+    }.about-div2{
+         display: none;
+    }.about{
+        margin-top: 500px;
+    }
+    .about-div1{
+        width: 90%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 </style>

@@ -2,7 +2,7 @@
     <div class="launch">
         <img src="@/assets/dots_1.png" alt="" class="dots_1">
         <img src="@/assets/stone_1.png" alt="" class="stone_1">
-        <span class="launch-text">LAUNCHING NOW</span><br>
+        <span class="launch-text">LAUNCHING SOON</span><br>
         <div class="launch-div1">
             <img src="@/assets/sln-coin.png" alt="" class="launch-coin">
             <h3>SILVERLINE TOKEN</h3>
@@ -87,5 +87,23 @@ rgba(142, 0, 255, 0.5);
 display: inline-block;
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(142, 0, 255, 0.15) 137.15%);
 border-radius: 15.2778px;
+}
+@media screen and (max-width: 800px){
+    .stone_1{
+        display: none;
+    }
+    .stonel-1{
+        display: none;
+    }.launch-div1{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }.launch-div2{
+        margin-top: 50px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 </style>

@@ -112,4 +112,24 @@ rgba(142, 0, 255, 0.5);
   margin-top: 300px;
   text-align: center;
 }
+@media screen and (max-width: 800px){
+    .tokenomics{
+        margin-top: 200px;
+        margin-bottom: 200px;
+       margin-left: auto;
+        margin-right: auto;
+        align-content: center;
+
+    }.token-div2{
+        display: none;
+        
+    }
+    .token-div1{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+
+    }
+}
 </style>

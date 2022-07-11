@@ -1,11 +1,11 @@
 <template>
 <div class="teams" id="team">
 <h3 class="teams-text">teams</h3>
-<img src="@/assets/balasir.png" alt="" class="sindhumam">
-<img src="@/assets/shaansir.png" alt="" class="sindhumam">
-<img src="@/assets/sindhumam.png" alt="" class="sindhumam1">
-<img src="@/assets/alansir.png" alt="" class="sindhumam">
-<img src="@/assets/maheshsir.png" alt="" class="sindhumam">
+<a href="https://www.linkedin.com/in/bala-kumaran-87900121a/" target="_blank"><img src="@/assets/balasir.png" alt="" class="sindhumam"></a>
+<a href="https://www.linkedin.com/in/shancoo/" target="_blank"><img src="@/assets/shaansir.png" alt="" class="sindhumam"></a>
+<a href="" target="_blank"><img src="@/assets/sindhumam.png" alt="" class="sindhumam1"></a>
+<a href="https://www.linkedin.com/in/allan-dias-454b3517/" target="_blank"><img src="@/assets/alansir.png" alt="" class="sindhumam"></a>
+<a href="https://www.linkedin.com/in/maheshmohan10/" target="_blank"><img src="@/assets/maheshsir.png" alt="" class="sindhumam"></a>
 </div>
     
 </template>
@@ -46,5 +46,9 @@ text-transform: uppercase;
 color: #FFFFFF;
 
 
+}@media screen and (max-width: 800px){
+    .sindhumam1{
+        height:270.88px ;
+    }
 }
 </style>

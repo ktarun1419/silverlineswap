@@ -125,4 +125,38 @@ color: #FFFFFF;
 
 
 }
+@media screen and (max-width: 800px){
+    .feature-div1{
+         margin-top: 100px;
+        position: static;
+        display: inline-block;
+         margin-right: 2%;
+       margin-left: 2%;
+    }
+    .feature-div2{
+        margin-top: 100px;
+        margin-right: 2%;
+       margin-left: 2%;
+         position: static;
+         display: inline-block;
+    }.feature-div3{
+         margin-top: 100px;
+         margin-right: 2%;
+       margin-left: 2%;
+         position: static;
+      display: inline-block;
+    }.feature-div4{
+         margin-top: 100px;
+         margin-right: 2%;
+       margin-left: 2%;
+        display: inline-block;
+         position: static;
+    }
+    .feature-img2{
+        display: none;
+    }
+    .feature-img3{
+        display: none;
+    }
+}
 </style>

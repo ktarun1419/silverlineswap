@@ -150,7 +150,7 @@ export default class Topbar extends Vue {
 position: fixed;
 width: 100%;
   color: #ffffff;
-  z-index: 4;
+  z-index: 2;
   /* height: 20px; */
   /* padding-left: 18px; */
 }
@@ -167,6 +167,7 @@ width: 100%;
   margin-top: 0px;
   margin-left: 3.5%;
   z-index: 2;
+  background-color: black;
 }
 #menu a {
   cursor: pointer;
@@ -178,6 +179,7 @@ width: 100%;
   line-height: 15px;
   z-index: 2;
   color: #ffffff;
+
 }
 
 #menu li a:hover {
@@ -201,7 +203,7 @@ width: 100%;
   line-height: 43px;
   text-align: center;
   position: absolute;
-  left: 35px;
+  left: 0px;
 }
 #menu a.dropdown-arrow:after {
   content: "\25BE";
@@ -213,9 +215,43 @@ width: 100%;
   margin-left: 20px;
   float: right;
 }
+#menu ul.sub-menus {
+  height: auto;
+  overflow: hidden;
+  width: 170px;
+  background: transparent;
+  position: absolute;
+  display: none;
+  z-index: 7;
+}
+#menu ul.sub-menus li {
+  display: block;
+  width: 100%;
+  z-index: 2;
+}
+#menu ul.sub-menus a {
+  color: #575757;
+  font-size: 16px;
+  z-index: 7;
+}
+#menu li:hover ul.sub-menus {
+  display: block;
+}
+#menu ul.sub-menus a:hover {
+  background: #ffffff;
+  color: #000000;
+}
 @media screen and (max-width: 800px) {
+    #menu ul.sub-menus {
+    width: 100%;
+    position: static;
+  }
+  #menu ul.sub-menus a {
+    padding-left:0;
+  }
   #menu {
-    position: relative;
+    position: absolute;
+    top: -10px;
   }
   .sl-container {
     float: right;
@@ -232,18 +268,22 @@ width: 100%;
     top: 100%;
     right: 0;
     left: 0;
+    width: 80%;
     height: auto;
     display: none;
   }
   #menu li {
     display: block;
-    float: none;
-    width: auto;
+    float: left;
+    width: 60%;
+    padding-top: 10px;
+    
+
   }
   #menu input,
   #menu label {
     position: absolute;
-    top: 0;
+    top: 30px;
     left: 0;
     display: block;
     color: white;

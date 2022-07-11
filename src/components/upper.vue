@@ -7,12 +7,12 @@
     <img src="@/assets/bluegem_1.png" alt="" class="bluegem_1" />
     <img src="@/assets/Yellow_1.png" alt="" class="yellow_1" />
     <div class="div1">
-      <h1>Get In Line For SilverLine</h1>
+      <h1>Get In Line For SilverLine</h1><br>
       <h4>
         SilverLine Token will be released in the Binance Smart Chain at the
         event of the Presale. Grab the SilverLine Token at just $0.0013 for an
         undeniable scope for growth.
-      </h4>
+      </h4><br>
       <button class="buy-sln" @click="joincommunity">JOIN OUR COMMUNITY →</button><br>
       <div class="logo-div" id="logo-div">
         <a href="https://www.t.me/SilverLineSwap" target="_blank"> <img src="@/assets/telegram1.png" alt="" class="logo"></a>   
@@ -24,12 +24,12 @@
     
     </div>
     <div class="div2">
-      <h1>PRE-SALE</h1>
+       <h1 class="presale-text">PRE-SALE</h1><br>
       <div class="div-input">
         <input
           type="number"
           class="input-box"
-          placeholder="0.0"
+          placeholder="Enter USDT BEP-20 "
           v-model="this.usdt_amount"
         />
         <span class="usdt_span">
@@ -41,7 +41,7 @@
         <input
           type="number"
           class="input-box"
-          placeholder="0.0"
+          placeholder="SilverLine Amount"
           id="sln-amount"
           v-model="this.sln_amt"
         />
@@ -90,7 +90,7 @@ export default class Upper extends Vue {}
     width: 40px;
     background-color: white;
     margin: 10px;
-    border-radius: 50%;
+    border-radius: 60%;
     border: 2px solid black;
     
 }
@@ -148,7 +148,7 @@ export default class Upper extends Vue {}
   width: 80.56px;
   height: 27.23px;
   top: -39px;
-  left: 130px;
+  left: 35%;
   color: black;
   padding: 10px;
   background: #d9a9ff;
@@ -167,7 +167,7 @@ export default class Upper extends Vue {}
   width: 80.56px;
   height: 27.23px;
   top: -42px;
-  left: 145px;
+  left: 40%;
   color: black;
   padding: 10px;
   background: #d9a9ff;
@@ -195,11 +195,15 @@ export default class Upper extends Vue {}
   color: white;
 }
 .input-box {
-  width: 342.8px;
+  /* width: 342.8px; */
+  width: 100%;
   height: 53.3px;
   background: #ffffff;
   border-radius: 10px;
   border: 0px;
+  font-weight: 600;
+  color: black;
+  font-size: 17px;
 }
 .buy-sln {
   width: auto;
@@ -225,10 +229,9 @@ export default class Upper extends Vue {}
 .div2 {
   float: right;
   margin-right: 10%;
-  box-sizing: border-box;
   width: 391.02px;
   height: 281.46px;
-  margin-top: 5%;
+  margin-top: 9%;
   padding: 10px;
 }
 .div-input {
@@ -246,6 +249,51 @@ export default class Upper extends Vue {}
 .upper {
   position: static;
   width: 100%;
+}@media screen and (max-width: 800px)
+{
+    .bluegem_1{
+        display: none;
+    }
+    .blue_1{
+        display: none;
+    }
+    .yellow_1{
+        display: none;
+    }
+    .vector_1{
+        display: none;
+    }.vector_2{
+         display: none;
+    }.rocket{
+         display: none;
+    }
+    .stone_1{
+        display: none;
+    }.div2{
+        float: none;
+        margin-top: 100px;
+        margin-right: 0%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        margin-bottom: 200px;
+        width: 80%;
+    }.div-input{
+        position: static;
+        max-height: 400px;
+    }
+    .div1{
+        
+       margin-top: 20%;
+        margin-bottom: 100px;
+        position: static;
+        width: 80%;
+        float: none;
+    }.presale-text{
+        display: none;
+    }.input-box-button{
+        width: 100%;
+    }
 }
 
 </style>

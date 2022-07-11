@@ -91,7 +91,6 @@ border-radius: 15.2778px;
 }
 .partners{
     position: static;
-    top: 2400px;
     text-align: center;
     align-content: center;
 }.partners-text{
@@ -113,5 +112,21 @@ font-size: 19.0972px;
 line-height: 22px;
 text-align: center;
 text-transform: uppercase;
+}
+@media screen and (max-width: 800px){
+    .partners-div{
+        position: relative;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }.binance{
+        width: 40%;
+    }.coinscope{
+        width: 25%;
+    }.hys{
+        width: 15%;
+    }
 }
 </style>

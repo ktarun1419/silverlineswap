@@ -23,7 +23,6 @@ export default class App extends Vue{
   
   position: absolute;
 width: 100%;
-scroll-behavior:auto;
 height:auto;
 color: white;
 left: 0px;

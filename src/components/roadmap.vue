@@ -209,6 +209,66 @@ line-height: 18px;
 letter-spacing: 0.08em;
 text-transform: capitalize;
 }
+@media  screen and (max-width:800px) {
+    .roadmap-div1{
+        display: none;
+    }.roadmap-div3{
+        display: none;
+    }.roadmap-div5{
+        display: none;
+    }.roadmap-div7{
+        display: none;
+    }.roadmap-div9{
+        display: none;
+    }.roadmap{
+        top: 100px;
+        
+    }
+    .roadmap-div2{
+        top: 100px;
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: auto;
+        margin-top: 100px;
+    }.roadmap-div4{
+        top: 100px;
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: auto;
+        margin-top: 100px;
+    }
+    .roadmap-div6{
+        top: 100px;
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        margin-top: 100px;
+        float: none;
+
+    }
+    .roadmap-div8{
+        top: 100px;
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: auto;
+        margin-top: 100px;
+    }.roadmap-div10{
+        top: 100px;
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: auto;
+        margin-top: 100px;
+    }
+}
 
 
 

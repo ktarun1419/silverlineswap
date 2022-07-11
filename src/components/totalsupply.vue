@@ -82,4 +82,28 @@ font-size: 26.7361px;
 line-height: 40px;
 text-transform: uppercase;
 }
+@media screen and (max-width: 800px){
+    .total-supply-text{
+        position: static;
+        margin-top: 50px;
+
+    }.total-distribution-text{
+        position: static;
+         margin-top: 50px;
+    }.token-supply-div{
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 80%;
+    }.token-supply-div2{
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 200px;
+        width: 80%;
+    }
+}
 </style>
