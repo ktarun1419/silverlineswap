@@ -227,7 +227,7 @@ margin-bottom: 40px;
   position: relative;
   width: 80.56px;
   height: 27.23px;
-  top: -39px;
+  top: -42px;
   left: 35%;
   color: black;
   padding: 10px;
