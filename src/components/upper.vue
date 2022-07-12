@@ -59,7 +59,7 @@
         <span class="arrow">
           <img src="@/assets/arrow.png" alt="" />
         </span>
-        <span class="min-amount-text" id="min-text">*min amount=10USDT</span>
+       
         <input
           type="number"
           class="input-box"
@@ -71,6 +71,7 @@
         <span class="sln_span">
           <img src="@/assets/sl_logo.png" class="usdt_logo" /> SLN
         </span>
+         <span class="min-amount-text" id="min-text">*min amount=10USDT</span>
         <button class="input-box-button" @click="buy" id="buy-button">BUY SLN</button>
       </div>
     </div>
@@ -241,7 +242,7 @@ margin-bottom: 40px;
     position: relative;
     color: white;
     font-size: 15px;
-    left: -45%;
+    left: -40%;
     font-weight: 600;
 }
 .sln_span {
@@ -249,7 +250,7 @@ margin-bottom: 40px;
   width: 80.56px;
   height: 27.23px;
   top: -42px;
-  left: 35%;
+  left: 56%;
   color: black;
   padding: 10px;
   background: #d9a9ff;
@@ -268,7 +269,7 @@ margin-bottom: 40px;
   width: 80.56px;
   height: 27.23px;
   top: -42px;
-  left: 61%;
+  left: 40%;
   color: black;
   padding: 10px;
   background: #d9a9ff;
@@ -284,7 +285,7 @@ margin-bottom: 40px;
   
   z-index: 2;
   padding: 8px;
-  left: 10%;
+  left: -10%;
   border-radius: 30px;
   
 }
