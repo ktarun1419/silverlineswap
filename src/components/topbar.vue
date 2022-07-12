@@ -151,7 +151,7 @@ export default class Topbar extends Vue {
 position: fixed;
 width: 100%;
   color: #ffffff;
-  z-index: 2;
+  z-index: 5;
   /* height: 20px; */
   /* padding-left: 18px; */
 }
