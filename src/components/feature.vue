@@ -59,49 +59,49 @@ left: 0%;
     position: absolute;
 width: 112.29px;
 height: 112.29px;
-left: 30%;
+left: 25%;
 top: 5%;
 
 }
 .feature-text{
     position: relative;
-    top: 80px;
+    top: 40px;
 }
 .feature-img{
     top: 40px;
     position: relative;
 }.feature-div3{
      position: absolute;
-width: 271.53px;
-height: 337.99px;
-left: 54%;
+width: 221.53px;
+height: 291.04px;
+right: 30%;
 top: 100px;
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(142, 0, 255, 0.1) 137.15%);
 border-radius: 30.5556px 15.2778px;
 }
 .feature-div4{
      position: absolute;
-width: 271.53px;
-height: 337.99px;
-left: 28%;
+width: 221.53px;
+height: 291.04px;
+left: 30%;
 top: 100px;
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(142, 0, 255, 0.1) 137.15%);
 border-radius: 30.5556px 15.2778px;
 }
 .feature-div2{
      position: absolute;
-width: 271.53px;
-height: 337.99px;
-right: 3%;
+width: 221.53px;
+height: 291.04px;
+right: 5%;
 top: 100px;
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(142, 0, 255, 0.1) 137.15%);
 border-radius: 30.5556px 15.2778px;
 }
 .feature-div1{
     position: absolute;
-width: 271.53px;
-height: 337.99px;
-margin-left: 3%;
+width: 221.53px;
+height: 291.04px;
+margin-left: 5%;
 top: 100px;
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(142, 0, 255, 0.1) 137.15%);
 border-radius: 30.5556px 15.2778px;
