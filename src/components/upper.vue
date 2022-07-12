@@ -90,12 +90,16 @@ import transactions from "@/mixins/transactions";
     usdt_amount(newvalue, oldvalue) {
       this.sln_amt = newvalue / 0.0013;
       let button=document.getElementById('buy-button')
-      if (button!=null) {
+      let text=document.getElementById('min-text')
+      if (button!=null && text!=null) {
           if (newvalue>=10) {
               button.style.cursor='pointer'
+               text.innerText='*min amount=10USDT'
+               text.style.color='white'
           }else{
               button.style.cursor='not-allowed'
-              
+              text.innerText='*Enter a Vaild Amount'
+              text.style.color='red'
           }
       }
     },
@@ -208,7 +212,7 @@ margin-bottom: 40px;
 }
 .vector_2 {
   position: absolute;
-  top: 500px;
+  top: 600px;
   width: 100%;
   left: -1.53%;
   right: 1.53%;
@@ -264,7 +268,7 @@ margin-bottom: 40px;
   width: 80.56px;
   height: 27.23px;
   top: -42px;
-  left: 40%;
+  left: 61%;
   color: black;
   padding: 10px;
   background: #d9a9ff;
@@ -277,7 +281,7 @@ margin-bottom: 40px;
   height: 35.08px;
   align-self: center;
   background: rgba(142, 0, 255, 1);
-  right: 30px;
+  
   z-index: 2;
   padding: 8px;
   left: 10%;
