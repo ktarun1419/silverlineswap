@@ -17,13 +17,13 @@ export default class Teams extends Vue {}
 </script>
 <style>
 .sindhumam{
-    width: 210.14px;
+    width: 15%;
 height: 300.88px;
 position: relative;
 margin: 30px;
 }
 .sindhumam1{
-    width: 210.14px;
+    width: 15%;
 height: 352.62px;
 position: relative;
 margin: 2%;
@@ -49,6 +49,9 @@ color: #FFFFFF;
 }@media screen and (max-width: 800px){
     .sindhumam1{
         height:270.88px ;
+        width: 60%;
+    }.sindhumam{
+        width: 60%;
     }
 }
 </style>
