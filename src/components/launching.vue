@@ -27,7 +27,7 @@ export default class Launching extends Vue{
     position:relative;
 width: 84.03px;
 height: 86.32px;
-left: 104.65px;
+right: 3%;
 top: 179.58px;
 }
 .stone_1{

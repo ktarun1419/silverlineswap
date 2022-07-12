@@ -49,6 +49,7 @@
         <input
           type="number"
           class="input-box"
+          min="0"
           placeholder="Enter USDT BEP-20 "
           v-model="this.usdt_amount"
         />
@@ -61,6 +62,7 @@
         <input
           type="number"
           class="input-box"
+          min="0"
           placeholder="SilverLine Amount"
           id="sln-amount"
           v-model="this.sln_amt"
@@ -90,10 +92,9 @@ import transactions from "@/mixins/transactions";
   },
   mounted(){
       let countDownDate = new Date("Jul 19, 2022 20:00:00").getTime();
-      console.log('countdate'+countDownDate)
       setInterval(()=>{
           var now = new Date().getTime();
-console.log('now'+now)
+
 // Find the distance between now and the count down date
 var distance = countDownDate - now;
 
@@ -154,7 +155,7 @@ export default class Upper extends Vue {}
     margin: 10px;
     width: 60px;
     height: 60px;
-background: linear-gradient(93.62deg, #3c0b63 1.06%, #c11bb9 147.09%);
+background:rgba(142, 0, 255, 0.3);
 border-radius: 15px;
 border-width: 2px;
   border-style: solid;
