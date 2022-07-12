@@ -17,14 +17,14 @@ export default class Teams extends Vue {}
 </script>
 <style>
 .sindhumam{
-    width: 15%;
-height: 300.88px;
+   width: 200px;
+height: 280.88px;
 position: relative;
 margin: 30px;
 }
 .sindhumam1{
-    width: 15%;
-height: 352.62px;
+    width: 200px;
+height: 280.88px;
 position: relative;
 margin: 2%;
 margin-top: 0px;
