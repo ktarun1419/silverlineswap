@@ -49,7 +49,7 @@
         <input
           type="number"
           class="input-box"
-          min="0"
+          min="10"
           placeholder="Enter USDT BEP-20 "
           v-model="this.usdt_amount"
         />
@@ -59,6 +59,7 @@
         <span class="arrow">
           <img src="@/assets/arrow.png" alt="" />
         </span>
+        <span class="min-amount-text" id="min-text">*min amount=10USDT</span>
         <input
           type="number"
           class="input-box"
@@ -70,7 +71,7 @@
         <span class="sln_span">
           <img src="@/assets/sl_logo.png" class="usdt_logo" /> SLN
         </span>
-        <button class="input-box-button" @click="buy">BUY SLN</button>
+        <button class="input-box-button" @click="buy" id="buy-button">BUY SLN</button>
       </div>
     </div>
   </div>
@@ -88,6 +89,15 @@ import transactions from "@/mixins/transactions";
   watch: {
     usdt_amount(newvalue, oldvalue) {
       this.sln_amt = newvalue / 0.0013;
+      let button=document.getElementById('buy-button')
+      if (button!=null) {
+          if (newvalue>=10) {
+              button.style.cursor='pointer'
+          }else{
+              button.style.cursor='not-allowed'
+              
+          }
+      }
     },
   },
   mounted(){
@@ -132,7 +142,7 @@ if (distance < 0) {
   },
   methods: {
     buy() {
-        if (this.usdt_amount>0) {
+        if (this.usdt_amount>=10) {
             transactions.prototype.buying_Sln(this.usdt_amount);
         }else{
             alert('Please Enter Valid Amount')
@@ -155,12 +165,12 @@ export default class Upper extends Vue {}
     margin: 10px;
     width: 60px;
     height: 60px;
-background:rgba(142, 0, 255, 0.3);
+background:rgba(191, 130, 241, 0.3);
 border-radius: 15px;
 border-width: 2px;
   border-style: solid;
   border-color:
-rgba(142, 0, 255, 0.5);
+rgba(150, 86, 202, 0.5);
 margin-bottom: 40px;
 
 }
@@ -223,6 +233,12 @@ margin-bottom: 40px;
   height: 63.02px;
   left: 45%;
   top: 343px;
+}.min-amount-text{
+    position: relative;
+    color: white;
+    font-size: 15px;
+    left: -45%;
+    font-weight: 600;
 }
 .sln_span {
   position: relative;
@@ -264,7 +280,9 @@ margin-bottom: 40px;
   right: 30px;
   z-index: 2;
   padding: 8px;
+  left: 10%;
   border-radius: 30px;
+  
 }
 .input-box-button {
   width: 100%;
@@ -274,6 +292,7 @@ margin-bottom: 40px;
   margin-top: 10px;
   border: 0px;
   color: white;
+  cursor: pointer;
 }
 .input-box {
   /* width: 342.8px; */
