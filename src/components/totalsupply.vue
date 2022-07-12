@@ -33,10 +33,10 @@ export default class Totalsupply extends Vue {}
 }
 .token-supply-div2{
     position: relative;
-width: 420.9px;
-height: 324.65px;
+width: 470.9px;
+height: 374.65px;
 left: 55%;
-top: -212.57px;
+top: -267.57px;
 
 border-radius: 15.2778px;
 
@@ -46,7 +46,7 @@ border-radius: 15.2778px;
     width: 287.22px;
 height: 27.5px;
 left: 20%;
-top:-300px;
+top:-343px;
 
 font-family: 'Poppins';
 font-style: normal;
@@ -61,8 +61,8 @@ text-transform: uppercase;
 }
 .token-supply-div{
     position: relative;
-width: 451.46px;
-height: 324.65px;
+width: 501.46px;
+height: 374.65px;
 left: 12%;
 
 top: 150.57px;

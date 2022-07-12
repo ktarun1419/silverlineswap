@@ -189,8 +189,8 @@ export default class Faq extends Vue {}
 }
 .faq-question {
   position: absolute;
-  top: 15px;
-
+  top: 30%;
+  width: 70%;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -205,9 +205,10 @@ export default class Faq extends Vue {}
   position: absolute;
   width: 38.96px;
   height: 35.53px;
-  left: 90%;
-  top: 14%;
+  left: 81%;
+  top: 20%;
   cursor: pointer;
+  right: 0%;
 }
 
 .email-text {
@@ -259,7 +260,7 @@ export default class Faq extends Vue {}
   text-align: left;
   margin-top: 30px;
   bottom: 9.55%;
-  height: 50px;
+  height: 60px;
   top: 4%;
   border-width: 1px;
   background: linear-gradient(
@@ -323,6 +324,20 @@ export default class Faq extends Vue {}
         width: 90%;
         margin-right: auto;
         margin-left: auto;
+    }.faq-div1{
+        min-height: 60px;
+        max-height: 80px;
+    }.faq-question{
+        top: auto;
+    }.answer-div{
+        width: 70%;
+    }.email-box{
+        height: 40px;
+    }.email-box-text{
+        padding: 0;
+        width: 65%;
+        top: 12%;
+        left: 5%;
     }
 }
 </style>

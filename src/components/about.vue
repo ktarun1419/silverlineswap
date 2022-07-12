@@ -137,7 +137,7 @@ rgba(142, 0, 255, 0.15);
     }.about-div2{
          display: none;
     }.about{
-        margin-top: 500px;
+        margin-top: 200px;
     }
     .about-div1{
         width: 90%;

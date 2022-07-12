@@ -5,11 +5,11 @@
         <span class="launch-text">LAUNCHING SOON</span><br>
         <div class="launch-div1">
             <img src="@/assets/sln-coin.png" alt="" class="launch-coin">
-            <h3>SILVERLINE TOKEN</h3>
+            <h3>SILVERLINE TOKEN</h3><br>
         </div>
         <div class="launch-div2">
             <img src="@/assets/sl-token-coin.png" alt="" class="launch-coin">
-            <h3>SILVERLINESWAP-DEX</h3>
+            <h3>SILVERLINESWAP-DEX</h3><br>
         </div>
         <img src="@/assets/stone_1.png" alt="" class="stonel-1">
     </div>
@@ -44,16 +44,17 @@ top: 300.58px;
   border-color:
 rgba(142, 0, 255, 0.5);
 position: static;
-width: 351.39px;
-height: 326.94px;
+width: 401.39px;
+height: 376.94px;
 display: inline-block;
-margin-top: 200px;
+margin-top: 000px;
 
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(142, 0, 255, 0.15) 137.15%);
 border-radius: 15.2778px;
 }
 .launch-coin{
     margin-top: 30px;
+    width: 70%;
 }
 .launch{
     position: static;
@@ -61,8 +62,7 @@ border-radius: 15.2778px;
 }
 .launch-text{
     position: static;
-width: 245.97px;
-height: 27.5px;
+
 
 /* top: 1199.31px; */
 
@@ -72,19 +72,19 @@ font-weight: 800;
 font-size: 26.7361px;
 line-height: 40px;
 text-transform: uppercase;
-
 color: #FFFFFF;
 }.launch-div1{
-    box-sizing: border-box;
+   
 position: static;
-width: 351.39px;
-height: 326.94px;
+width: 401.39px;
+height: 376.94px;
 border-width: 2px;
 margin: 100px;
   border-style: solid;
   border-color:
 rgba(142, 0, 255, 0.5);
 display: inline-block;
+vertical-align: -25px;
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(142, 0, 255, 0.15) 137.15%);
 border-radius: 15.2778px;
 }
@@ -98,6 +98,7 @@ border-radius: 15.2778px;
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+        vertical-align: 0;
 
     }.launch-div2{
         margin-top: 50px;

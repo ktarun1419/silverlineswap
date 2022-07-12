@@ -7,7 +7,7 @@
     <img src="@/assets/bluegem_1.png" alt="" class="bluegem_1" />
     <img src="@/assets/Yellow_1.png" alt="" class="yellow_1" />
     <div class="div1">
-      <h1>Get In Line For SilverLine</h1><br>
+      <h1>Get In Line For SilverLine</h1>
       <h4>
         SilverLine Token will be released in the Binance Smart Chain at the
         event of the Presale. Grab the SilverLine Token at just $0.0013 for an
@@ -24,7 +24,27 @@
     
     </div>
     <div class="div2">
-       <h1 class="presale-text">PRE-SALE</h1><br>
+       
+       <h1 class="presale-text">PRE-SALE</h1>
+        
+            <div class="countdown-day" > 
+                <h3 id="days">00</h3>
+                <h4>Days</h4>
+            </div>
+            <div class="countdown-day" >
+                <h3 id="hours">00</h3>
+                <h4>Hours</h4>
+            </div>
+            <div class="countdown-day">
+                <h3 id="minutes">00</h3>
+                <h4>Minutes</h4>
+            </div>
+            <div class="countdown-day">
+                <h4 id="seconds">00</h4>
+                <h4>Seconds</h4>
+            </div>
+            <br>
+        
       <div class="div-input">
         <input
           type="number"
@@ -68,21 +88,81 @@ import transactions from "@/mixins/transactions";
       this.sln_amt = newvalue / 0.0013;
     },
   },
+  mounted(){
+      let countDownDate = new Date("Jul 19, 2022 20:00:00").getTime();
+      console.log('countdate'+countDownDate)
+      setInterval(()=>{
+          var now = new Date().getTime();
+console.log('now'+now)
+// Find the distance between now and the count down date
+var distance = countDownDate - now;
+
+// Time calculations for days, hours, minutes and seconds
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+// Output the result in an element with id=".countdown"
+let day=document.getElementById('days')
+if (day!=null) {
+    day.innerText=days.toString()
+}
+let hour=document.getElementById('hours')
+if (hour!=null) {
+    hour.innerHTML= hours.toString()
+}
+let min=document.getElementById('minutes')
+if (min!=null) {
+    min.innerHTML= minutes.toString()
+}
+let sec=document.getElementById('seconds')
+if (sec!=null) {
+    sec.innerHTML= seconds.toString()
+}
+//
+  
+
+// If the count down is over, write some text
+if (distance < 0) { 
+  countDownDate += 3600000 * Math.abs(Math.round(distance / 3600000)-1);
+}
+      },1000)
+  },
   methods: {
     buy() {
-      transactions.prototype.buying_Sln(this.usdt_amount);
+        if (this.usdt_amount>0) {
+            transactions.prototype.buying_Sln(this.usdt_amount);
+        }else{
+            alert('Please Enter Valid Amount')
+        }
+      
     },
     joincommunity(){
         let logo=document.getElementById('logo-div')
         if (logo!=null) {
             logo.style.display='block'
         }
-    }
-  },
+    },
+  }
 })
 export default class Upper extends Vue {}
 </script>
 <style>
+.countdown-day{
+    display: inline-block;
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+background: linear-gradient(93.62deg, #3c0b63 1.06%, #c11bb9 147.09%);
+border-radius: 15px;
+border-width: 2px;
+  border-style: solid;
+  border-color:
+rgba(142, 0, 255, 0.5);
+margin-bottom: 40px;
+
+}
 .logo-div{
     display: none;
 }
@@ -224,14 +304,14 @@ export default class Upper extends Vue {}
   margin-left: 10%;
   width: 440px;
   text-align: left;
-  margin-top: 10%;
+  margin-top: 14%;
 }
 .div2 {
   float: right;
   margin-right: 10%;
   width: 391.02px;
   height: 281.46px;
-  margin-top: 9%;
+  margin-top: 5%;
   padding: 10px;
 }
 .div-input {
@@ -281,6 +361,7 @@ export default class Upper extends Vue {}
     }.div-input{
         position: static;
         max-height: 400px;
+        margin-top: 100px;
     }
     .div1{
         
@@ -293,6 +374,9 @@ export default class Upper extends Vue {}
         display: none;
     }.input-box-button{
         width: 100%;
+    }.countdown-day{
+        width: 60px;
+        height: 60px;
     }
 }
 

@@ -51,29 +51,29 @@ export default class Features extends Vue{
 .feature-img3{
     position: absolute;
     z-index: 0;
-width: 221.53px;
-height: 287.99px;
+width: 100%;
+height: 100%;
 left: 0%;
 }
 .feature-img2{
     position: absolute;
 width: 112.29px;
 height: 112.29px;
-left: 25%;
+left: 30%;
 top: 5%;
 
 }
 .feature-text{
     position: relative;
-    top: 40px;
+    top: 80px;
 }
 .feature-img{
     top: 40px;
     position: relative;
 }.feature-div3{
      position: absolute;
-width: 221.53px;
-height: 287.99px;
+width: 271.53px;
+height: 337.99px;
 right: 30%;
 top: 100px;
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(142, 0, 255, 0.1) 137.15%);
@@ -81,17 +81,17 @@ border-radius: 30.5556px 15.2778px;
 }
 .feature-div4{
      position: absolute;
-width: 221.53px;
-height: 287.99px;
-left: 30%;
+width: 271.53px;
+height: 337.99px;
+left: 28%;
 top: 100px;
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(142, 0, 255, 0.1) 137.15%);
 border-radius: 30.5556px 15.2778px;
 }
 .feature-div2{
      position: absolute;
-width: 221.53px;
-height: 287.99px;
+width: 271.53px;
+height: 337.99px;
 right: 5%;
 top: 100px;
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(142, 0, 255, 0.1) 137.15%);
@@ -99,8 +99,8 @@ border-radius: 30.5556px 15.2778px;
 }
 .feature-div1{
     position: absolute;
-width: 221.53px;
-height: 287.99px;
+width: 271.53px;
+height: 337.99px;
 margin-left: 5%;
 top: 100px;
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(142, 0, 255, 0.1) 137.15%);
@@ -132,6 +132,7 @@ color: #FFFFFF;
         display: inline-block;
          margin-right: 2%;
        margin-left: 2%;
+       width: 80%;
     }
     .feature-div2{
         margin-top: 100px;
@@ -139,24 +140,30 @@ color: #FFFFFF;
        margin-left: 2%;
          position: static;
          display: inline-block;
+         width: 80%;
     }.feature-div3{
          margin-top: 100px;
          margin-right: 2%;
        margin-left: 2%;
          position: static;
       display: inline-block;
+      width: 80%;
     }.feature-div4{
          margin-top: 100px;
          margin-right: 2%;
        margin-left: 2%;
         display: inline-block;
          position: static;
+         width: 80%;
     }
     .feature-img2{
         display: none;
     }
     .feature-img3{
         display: none;
+        
+    }.feature-heading{
+        left: 30%;
     }
 }
 </style>

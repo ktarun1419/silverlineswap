@@ -121,12 +121,21 @@ text-transform: uppercase;
         margin-right: auto;
         left: 0;
         right: 0;
+        height: 150px;
     }.binance{
         width: 40%;
+        left: 5%;
     }.coinscope{
         width: 25%;
     }.hys{
         width: 15%;
+        right: 1%;
+    }.line{
+        top:5%
+    }.div-text{
+        left: 10%;
+    }.div-text2{
+        right: 5%;
     }
 }
 </style>

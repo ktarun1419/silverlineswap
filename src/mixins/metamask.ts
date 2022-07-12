@@ -36,9 +36,9 @@ export default class Metamask extends Vue{
           let chain = web3.eth.getChainId();
               chain.then((result) => {
                 console.log(result);
-                store.commit("set_chainId", result)
+                
                 if (result==4) {
-                    
+                    store.commit("set_chainId", result)
                 }
                 else{
                   try {
@@ -47,6 +47,7 @@ export default class Metamask extends Vue{
                        method: 'wallet_switchEthereumChain',
                          params: [{ chainId: Web3.utils.toHex(4) }],
                        });
+                       store.commit("set_chainId", result)
                    } catch (switchError) {
                      // This error code indicates that the chain has not been added to MetaMask.
                    }

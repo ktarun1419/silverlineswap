@@ -106,6 +106,7 @@ import store from "@/store";
      this.connect()
     };
     window.ethereum.on("accountsChanged", handler);
+    window.ethereum.on("chainChanged",handler)
   },
 })
 export default class Topbar extends Vue {

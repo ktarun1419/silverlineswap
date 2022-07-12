@@ -201,12 +201,12 @@ text-align: left;
 padding: 30px;
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(142, 0, 255, 0.2) 137.15%);
 border-radius: 15.2778px;
-font-family: 'Inter';
-font-style: normal;
+
+
 font-weight: 500;
 font-size: 15.2778px;
 line-height: 18px;
-letter-spacing: 0.08em;
+
 text-transform: capitalize;
 }
 @media  screen and (max-width:800px) {
