@@ -1,9 +1,9 @@
 <template>
   <div class="about" id="about">
-    <img src="@/assets/dots_1.png" alt="" class="dots_1" />
-    <img src="@/assets/Vector_3.png" alt="" class="vector_3" />
+    <!-- <img src="@/assets/dots_1.png" alt="" class="dots_1" /> -->
+     <img src="@/assets/Vector_3.png" alt="" class="vector_3" />
     <img src="@/assets/Vector_2.png" alt="" class="vector2-about" />
-    <img src="@/assets/Vector_4.png" alt="" class="vector_4" />
+    <!-- <img src="@/assets/Vector_4.png" alt="" class="vector_4" /> -->
     <img src="@/assets/bluegem_1.png" alt="" class="bluegem_1" />
     <h1 class="about-heading">ABOUT SILVERLINE</h1>
     <div class="about-div1">
@@ -15,7 +15,11 @@
         and services from SilverLine.
       </span>
     </div>
-    <img src="@/assets/sln-about.png" alt="" class="about-div2">
+  <div class="about-div2">
+         <iframe src="https://www.youtube.com/embed/gD0r5kAW1kk?mute=1&autoplay=0&version=3" frameborder="0" width="100%" height="100%" style="z-index:2">
+     </iframe> 
+    </div> 
+   
   </div>
 </template>
 <script lang="ts">
@@ -27,7 +31,7 @@ export default class About extends Vue {}
 <style>
 .vector2-about{
     position: absolute;
-    top: 1150px;
+    top: 1300px;
     left: -1%;
     right: 1%;
     width: 100%;
@@ -36,10 +40,13 @@ export default class About extends Vue {}
 }
 .about-div2{
    float: right;
-   margin-right: 20%; 
+   margin-right: 10%; 
    position: static;
   margin-top: -250px;
-   height:300px ;
+   height:300px;
+   width: 40%;
+   z-index: 2;
+  
 }
 .vector_4 {
   position: absolute;
@@ -67,6 +74,7 @@ export default class About extends Vue {}
   width: 100%;
   height: auto;
   left: -1px;
+ 
 }
 .dots_2 {
   position: absolute;
@@ -135,7 +143,12 @@ rgba(142, 0, 255, 0.15);
     }.vector_4{
          display: none;
     }.about-div2{
-         display: none;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        left: 0;
+        float: none;
     }.about{
         margin-top: 200px;
     }
