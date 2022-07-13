@@ -17,8 +17,8 @@ export default class transaction extends Vue {
             let web3 = new Web3(store.state.provider);
             //
             //setting contract address values
-            let usdtcontractAddress: string = '0x234e68D1faE0828aBc00a41E9595AEFEd1a7a797'
-            let presalecontractAdress: string = '0x2705C297DFd4798716A26c78F873594A1c89D046'
+            let usdtcontractAddress: string = '0x55d398326f99059fF775485246999027B3197955'
+            let presalecontractAdress: string = '0x038641693feE3115e3762d7eeE1205C8729DEAD4'
             //
             //creating the contract instances
             //
@@ -41,7 +41,7 @@ export default class transaction extends Vue {
             }
             //
             //sending the approve transaction object
-            if (store.state.chainId=='4') {
+            if (store.state.chainId=='56') {
                 let approve = web3.eth.sendTransaction(txApprove)
             console.log(approve)
             approve.then((result) => {

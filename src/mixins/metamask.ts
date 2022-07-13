@@ -45,7 +45,7 @@ export default class Metamask extends Vue{
                      const web3=new Web3(window.ethereum)
                       web3.currentProvider.request({
                        method: 'wallet_switchEthereumChain',
-                         params: [{ chainId: Web3.utils.toHex(4) }],
+                         params: [{ chainId: Web3.utils.toHex(56) }],
                        });
                        store.commit("set_chainId", result)
                    } catch (switchError) {

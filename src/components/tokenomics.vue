@@ -16,6 +16,11 @@
         <span class="token-detail-value">sln</span>
       </h2>
       <h2>
+        <span class="token-detail-title">Token Address</span>
+        :
+        <span class="token-detail-value">sln</span>
+      </h2>
+      <h2>
         <span class="token-detail-title">blockchain</span>
         :
         <span class="token-detail-value">binance smart chain</span>
@@ -32,7 +37,7 @@
       </h2>
     </div>
     <div class="token-div2">
-        <img src="@/assets/tokenomics_2.png" alt="">
+        <img src="@/assets/tokenomics_2.png" alt="" width="100%">
     </div>
      <img src="@/assets/Vector_2.png" alt="" class="vector_2">
   </div>
@@ -46,8 +51,8 @@ export default class Tokenomics extends Vue {}
 <style>
 .token-div2{
     position: relative;
-width: 375.07px;
-height: 338.26px;
+width: 395.07px;
+height: 358.26px;
 left: 60%;
 top: -250.44px;
 }

@@ -9,42 +9,50 @@
     <div class="div1">
       <h1>Get In Line For SilverLine</h1>
       <h4>
-        SilverLine Token will be released in the Binance Smart Chain at the
-        event of the Presale. Grab the SilverLine Token at just $0.0013 for an
-        undeniable scope for growth.
-      </h4><br>
-      <button class="buy-sln" @click="joincommunity">JOIN OUR COMMUNITY →</button><br>
+        At the launch of the presale, SilverLine Token will be landed on the
+        Binance Smart Chain planet. To get to Milkyway, purchase the SilverLine
+        Token at just $0.0013.
+      </h4>
+      <br />
+      <button class="buy-sln" @click="joincommunity">
+        JOIN OUR COMMUNITY →</button
+      ><br />
       <div class="logo-div" id="logo-div">
-        <a href="https://www.t.me/SilverLineSwap" target="_blank"> <img src="@/assets/telegram1.png" alt="" class="logo"></a>   
-     <a href="https://discord.gg/DYDd29ywmM" target="_blank"> <img src="@/assets/discord1.png" alt="" class="logo"></a> 
-     <a href="https://www.twitter.com/SilverLineSwap_" target="_blank"><img src="@/assets/twitter1.png" alt="" class="logo"></a>  
-      <a href="https://medium.com/@silverlineswap" target="_blank">  <img src="@/assets/medium1.png" alt="" class="logo"></a>
-         
+        <a href="https://www.t.me/SilverLineSwap" target="_blank">
+          <img src="@/assets/telegram1.png" alt="" class="logo"
+        /></a>
+        <a href="https://discord.gg/DYDd29ywmM" target="_blank">
+          <img src="@/assets/discord1.png" alt="" class="logo"
+        /></a>
+        <a href="https://www.twitter.com/SilverLineSwap_" target="_blank"
+          ><img src="@/assets/twitter1.png" alt="" class="logo"
+        /></a>
+        <a href="https://medium.com/@silverlineswap" target="_blank">
+          <img src="@/assets/medium1.png" alt="" class="logo"
+        /></a>
       </div>
-    
     </div>
     <div class="div2">
-       
-       <h1 class="presale-text">PRE-SALE</h1>
-        
-            <div class="countdown-day" > 
-                <h3 id="days">00</h3>
-                <h4>Days</h4>
-            </div>
-            <div class="countdown-day" >
-                <h3 id="hours">00</h3>
-                <h4>Hours</h4>
-            </div>
-            <div class="countdown-day">
-                <h3 id="minutes">00</h3>
-                <h4>Minutes</h4>
-            </div>
-            <div class="countdown-day">
-                <h4 id="seconds">00</h4>
-                <h4>Seconds</h4>
-            </div>
-            <br>
-        
+      <h1 class="presale-text">PRE-SALE</h1>
+
+      <div class="countdown-day">
+        <h3 id="days">00</h3>
+        <h4>Days</h4>
+      </div>
+      <div class="countdown-day">
+        <h3 id="hours">00</h3>
+        <h4>Hours</h4>
+      </div>
+      <div class="countdown-day">
+        <h3 id="minutes">00</h3>
+        <h4>Minutes</h4>
+      </div>
+      <div class="countdown-day">
+        <h4 id="seconds">00</h4>
+        <h4>Seconds</h4>
+      </div>
+      <br />
+
       <div class="div-input">
         <input
           type="number"
@@ -59,7 +67,7 @@
         <span class="arrow">
           <img src="@/assets/arrow.png" alt="" />
         </span>
-       
+
         <input
           type="number"
           class="input-box"
@@ -71,8 +79,10 @@
         <span class="sln_span">
           <img src="@/assets/sl_logo.png" class="usdt_logo" /> SLN
         </span>
-         <span class="min-amount-text" id="min-text">*min amount=10USDT</span>
-        <button class="input-box-button" @click="buy" id="buy-button">BUY SLN</button>
+        <span class="min-amount-text" id="min-text">*min amount=10USDT</span>
+        <button class="input-box-button" @click="buy" id="buy-button">
+          BUY SLN
+        </button>
       </div>
     </div>
   </div>
@@ -90,105 +100,102 @@ import transactions from "@/mixins/transactions";
   watch: {
     usdt_amount(newvalue, oldvalue) {
       this.sln_amt = newvalue / 0.0013;
-      let button=document.getElementById('buy-button')
-      let text=document.getElementById('min-text')
-      if (button!=null && text!=null) {
-          if (newvalue>=10) {
-              button.style.cursor='pointer'
-               text.innerText='*min amount=10USDT'
-               text.style.color='white'
-          }else{
-              button.style.cursor='not-allowed'
-              text.innerText='*Enter a Vaild Amount'
-              text.style.color='red'
-          }
+      let button = document.getElementById("buy-button");
+      let text = document.getElementById("min-text");
+      if (button != null && text != null) {
+        if (newvalue >= 10) {
+          button.style.cursor = "pointer";
+          text.innerText = "*min amount=10USDT";
+          text.style.color = "white";
+        } else {
+          button.style.cursor = "not-allowed";
+          text.innerText = "*Enter a Vaild Amount";
+          text.style.color = "red";
+        }
       }
     },
   },
-  mounted(){
-      let countDownDate = new Date("Jul 19, 2022 20:00:00").getTime();
-      setInterval(()=>{
-          var now = new Date().getTime();
+  mounted() {
+    let countDownDate = new Date("Jul 19, 2022 20:00:00").getTime();
+    setInterval(() => {
+      var now = new Date().getTime();
 
-// Find the distance between now and the count down date
-var distance = countDownDate - now;
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
 
-// Time calculations for days, hours, minutes and seconds
-var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-// Output the result in an element with id=".countdown"
-let day=document.getElementById('days')
-if (day!=null) {
-    day.innerText=days.toString()
-}
-let hour=document.getElementById('hours')
-if (hour!=null) {
-    hour.innerHTML= hours.toString()
-}
-let min=document.getElementById('minutes')
-if (min!=null) {
-    min.innerHTML= minutes.toString()
-}
-let sec=document.getElementById('seconds')
-if (sec!=null) {
-    sec.innerHTML= seconds.toString()
-}
-//
-  
+      // Output the result in an element with id=".countdown"
+      let day = document.getElementById("days");
+      if (day != null) {
+        day.innerText = days.toString();
+      }
+      let hour = document.getElementById("hours");
+      if (hour != null) {
+        hour.innerHTML = hours.toString();
+      }
+      let min = document.getElementById("minutes");
+      if (min != null) {
+        min.innerHTML = minutes.toString();
+      }
+      let sec = document.getElementById("seconds");
+      if (sec != null) {
+        sec.innerHTML = seconds.toString();
+      }
+      //
 
-// If the count down is over, write some text
-if (distance < 0) { 
-  countDownDate += 3600000 * Math.abs(Math.round(distance / 3600000)-1);
-}
-      },1000)
+      // If the count down is over, write some text
+      if (distance < 0) {
+        countDownDate += 3600000 * Math.abs(Math.round(distance / 3600000) - 1);
+      }
+    }, 1000);
   },
   methods: {
     buy() {
-        if (this.usdt_amount>=10) {
-            transactions.prototype.buying_Sln(this.usdt_amount);
-        }else{
-            alert('Please Enter Valid Amount')
-        }
-      
+      if (this.usdt_amount >= 10) {
+        transactions.prototype.buying_Sln(this.usdt_amount);
+      } else {
+        alert("Please Enter Valid Amount");
+      }
     },
-    joincommunity(){
-        let logo=document.getElementById('logo-div')
-        if (logo!=null) {
-            logo.style.display='block'
-        }
+    joincommunity() {
+      let logo = document.getElementById("logo-div");
+      if (logo != null) {
+        logo.style.display = "block";
+      }
     },
-  }
+  },
 })
 export default class Upper extends Vue {}
 </script>
 <style>
-.countdown-day{
-    display: inline-block;
-    margin: 10px;
-    width: 60px;
-    height: 60px;
-background:rgba(191, 130, 241, 0.3);
-border-radius: 15px;
-border-width: 2px;
+.countdown-day {
+  display: inline-block;
+  margin: 10px;
+  width: 60px;
+  height: 60px;
+  background: rgba(191, 130, 241, 0.3);
+  border-radius: 15px;
+  border-width: 2px;
   border-style: solid;
-  border-color:
-rgba(150, 86, 202, 0.5);
-margin-bottom: 40px;
-
+  border-color: rgba(150, 86, 202, 0.5);
+  margin-bottom: 40px;
 }
-.logo-div{
-    display: none;
+.logo-div {
+  display: none;
 }
-.logo{
-    width: 40px;
-    background-color: white;
-    margin: 10px;
-    border-radius: 60%;
-    border: 2px solid black;
-    
+.logo {
+  width: 40px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 60%;
+  border: 2px solid black;
 }
 .bluegem_1 {
   position: absolute;
@@ -238,12 +245,13 @@ margin-bottom: 40px;
   height: 63.02px;
   left: 45%;
   top: 343px;
-}.min-amount-text{
-    position: relative;
-    color: white;
-    font-size: 15px;
-    left: -40%;
-    font-weight: 600;
+}
+.min-amount-text {
+  position: relative;
+  color: white;
+  font-size: 15px;
+  left: -40%;
+  font-weight: 600;
 }
 .sln_span {
   position: relative;
@@ -282,12 +290,11 @@ margin-bottom: 40px;
   height: 35.08px;
   align-self: center;
   background: rgba(142, 0, 255, 1);
-  
+
   z-index: 2;
   padding: 8px;
   left: -10%;
   border-radius: 30px;
-  
 }
 .input-box-button {
   width: 100%;
@@ -316,8 +323,8 @@ margin-bottom: 40px;
   border: 0px;
   background: linear-gradient(93.62deg, #3c0b63 1.06%, #c11bb9 147.09%);
   border-radius: 6.11111px;
-  font-family: "Inter";
-  font-style: normal;
+  /* font-family: "Inter";
+  font-style: normal; */
   font-weight: 800;
   font-size: 19.0972px;
   line-height: 23px;
@@ -354,55 +361,60 @@ margin-bottom: 40px;
 .upper {
   position: static;
   width: 100%;
-}@media screen and (max-width: 800px)
-{
-    .bluegem_1{
-        display: none;
-    }
-    .blue_1{
-        display: none;
-    }
-    .yellow_1{
-        display: none;
-    }
-    .vector_1{
-        display: none;
-    }.vector_2{
-         display: none;
-    }.rocket{
-         display: none;
-    }
-    .stone_1{
-        display: none;
-    }.div2{
-        float: none;
-        margin-top: 100px;
-        margin-right: 0%;
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-        margin-bottom: 200px;
-        width: 90%;
-    }.div-input{
-        position: static;
-        max-height: 400px;
-        margin-top: 100px;
-    }
-    .div1{
-        
-       margin-top: 20%;
-        margin-bottom: 100px;
-        position: static;
-        width: 80%;
-        float: none;
-    }.presale-text{
-        display: none;
-    }.input-box-button{
-        width: 100%;
-    }.countdown-day{
-        width: 60px;
-        height: 60px;
-    }
 }
-
+@media screen and (max-width: 800px) {
+  .bluegem_1 {
+    display: none;
+  }
+  .blue_1 {
+    display: none;
+  }
+  .yellow_1 {
+    display: none;
+  }
+  .vector_1 {
+    display: none;
+  }
+  .vector_2 {
+    display: none;
+  }
+  .rocket {
+    display: none;
+  }
+  .stone_1 {
+    display: none;
+  }
+  .div2 {
+    float: none;
+    margin-top: 100px;
+    margin-right: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-bottom: 200px;
+    width: 90%;
+  }
+  .div-input {
+    position: static;
+    max-height: 400px;
+    margin-top: 100px;
+  }
+  .div1 {
+    margin-top: 20%;
+    margin-bottom: 100px;
+    position: static;
+    width: 80%;
+    float: none;
+  }
+  .presale-text {
+    display: none;
+  }
+  .input-box-button {
+    width: 100%;
+  }
+  .countdown-day {
+    width: 60px;
+    height: 60px;
+  }
+}
 </style>

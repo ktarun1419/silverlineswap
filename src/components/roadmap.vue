@@ -3,6 +3,7 @@
          
         <h1 class="roadmap-text">ROADMAP</h1><br>
         <div class="roadmap-div1">
+            <h1 class="phase-text">PHASE 1</h1>
             <img src="@/assets/planet_1.png" alt="">
         </div>
           <img src="@/assets/dots_1.png" alt="" class="dots_1">
@@ -18,6 +19,7 @@
            <h4>➼ Smart Contract Audit (Coinscope) - January 2022</h4>
         </div>
         <div class="roadmap-div3">
+            <h1>PHASE 2</h1>
             <img src="@/assets/planet_2.png" alt="">
         </div>
         <div class="roadmap-div4">
@@ -36,7 +38,7 @@
            <h5>➼ Smart Contract Audit (Techrate) - March 2022/h4></h5>
         </div>
         <div class="roadmap-div5">
-            
+            <h1 class="phase-text">PHASE 3</h1>
             <img src="@/assets/planet_3.png" alt="">
         </div>
         <div class="roadmap-div6">
@@ -44,6 +46,7 @@
            <h4>➼ Ecosystem Build Up - Ongoing</h4> 
         </div>
          <div class="roadmap-div7">
+             <h1 class="phase-text">PHASE 4 </h1>
             <img src="@/assets/planet_4.png" alt="">
         </div>
         <div class="roadmap-div8">
@@ -54,6 +57,7 @@
            <h5>➼ Crypto Score - Upcoming</h5>
         </div>
         <div class="roadmap-div9">
+            <h1 >PHASE 5</h1>
             <img src="@/assets/planet_5.png" alt="">
         </div>
         <div class="roadmap-div10">
@@ -72,7 +76,10 @@ export default class Roadmap extends Vue{
 }
 </script>
 <style>
-
+.phase-text{
+    position: relative;
+    left: 8%;
+}
 .roadmap-text{
 /* left: 15%; */
 }
@@ -83,6 +90,7 @@ export default class Roadmap extends Vue{
     align-content: center;
 }
 .roadmap-div1{
+    text-align: center;
     position: relative;
     width: 380.42px;
 height: 354.44px;
