@@ -1,6 +1,6 @@
 <template>
   <div class="faq" id="faq">
-    <img src="@/assets/dots_1.png" alt="" class="dots_1" />
+    <img src="@/assets/dots_1.png" alt="" class="dots_1" /> 
     <img src="@/assets/Vector_2.png" alt="" class="vector2-faq" />
     <img src="@/assets/Vector_4.png" alt="" class="vector_4" />
     <span class="faq-text">faq</span><br />
@@ -71,7 +71,7 @@
       </div>
     </div>
     <img src="@/assets/Vector_2.png" alt="" class="vector_2" />
-    <img src="@/assets/dots_1.png" alt="" class="dots_1" />
+    <!-- <img src="@/assets/dots_1.png" alt="" class="dots_1" /> -->
     
   </div>
 </template>

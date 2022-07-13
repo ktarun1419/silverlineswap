@@ -18,7 +18,7 @@
       <h2>
         <span class="token-detail-title">Token Address</span>
         :
-        <span class="token-detail-value">sln</span>
+        <span class="token-detail-value1">0x40491520d7BdcdD670cf387902BaD615ab65f43B</span>
       </h2>
       <h2>
         <span class="token-detail-title">blockchain</span>
@@ -76,6 +76,15 @@ top: -250.44px;
   font-style: normal;
   font-weight: 700;
   font-size: 19.0972px;
+  line-height: 23px;
+  text-indent: 3.81944px;
+  text-transform: uppercase;
+  color: white;
+}
+.token-detail-value1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15.0972px;
   line-height: 23px;
   text-indent: 3.81944px;
   text-transform: uppercase;

@@ -24,18 +24,19 @@
         </div>
         <div class="roadmap-div4">
             <h5> ➼ Smart Contract Audit – March 2022 </h5>
-           <h5>➼ Team KYC – March 2022</h5>
-           <h5>➼ Token Presale (PinkSale) – April 2022</h5>
-           <h5>➼ Private Sale – April 2022</h5>
-           <h5>➼ CoinMarketCap & CoinGecko Listing – April 2022</h5>
-           <h5>➼ Distributed Denial Of Service (DDOS)Integration – April</h5>
-           <h5>➼ 2022 Insurance For SLN Token -April 2022</h5>
-           <h5>➼ Token Launch In Pancakeswap – May 2022</h5>
-           <h5>➼ SilverLine Token Staking – May 2022</h5>
-           <h5>➼ SilverLine Token Farming –May2022</h5>
-           <h5>➼ Decentralized Exchange Platform– May 2022</h5>
-           <h5>➼ Stake Silverline Token To Earn Alt-Coins –May 2022</h5>
-           <h5>➼ Smart Contract Audit (Techrate) - March 2022/h4></h5>
+           <h5>➼ Team KYC – June 2022</h5>
+           <h5>➼ Token Presale (PinkSale) – July 2022</h5>
+           <h5>➼ Private Sale – July 2022</h5>
+           <h5>➼ Distributed Denial Of Service (DDOS)Integration – July</h5>
+           <h5>➼ CoinMarketCap & CoinGecko Listing – July 2022</h5>
+           <h5>➼ Smart Contract Audit (Techrate) - August 2022</h5>
+           <h5>➼ 2022 Insurance For SLN Token -August 2022</h5>
+           <h5>➼ Token Launch In Pancakeswap – August 2022</h5>
+           <h5>➼ SilverLine Token Staking – August 2022</h5>
+           <h5>➼ SilverLine Token Farming –August 2022</h5>
+           <h5>➼ Decentralized Exchange Platform– August 2022</h5>
+           <h5>➼ Stake Silverline Token To Earn Alt-Coins –August 2022</h5>
+           
         </div>
         <div class="roadmap-div5">
             <h1 class="phase-text">PHASE 3</h1>
