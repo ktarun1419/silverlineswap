@@ -14,7 +14,7 @@
             <img src="@/assets/home_elipse.png" alt="" class="feature-img2">
             <img src="@/assets/cryptoload-border.png" alt="" class="feature-img3">
             <h2 class="feature-text">CRYPTO LOAN</h2>
-            <h5 class="feature-text">Global Unique Number, a global unique Identity that will protect you and your future.</h5>
+            <h5 class="feature-text">A strategically flexible collateral free loan provided to you based on your crypto score.</h5>
         </div>
         <div class="feature-div3">
             <img src="@/assets/silverpay.png" alt="" class="feature-img">

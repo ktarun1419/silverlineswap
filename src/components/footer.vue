@@ -41,26 +41,25 @@ export default class Footer extends Vue {}
   top: 0%;
   bottom: 0%;
   color: white;
-
-  background: linear-gradient(94.96deg, #14003e 0.95%, #943cca 109.33%);
+  font-size: 15px;
+  border: none;
+  background: linear-gradient(94.96deg, #6439c7 0.95%, #943cca 109.33%);
   border-radius: 7.63889px;
 }
 .email-box-text {
   position: absolute;
-  width: 60%;
+  width: 65%;
   height: 16.81px;
   left: 0%;
   top: -3%;
-  padding: 18px;
+  padding: 14px;
   background: transparent;
-  font-family: "Poppins";
-  font-style: normal;
   font-weight: 700;
   font-size: 20.2778px;
   line-height: 23px;
-  text-transform: capitalize;
   border-width: 0px;
   color: #ffffff;
+
   transform: rotate(0.17deg);
 }
 .email-box-content {
@@ -105,7 +104,7 @@ export default class Footer extends Vue {}
 }
 .footer {
   position: static;
-  margin-top: 500px;
+  margin-top: 300px;
 }
 .footer-div {
   width: 100%;

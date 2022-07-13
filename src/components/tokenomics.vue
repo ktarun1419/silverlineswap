@@ -54,7 +54,7 @@ export default class Tokenomics extends Vue {}
 width: 395.07px;
 height: 358.26px;
 left: 60%;
-top: -250.44px;
+top: -300.44px;
 }
 .vector1-tokenomics{
     position: absolute;
@@ -144,6 +144,8 @@ rgba(142, 0, 255, 0.5);
         margin-right: auto;
         left: 0;
 
+    }.token-detail-value1{
+        font-size: 12px;
     }
 }
 </style>

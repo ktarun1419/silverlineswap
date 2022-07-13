@@ -160,7 +160,7 @@ export default class Faq extends Vue {}
 <style>
 .vector2-faq {
   position: absolute;
-  top: 10000px;
+  top: 9800px;
   left: -1%;
   right: 1%;
   width: 100%;
@@ -199,7 +199,7 @@ export default class Faq extends Vue {}
   position: absolute;
   width: 38.96px;
   height: 35.53px;
-  left: 81%;
+  left: 90%;
   top: 20%;
   cursor: pointer;
   right: 0%;

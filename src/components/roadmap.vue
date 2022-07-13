@@ -120,7 +120,7 @@ border-radius: 15.2778px;
     position:relative;
     width: 380.42px;
 height: 354.44px;
-top: 0px;
+top: -100px;
 float: right;
 margin-right: 10%;
 }
@@ -183,7 +183,7 @@ rgba(142, 0, 255, 0.5);
 width: 543.89px;
 height: auto;
 /* left: 94.73px; */
-top: -150px;
+top: -100px;
 margin-left: 10%;
 
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(142, 0, 255, 0.2) 137.15%);
@@ -205,7 +205,7 @@ rgba(142, 0, 255, 0.5);
 width: 495px;
 height: auto;
 left: 50%;
-top: -350px;
+top: -300px;
 text-align: left;
 padding: 30px;
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(142, 0, 255, 0.2) 137.15%);

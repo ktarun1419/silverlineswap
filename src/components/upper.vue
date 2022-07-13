@@ -1,5 +1,6 @@
 <template>
   <div class="upper" id="upper">
+      
     <img src="@/assets/Vector_1.png" alt="" class="vector_1" />
     <img src="@/assets/Vector_2.png" alt="" class="vector_2" />
     <img src="@/assets/rocket_1.png" alt="" class="rocket" />
@@ -7,12 +8,12 @@
     <img src="@/assets/bluegem_1.png" alt="" class="bluegem_1" />
     <img src="@/assets/Yellow_1.png" alt="" class="yellow_1" />
     <div class="div1">
-      <h1>Get In Line For SilverLine</h1>
-      <h4>
+      <h1 style="font-size:36px;" >Get In Line For SilverLine</h1>
+      <h3>
         At the launch of the presale, SilverLine Token will be landed on the
         Binance Smart Chain planet. To get to Milkyway, purchase the SilverLine
         Token at just $0.0013.
-      </h4>
+      </h3>
       <br />
       <button class="buy-sln" @click="joincommunity">
         JOIN OUR COMMUNITY →</button
@@ -37,19 +38,19 @@
 
       <div class="countdown-day">
         <h3 id="days">00</h3>
-        <h4>Days</h4>
+        <h5>Days</h5>
       </div>
       <div class="countdown-day">
         <h3 id="hours">00</h3>
-        <h4>Hours</h4>
+        <h5>Hours</h5>
       </div>
       <div class="countdown-day">
         <h3 id="minutes">00</h3>
-        <h4>Minutes</h4>
+        <h5>Minutes</h5>
       </div>
       <div class="countdown-day">
         <h4 id="seconds">00</h4>
-        <h4>Seconds</h4>
+        <h5>Seconds</h5>
       </div>
       <br />
 
@@ -116,7 +117,7 @@ import transactions from "@/mixins/transactions";
     },
   },
   mounted() {
-    let countDownDate = new Date("Jul 19, 2022 20:00:00").getTime();
+    let countDownDate = new Date("Jul 23, 2022 20:00:00").getTime();
     setInterval(() => {
       var now = new Date().getTime();
 
@@ -180,11 +181,11 @@ export default class Upper extends Vue {}
   margin: 10px;
   width: 60px;
   height: 60px;
-  background: rgba(191, 130, 241, 0.3);
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0.2) 0%, rgba(217, 217, 217, 0) 100%);
   border-radius: 15px;
   border-width: 2px;
   border-style: solid;
-  border-color: rgba(150, 86, 202, 0.5);
+  border-color: rgba(150, 86, 202, 1);
   margin-bottom: 40px;
 }
 .logo-div {
@@ -203,6 +204,7 @@ export default class Upper extends Vue {}
   right: 80.77%;
   top: 550px;
   bottom: 2.48%;
+  width: 80px;
 }
 .blue_1 {
   position: absolute;
@@ -232,7 +234,7 @@ export default class Upper extends Vue {}
   position: absolute;
   left: 0%;
   right: 10%;
-  top: 800px;
+  top: 100px;
 
   width: 20%;
   opacity: 0.05;
@@ -308,7 +310,7 @@ export default class Upper extends Vue {}
 }
 .input-box {
   /* width: 342.8px; */
-  width: 100%;
+  width: 94%;
   height: 53.3px;
   background: #ffffff;
   border-radius: 10px;
@@ -316,6 +318,7 @@ export default class Upper extends Vue {}
   font-weight: 600;
   color: black;
   font-size: 17px;
+  padding-left:6% ;
 }
 .buy-sln {
   width: auto;
@@ -326,7 +329,7 @@ export default class Upper extends Vue {}
   /* font-family: "Inter";
   font-style: normal; */
   font-weight: 800;
-  font-size: 19.0972px;
+  font-size: 15.0972px;
   line-height: 23px;
   color: white;
   cursor: pointer;
