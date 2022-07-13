@@ -116,7 +116,7 @@ import transactions from "@/mixins/transactions";
     },
   },
   mounted() {
-    let countDownDate = new Date("Jul 23, 2022 20:00:00").getTime();
+    let countDownDate = new Date("Jul 19, 2022 20:00:00").getTime();
     setInterval(() => {
       var now = new Date().getTime();
 
@@ -391,8 +391,9 @@ export default class Upper extends Vue {}
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    margin-bottom: 200px;
+    margin-bottom: 350px;
     width: 90%;
+
   }
   .div-input {
     position: static;

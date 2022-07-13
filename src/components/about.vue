@@ -164,8 +164,11 @@ top: 825.76px; */
   .about-div1 {
     width: 90%;
     height: auto;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
+  }.about-heading{
+      margin-top:00px
   }
 }
 </style>

@@ -138,19 +138,19 @@ top: 40.01%;
 }
 .coinscope{
     position: absolute;
-left: 35%;
+left: 37%;
 top: 40.01%;
 }
 .binance{
     position: absolute;
-left: 5.64%;
+left: 2.64%;
 
 top: 40.25%;
 
 }
 .partners-div{
     position: relative;
-width: 60%;
+width: 850px;
 height: 239.1px;
 left: 20%;
 top: 101.6px;
