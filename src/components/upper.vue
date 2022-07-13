@@ -116,7 +116,7 @@ import transactions from "@/mixins/transactions";
     },
   },
   mounted() {
-    let countDownDate = new Date("Jul 19, 2022 20:00:00").getTime();
+    let countDownDate = new Date("Jul 23, 2022 20:00:00").getTime();
     setInterval(() => {
       var now = new Date().getTime();
 
