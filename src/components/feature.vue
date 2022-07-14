@@ -66,6 +66,7 @@ top: 5%;
 .feature-text{
     position: relative;
     top: 40px;
+    padding: 5px;
 }
 .feature-img{
     top: 40px;
@@ -114,7 +115,7 @@ position: absolute;
 width: 136.74px;
 height: 27.5px;
 right: 45%;
-font-family: 'Poppins';
+font-family:roboto-bold;
 font-style: normal;
 font-weight: 800;
 font-size: 26.7361px;

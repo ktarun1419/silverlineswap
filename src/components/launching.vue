@@ -62,11 +62,9 @@ border-radius: 15.2778px;
 }
 .launch-text{
     position: static;
-
-
+font-family:roboto-bold;
 /* top: 1199.31px; */
 
-font-family: 'Poppins';
 font-style: normal;
 font-weight: 800;
 font-size: 26.7361px;

@@ -8,7 +8,7 @@
     <img src="@/assets/bluegem_1.png" alt="" class="bluegem_1" />
     <img src="@/assets/Yellow_1.png" alt="" class="yellow_1" />
     <div class="div1">
-      <h1 style="font-size:36px;" >Get In Line For SilverLine</h1>
+      <h1 style="font-size:36px;font-family:roboto-bold;" >Get In Line For SilverLine</h1>
       <h3>
         At the launch of the presale, SilverLine Token will be landed on the
         Binance Smart Chain planet. To get to Milkyway, purchase the SilverLine
@@ -34,23 +34,23 @@
       </div>
     </div>
     <div class="div2">
-      <h1 class="presale-text">PRE-SALE</h1>
+      <h1 class="presale-text" >PRE-SALE</h1>
 
       <div class="countdown-day">
-        <h3 id="days">00</h3>
-        <h5>Days</h5>
+        <h3 id="days" style="font-family: Avenir, Helvetica, Arial, sans-serif;">00</h3>
+        <h5 style="font-family: Avenir, Helvetica, Arial, sans-serif;">Days</h5>
       </div>
       <div class="countdown-day">
-        <h3 id="hours">00</h3>
-        <h5>Hours</h5>
+        <h3 id="hours" style="font-family: Avenir, Helvetica, Arial, sans-serif;">00</h3>
+        <h5 style="font-family: Avenir, Helvetica, Arial, sans-serif;">Hours</h5>
       </div>
       <div class="countdown-day">
-        <h3 id="minutes">00</h3>
-        <h5>Minutes</h5>
+        <h3 id="minutes" style="font-family: Avenir, Helvetica, Arial, sans-serif;">00</h3>
+        <h5 style="font-family: Avenir, Helvetica, Arial, sans-serif;">Minutes</h5>
       </div>
       <div class="countdown-day">
-        <h4 id="seconds">00</h4>
-        <h5>Seconds</h5>
+        <h4 id="seconds" style="font-family: Avenir, Helvetica, Arial, sans-serif;">00</h4>
+        <h5 style="font-family: Avenir, Helvetica, Arial, sans-serif;">Seconds</h5>
       </div>
       <br />
 
@@ -176,9 +176,12 @@ import transactions from "@/mixins/transactions";
 export default class Upper extends Vue {}
 </script>
 <style>
+.presale-text{
+    font-family:roboto-bold;
+}
 .countdown-day {
   display: inline-block;
-  margin: 10px;
+  margin: 14px;
   width: 60px;
   height: 60px;
   background: linear-gradient(180deg, rgba(217, 217, 217, 0.2) 0%, rgba(217, 217, 217, 0) 100%);

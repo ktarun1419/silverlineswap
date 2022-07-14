@@ -166,7 +166,7 @@ border-radius: 15.2778px;
     text-align: center;
     align-content: center;
 }.partners-text{
-font-family: 'Poppins';
+font-family:roboto-bold;
 font-style: normal;
 font-weight: 800;
 font-size: 26.7361px;
@@ -177,6 +177,7 @@ color: #FFFFFF;
   margin-top: 200px;
 font-style: normal;
 font-weight: 800;
+font-family:roboto-bold;
 font-size: 26.7361px;
 line-height: 40px;
 text-transform: uppercase;

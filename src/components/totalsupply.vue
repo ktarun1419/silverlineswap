@@ -48,7 +48,7 @@ height: 27.5px;
 left: 20%;
 top:-343px;
 
-font-family: 'Poppins';
+font-family:roboto-bold;
 font-style: normal;
 font-weight: 800;
 font-size: 26.7361px;
@@ -75,7 +75,7 @@ width: 203.19px;
 height: 27.5px;
 right: 20%;
 top: 71.04px;
-font-family: 'Poppins';
+font-family:roboto-bold;
 font-style: normal;
 font-weight: 800;
 font-size: 26.7361px;

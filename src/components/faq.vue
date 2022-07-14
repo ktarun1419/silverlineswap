@@ -160,7 +160,7 @@ export default class Faq extends Vue {}
 <style>
 .vector2-faq {
   position: absolute;
-  top: 9800px;
+  top: 9700px;
   left: -1%;
   right: 1%;
   width: 100%;
@@ -288,6 +288,7 @@ export default class Faq extends Vue {}
   top: 2600px;
   align-content: center;
   margin-top: 200px;
+  
 }
 .faq-text {
   width: 59.58px;
@@ -295,7 +296,7 @@ export default class Faq extends Vue {}
   left: auto;
   right: auto;
   top: 10%;
-  font-family: "Poppins";
+  font-family:roboto-bold;
   font-style: normal;
   font-weight: 800;
   font-size: 26.7361px;

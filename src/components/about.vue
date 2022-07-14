@@ -69,7 +69,7 @@ export default class About extends Vue {}
   opacity: 0.1;
 }
 .about-heading {
-  font-family: "Poppins";
+  font-family:roboto-bold;
   font-style: normal;
   font-weight: 800;
   font-size: 26.7361px;
@@ -131,10 +131,10 @@ top: 825.76px; */
   border-radius: 15.2778px;
 }
 .about-text {
-  font-family: "Roboto";
+  
   font-style: normal;
   font-weight: 400;
-  font-size: 19.5694px;
+  font-size: 17.5694px;
   line-height: 132.02%;
   /* or 23px */
 

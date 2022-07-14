@@ -114,7 +114,7 @@ rgba(142, 0, 255, 0.5);
   height: 27.5px;
   left: auto;
   right: auto;
-  font-family: "Poppins";
+  font-family:roboto-bold;
   font-style: normal;
   font-weight: 800;
   font-size: 26.7361px;

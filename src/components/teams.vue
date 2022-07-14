@@ -36,7 +36,7 @@ margin-top: 0px;
     text-align: center;
     margin-top: -200px;
 }.teams-text{
-font-family: 'Poppins';
+font-family:roboto-bold;
 font-style: normal;
 font-weight: 800;
 font-size: 26.7361px;

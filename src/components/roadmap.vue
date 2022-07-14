@@ -80,9 +80,10 @@ export default class Roadmap extends Vue{
 .phase-text{
     position: relative;
     left: 8%;
+    font-family:roboto-bold;
 }
 .roadmap-text{
-/* left: 15%; */
+font-family:roboto-bold;
 }
 .roadmap{
     position: relative;
