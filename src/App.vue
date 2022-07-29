@@ -16,7 +16,8 @@ export default class App extends Vue{
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+   //font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: moderne;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -30,9 +31,15 @@ top: 0px;
  //background-image: url('./assets/backgroundScreen1.png');
 background: radial-gradient(33.15% 44.58% at 50% 52.98%, #3C0B63 0%, #18002B 99.98%);
 }
-.router{
-  z-index: 0;
+@font-face {
+    font-family: moderne;
+    src: url(moderne.ttf);
 }
+@font-face {
+    font-family: roboto-bold;
+    src: url(robotobold.ttf);
+}
+
 #bg {
   position: absolute;
   top: 0;
