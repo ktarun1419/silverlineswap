@@ -4,12 +4,13 @@
         <img src="@/assets/stone_1.png" alt="" class="stone_1">
         <span class="launch-text">LAUNCHING SOON</span><br>
         <div class="launch-div1">
-            <img src="@/assets/sln-coin.png" alt="" class="launch-coin">
-            <h3>SILVERLINE TOKEN</h3><br>
+            <img src="@/assets/launch-token.png" alt="" class="sparc-img">
+        </div>
+        <div class="launch-div3">
+            <img src="@/assets/launch-sparc.png" alt="" class="sparc-img">
         </div>
         <div class="launch-div2">
-            <img src="@/assets/sl-token-coin.png" alt="" class="launch-coin">
-            <h3>SILVERLINESWAP-DEX</h3><br>
+            <img src="@/assets/launch-dex.png" alt="" class="sparc-img">
         </div>
         <img src="@/assets/stone_1.png" alt="" class="stonel-1">
     </div>
@@ -23,6 +24,20 @@ export default class Launching extends Vue{
 }
 </script>
 <style>
+.sparc-img{
+    width: 100%;
+    height: 100%;
+}
+.launch-div3{
+   width: 331.39px;
+   border-radius: 15.2778px;
+height: 376.94px;
+display: inline-block;
+position: static;
+margin-top: 100px;
+margin-right: 50px;
+
+}
 .stonel-1{
     position:relative;
 width: 84.03px;
@@ -37,19 +52,16 @@ height: 86.32px;
 left: 5%;
 top: 300.58px;
 
+
 }
 .launch-div2{
-    border-width: 2px;
-  border-style: solid;
-  border-color:
-rgba(142, 0, 255, 0.5);
 position: static;
-width: 401.39px;
+width: 331.39px;
 height: 376.94px;
 display: inline-block;
-margin-top: 000px;
+margin-top: 100px;
 
-background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(142, 0, 255, 0.15) 137.15%);
+/* background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(142, 0, 255, 0.15) 137.15%); */
 border-radius: 15.2778px;
 }
 .launch-coin{
@@ -72,18 +84,14 @@ line-height: 40px;
 text-transform: uppercase;
 color: #FFFFFF;
 }.launch-div1{
-   
+   margin-left: 100px;
 position: static;
-width: 401.39px;
+width: 331.39px;
 height: 376.94px;
-border-width: 2px;
-margin: 100px;
-  border-style: solid;
-  border-color:
-rgba(142, 0, 255, 0.5);
+margin-right: 50px;
 display: inline-block;
-vertical-align: -25px;
-background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(142, 0, 255, 0.15) 137.15%);
+
+/* background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(142, 0, 255, 0.15) 137.15%); */
 border-radius: 15.2778px;
 }
 @media screen and (max-width: 800px){
@@ -99,6 +107,11 @@ border-radius: 15.2778px;
         vertical-align: 0;
 
     }.launch-div2{
+        margin-top: 50px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }.launch-div3{
         margin-top: 50px;
         width: 80%;
         margin-left: auto;
