@@ -7,7 +7,7 @@ export default class Metamask extends Vue{
     
     public async provider() {
       const globalAny:any = globalThis;
-      const WalletConnectProvider = globalAny.WalletConnectProvider;
+      const WalletConnectProvider = globalAny.WalletConnectProvider.default;
       let providerOptions = {
         walletconnect: {
           package: WalletConnectProvider,
