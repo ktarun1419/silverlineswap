@@ -19,7 +19,8 @@
           <a @click="tofeature">Features </a>
         </li>
         <li>
-          <a href="https://www.silverlineswap.org/Docs/WHITEPAPER_0522.pdf" target="_blank">Whitepaper</a>
+            <!-- href="https://www.silverlineswap.org/Docs/WHITEPAPER_0522.pdf" -->
+          <a href="https://silverline-pdf.vercel.app/" target="_blank">Whitepaper</a>
         </li>
         <li>
           <a href="https://github.com/TechRate/Smart-Contract-Audits/blob/main/March/SilverLine.pdf" target="_blank"> Audit Report</a>
@@ -53,6 +54,9 @@ import store from "@/store";
   methods: {
     connect() {
       Metamask.prototype.provider();
+    },
+    whitepaper(){
+        this.$router.replace({name:"Whitepaper"})
     },
     toabout(){
         let ele=document.getElementById("about")
@@ -242,7 +246,7 @@ width: 100%;
   background: #ffffff;
   color: #000000;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 840px) {
     #menu ul.sub-menus {
     width: 100%;
     position: static;

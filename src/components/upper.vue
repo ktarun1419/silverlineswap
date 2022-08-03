@@ -8,7 +8,7 @@
     <img src="@/assets/bluegem_1.png" alt="" class="bluegem_1" />
     <img src="@/assets/Yellow_1.png" alt="" class="yellow_1" />
     <div class="div1">
-      <h1 style="font-size:36px;font-family:roboto-bold;" >Get In Line For SilverLine</h1>
+      <h1 style="font-size:32px;font-family:moderne" >Get In Line For SilverLine</h1>
       <h3>
         At the launch of the presale, SilverLine Token will be landed on the
         Binance Smart Chain planet. To get to Milkyway, purchase the SilverLine
@@ -60,6 +60,7 @@
           class="input-box"
           min="10"
           placeholder="Enter USDT BEP-20 "
+          id="usdt_amt"
           v-model="this.usdt_amount"
         />
         <span class="usdt_span">
@@ -100,7 +101,8 @@ import transactions from "@/mixins/transactions";
   },
   watch: {
     usdt_amount(newvalue, oldvalue) {
-      this.sln_amt = newvalue / 0.0013;
+      
+      this.sln_amt = (newvalue / 0.0013).toString()
       let button = document.getElementById("buy-button");
       let text = document.getElementById("min-text");
       if (button != null && text != null) {
@@ -117,7 +119,7 @@ import transactions from "@/mixins/transactions";
     },
   },
   mounted() {
-    let countDownDate = new Date("Jul 23, 2022 20:00:00").getTime();
+    let countDownDate = new Date("Aug 12, 2022 20:00:00").getTime();
     setInterval(() => {
       var now = new Date().getTime();
 
@@ -173,11 +175,13 @@ import transactions from "@/mixins/transactions";
     },
   },
 })
-export default class Upper extends Vue {}
+export default class Upper extends Vue {
+  
+}
 </script>
 <style>
 .presale-text{
-    font-family:roboto-bold;
+    font-family:moderne;
 }
 .countdown-day {
   display: inline-block;
@@ -282,7 +286,7 @@ export default class Upper extends Vue {}
   width: 80.56px;
   height: 27.23px;
   top: -42px;
-  left: 40%;
+  left: 39%;
   color: black;
   padding: 10px;
   background: #d9a9ff;
@@ -368,7 +372,7 @@ export default class Upper extends Vue {}
   position: static;
   width: 100%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 840px) {
   .bluegem_1 {
     display: none;
   }

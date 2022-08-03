@@ -18,7 +18,7 @@ export default class transaction extends Vue {
             //
             //setting contract address values
             let usdtcontractAddress: string = '0x55d398326f99059fF775485246999027B3197955'
-            let presalecontractAdress: string = '0x038641693feE3115e3762d7eeE1205C8729DEAD4'
+            let presalecontractAdress: string = '0x2c7077Fe4c2DAEFE5B83b5E7eD00C40E666F0D60'
             //
             //creating the contract instances
             //

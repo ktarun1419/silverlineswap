@@ -36,7 +36,7 @@ margin-top: 0px;
     text-align: center;
     margin-top: -200px;
 }.teams-text{
-font-family:roboto-bold;
+font-family:moderne;
 font-style: normal;
 font-weight: 800;
 font-size: 26.7361px;
@@ -46,7 +46,7 @@ text-transform: uppercase;
 color: #FFFFFF;
 
 
-}@media screen and (max-width: 800px){
+}@media screen and (max-width: 840px){
     .sindhumam1{
         height:270.88px ;
         width: 60%;

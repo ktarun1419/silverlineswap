@@ -296,7 +296,7 @@ export default class Faq extends Vue {}
   left: auto;
   right: auto;
   top: 10%;
-  font-family:roboto-bold;
+  font-family:moderne;
   font-style: normal;
   font-weight: 800;
   font-size: 26.7361px;
@@ -305,7 +305,7 @@ export default class Faq extends Vue {}
 
   color: #ffffff;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 840px) {
   .email-box {
     width: 90%;
     margin-right: auto;

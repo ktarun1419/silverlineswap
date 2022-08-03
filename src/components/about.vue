@@ -69,7 +69,7 @@ export default class About extends Vue {}
   opacity: 0.1;
 }
 .about-heading {
-  font-family:roboto-bold;
+ font-family:moderne;
   font-style: normal;
   font-weight: 800;
   font-size: 26.7361px;
@@ -140,7 +140,7 @@ top: 825.76px; */
 
   text-align: justify;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 840px) {
   .vector_3 {
     display: none;
   }

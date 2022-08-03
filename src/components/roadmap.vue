@@ -83,7 +83,7 @@ export default class Roadmap extends Vue{
     font-family:roboto-bold;
 }
 .roadmap-text{
-font-family:roboto-bold;
+font-family:moderne;
 }
 .roadmap{
     position: relative;
@@ -219,7 +219,7 @@ line-height: 18px;
 
 text-transform: capitalize;
 }
-@media  screen and (max-width:800px) {
+@media  screen and (max-width:840px) {
     .roadmap-div1{
         display: none;
     }.roadmap-div3{

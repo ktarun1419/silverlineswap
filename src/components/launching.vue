@@ -74,7 +74,7 @@ border-radius: 15.2778px;
 }
 .launch-text{
     position: static;
-font-family:roboto-bold;
+font-family:moderne;
 /* top: 1199.31px; */
 
 font-style: normal;
@@ -94,7 +94,7 @@ display: inline-block;
 /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(142, 0, 255, 0.15) 137.15%); */
 border-radius: 15.2778px;
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 840px){
     .stone_1{
         display: none;
     }

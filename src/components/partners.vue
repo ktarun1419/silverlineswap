@@ -24,18 +24,19 @@
 <img src="@/assets/listing2.png" alt="" class="listing">
 <img src="@/assets/listing3.png" alt="" class="listing">
 <img src="@/assets/listing4.png" alt="" class="listing">
-<img src="@/assets/listing5.png" alt="" class="listing">
-<img src="@/assets/listing6.png" alt="" class="listing">
-<img src="@/assets/listing7.png" alt="" class="listing">
+<img src="@/assets/listing5.png" alt="" class="listing1">
+<img src="@/assets/listing6.png" alt="" class="listing"><br class="br">
+<img src="@/assets/listing7.png" alt="" class="listing1">
 <img src="@/assets/listing8.png" alt="" class="listing">
-<img src="@/assets/listing9.png" alt="" class="listing"><br class="br">
-<img src="@/assets/listing10.png" alt="" class="listing">
-<img src="@/assets/listing11.png" alt="" class="listing">
-<img src="@/assets/listing12.png" alt="" class="listing">
-<img src="@/assets/listing13.png" alt="" class="listing">
-<img src="@/assets/listing14.png" alt="" class="listing">
+<img src="@/assets/listing9.png" alt="" class="listing">
+<img src="@/assets/listing10.png" alt="" class="listing1">
+<img src="@/assets/listing11.png" alt="" class="listing1">
+<img src="@/assets/listing12.png" alt="" class="listing"><br class="br">
+<img src="@/assets/listing13.png" alt="" class="listing1">
+<img src="@/assets/listing14.png" alt="" class="listing1">
 <img src="@/assets/listing15.png" alt="" class="listing">
-
+<img src="@/assets/listing16.png" alt="" class="listing1">
+<img src="@/assets/listing17.png" alt="" class="listing1">
 
 
 
@@ -72,7 +73,12 @@ export default class Partners extends Vue {}
 }
 .listing{
     display: inline-block;
-    width: 55px;
+    width: 10%;
+    margin: 20px;
+}
+.listing1{
+    display: inline-block;
+    width: 8%;
     margin: 20px;
 }
 .div-text{
@@ -166,7 +172,7 @@ border-radius: 15.2778px;
     text-align: center;
     align-content: center;
 }.partners-text{
-font-family:roboto-bold;
+font-family:moderne;
 font-style: normal;
 font-weight: 800;
 font-size: 26.7361px;
@@ -177,7 +183,7 @@ color: #FFFFFF;
   margin-top: 200px;
 font-style: normal;
 font-weight: 800;
-font-family:roboto-bold;
+font-family:moderne;
 font-size: 26.7361px;
 line-height: 40px;
 text-transform: uppercase;
@@ -194,7 +200,7 @@ line-height: 22px;
 text-align: center;
 text-transform: uppercase;
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 840px){
     .partners-div{
         position: relative;
         width: 96%;

@@ -114,7 +114,7 @@ rgba(142, 0, 255, 0.5);
   height: 27.5px;
   left: auto;
   right: auto;
-  font-family:roboto-bold;
+  font-family:moderne;
   font-style: normal;
   font-weight: 800;
   font-size: 26.7361px;
@@ -126,7 +126,7 @@ rgba(142, 0, 255, 0.5);
   margin-top: 500px;
   text-align: center;
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 840px){
     .tokenomics{
         margin-top: 200px;
         margin-bottom: 200px;

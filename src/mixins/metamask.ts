@@ -6,9 +6,23 @@ import { Vue, Options } from "vue-class-component";
 export default class Metamask extends Vue{
     
     public async provider() {
+      const globalAny:any = globalThis;
+      const WalletConnectProvider = globalAny.WalletConnectProvider.default;
+      let providerOptions = {
+        walletconnect: {
+          package: WalletConnectProvider,
+          options: {
+            // Mikko's test key - don't copy as your mileage may vary
+            infuraId: "8043bb2cf99347b1bfadfb233c5325c0",
+          }
+        },
+      };
+       
         let web3modal: any = new Web3Modal({
-            network: "kovan",
+            network: "mainnet",
             cacheProvider: false,
+            providerOptions
+          
           });
           console.log('function called')
           let provider: any = await web3modal.connect();

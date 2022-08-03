@@ -115,7 +115,7 @@ position: absolute;
 width: 136.74px;
 height: 27.5px;
 right: 45%;
-font-family:roboto-bold;
+font-family:moderne;
 font-style: normal;
 font-weight: 800;
 font-size: 26.7361px;
@@ -126,7 +126,7 @@ color: #FFFFFF;
 
 
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 840px){
     .feature-div1{
          margin-top: 100px;
         position: static;

@@ -130,7 +130,7 @@ export default class Footer extends Vue {}
   text-transform: capitalize;
   color: #ffffff;
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 840px){
     .footer-twitter{
         left:0;
         margin-right: auto;
