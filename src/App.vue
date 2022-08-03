@@ -17,11 +17,11 @@ export default class App extends Vue{
 <style lang="scss">
 #app {
    //font-family: Avenir, Helvetica, Arial, sans-serif;
-  font-family: moderne;
+  font-family: poppins;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  
+  font-weight: 300;
   position: absolute;
 width: 100%;
 height:auto;
@@ -36,8 +36,8 @@ background: radial-gradient(33.15% 44.58% at 50% 52.98%, #3C0B63 0%, #18002B 99.
     src: url(moderne.ttf);
 }
 @font-face {
-    font-family: roboto-bold;
-    src: url(robotobold.ttf);
+    font-family:poppins;
+    src: url(Poppins-Light.ttf);
 }
 
 #bg {
