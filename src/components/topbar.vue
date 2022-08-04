@@ -158,7 +158,7 @@ export default class Topbar extends Vue {
   top: 10px;
 }
 #menu {
-  background-color: rgba(0, 0, 0, 0.466);
+  background-color: rgba(0, 0, 0, 0.766);
 position: fixed;
 width: 100%;
   color: #ffffff;
