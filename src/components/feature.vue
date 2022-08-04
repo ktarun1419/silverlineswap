@@ -50,7 +50,8 @@ export default class Features extends Vue{
 }
 .feature-img3{
     position: absolute;
-    z-index: 0;
+
+    z-index: 1;
 width: 100%;
 height: 100%;
 left: 0%;
@@ -59,7 +60,7 @@ left: 0%;
     position: absolute;
 width: 112.29px;
 height: 112.29px;
-left: 25%;
+left: 27%;
 top: 5%;
 
 }
@@ -72,26 +73,29 @@ top: 5%;
     top: 40px;
     position: relative;
 }.feature-div3{
-     position: absolute;
-width: 221.53px;
+    
+      position: absolute; 
+width: 18%;
 height: 291.04px;
-right: 30%;
+right: 29%;
 top: 100px;
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(142, 0, 255, 0.1) 137.15%);
 border-radius: 30.5556px 15.2778px;
 }
 .feature-div4{
-     position: absolute;
-width: 221.53px;
+     position: absolute; 
+     /* position: absolute; */
+width: 18%;
 height: 291.04px;
-left: 30%;
+left: 29%;
 top: 100px;
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(142, 0, 255, 0.1) 137.15%);
 border-radius: 30.5556px 15.2778px;
 }
 .feature-div2{
-     position: absolute;
-width: 221.53px;
+    position: absolute; 
+     /* position: absolute; */
+width: 18%;
 height: 291.04px;
 right: 5%;
 top: 100px;
@@ -99,8 +103,9 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(142, 0, 25
 border-radius: 30.5556px 15.2778px;
 }
 .feature-div1{
-    position: absolute;
-width: 221.53px;
+    /* position: absolute; */
+    position: absolute; 
+width: 18%;
 height: 291.04px;
 margin-left: 5%;
 top: 100px;

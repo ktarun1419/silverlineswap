@@ -300,9 +300,7 @@ export default class Upper extends Vue {
   height: 35.08px;
   align-self: center;
   background: rgba(142, 0, 255, 1);
-
   z-index: 2;
-  
   padding: 10px;
   padding-right: 13px;
   padding-left: 13px;
@@ -343,6 +341,7 @@ export default class Upper extends Vue {
   font-size: 15.0972px;
   line-height: 23px;
   padding-right:30px ;
+  padding-left: 30px;
   color: white;
   cursor: pointer;
 }

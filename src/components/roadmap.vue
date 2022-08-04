@@ -3,7 +3,7 @@
     <h1 class="roadmap-text">ROADMAP</h1>
     <br />
     <div class="roadmap-div1">
-      <img src="@/assets/planet_1.png" alt="" />
+      <img src="@/assets/planet_1.png" alt="" width="100%"/>
     </div>
     <img src="@/assets/dots_1.png" alt="" class="dots_1" />
     <img src="@/assets/dots_1.png" alt="" class="dots_2" />
@@ -22,7 +22,7 @@
     </div>
     <div class="roadmap-div3">
     
-      <img src="@/assets/planet_2.png" alt="" />
+      <img src="@/assets/planet_2.png" alt="" width="100%"/>
     </div>
     <div class="roadmap-div4">
           <h1 class="phase-text2">PHASE 2</h1>
@@ -44,7 +44,7 @@
     </div>
     <div class="roadmap-div5">
       
-      <img src="@/assets/planet_3.png" alt="" />
+      <img src="@/assets/planet_3.png" alt="" width="100%" />
     </div>
     <div class="roadmap-div6">
         <h1 class="phase-text">PHASE 3</h1>
@@ -55,7 +55,7 @@
     </div>
     <div class="roadmap-div7">
     
-      <img src="@/assets/planet_4.png" alt="" />
+      <img src="@/assets/planet_4.png" alt=""  width="100%"/>
     </div>
     <div class="roadmap-div8">
           <h1 class="phase-text4">PHASE 4</h1>
@@ -69,7 +69,7 @@
     </div>
     <div class="roadmap-div9">
       
-      <img src="@/assets/planet_5.png" alt="" />
+      <img src="@/assets/planet_5.png" alt="" width="100%" />
     </div>
     <div class="roadmap-div10">
         <h1 class="phase-text5">PHASE 5</h1>
@@ -120,8 +120,8 @@ export default class Roadmap extends Vue {}
 .roadmap-div1 {
   text-align: center;
   position: relative;
-  width: 380.42px;
-  height: 354.44px;
+  width: 40%;
+  height: 404.44px;
   /* left: 10%; */
   top: 50px;
   margin-left: 10%;
@@ -130,7 +130,7 @@ export default class Roadmap extends Vue {}
 .roadmap-div2 {
   position: relative;
 
-  top: -300px;
+  top: -350px;
   left: 50%;
   width: 490.42px;
   height: auto;
@@ -151,9 +151,9 @@ export default class Roadmap extends Vue {}
 }
 .roadmap-div3 {
   position: relative;
-  width: 380.42px;
-  height: 354.44px;
-  top: -50px;
+  width: 500.42px;
+  height: 404.44px;
+  top: -100px;
   float: right;
   margin-right: 10%;
 }
@@ -161,7 +161,7 @@ export default class Roadmap extends Vue {}
   margin-left: 10%;
   text-align: center;
   position: relative;
-  top: -100px;
+  top: -150px;
   width: 490.42px;
   height: 550px;
 }
@@ -181,8 +181,8 @@ export default class Roadmap extends Vue {}
 }
 .roadmap-div5 {
   position: relative;
-  width: 380.42px;
-  height: 354.44px;
+ width: 500.42px;
+  height: 404.44px;
   /* left: 10%; */
   top: 150px;
   margin-left: 10%;
@@ -212,8 +212,8 @@ export default class Roadmap extends Vue {}
 }
 .roadmap-div7 {
   position: relative;
-  width: 380.42px;
-  height: 354.44px;
+ width: 500.42px;
+  height: 404.44px;
   left: 60%;
   top: 350px;
 }
@@ -243,14 +243,14 @@ export default class Roadmap extends Vue {}
 }
 .roadmap-div9 {
   position: relative;
-  width: 440.76px;
-  height: 481.25px;
+ width: 500.42px;
+  height: 404.44px;
   margin-left: 10%;
-  top: 130.64px;
+  top: 100.64px;
 }
 .roadmap-div10 {
   left: 50%;
-  top: -300px;
+  top: -200px;
   text-align: center;
   position: relative;
   width: 495px;

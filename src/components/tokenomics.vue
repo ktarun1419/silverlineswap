@@ -1,10 +1,10 @@
 <template>
-  <div class="tokenomics" id="tokenomics">
+  <div class="tokenomics" >
        <img src="@/assets/dots_1.png" alt="" class="dots_1">
         <img src="@/assets/Vector_1.png" alt="" class="vector_1">
          <img src="@/assets/Vector_4.png" alt="" class="vector1-tokenomics">
     <br><span class="tokenomics-title">TOKENOMICS</span>
-    <div class="token-div1">
+    <div class="token-div1" id="tokenomics">
       <h2>
         <span class="token-detail-title">name</span>
         :
@@ -133,10 +133,8 @@ rgba(142, 0, 255, 0.5);
        margin-left: auto;
         margin-right: auto;
         align-content: center;
-
     }.token-div2{
-        display: none;
-        
+        display: none;   
     }
     .token-div1{
         width: 80%;

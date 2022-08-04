@@ -159,7 +159,7 @@ top: 40.25%;
 width: 850px;
 height: 239.1px;
 left: 20%;
-top: 101.6px;
+top: 51.6px;
 border-width: 2px;
   border-style: solid;
   border-color:

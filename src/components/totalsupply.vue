@@ -57,6 +57,7 @@ text-transform: uppercase;
 }
 .total-supply{
     position: static;
+    margin-top: -100px;
   
 }
 .token-supply-div{

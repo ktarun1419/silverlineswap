@@ -270,7 +270,7 @@ export default class Faq extends Vue {}
   height: auto;
   margin-right: auto;
   margin-left: auto;
-  top: 100px;
+  top: 00px;
   padding-bottom: 30px;
   border-width: 2px;
   border-style: solid;

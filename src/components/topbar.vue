@@ -85,7 +85,7 @@ import store from "@/store";
         let ele=document.getElementById("tokenomics")
         if (ele!=null) {
             console.log(ele)
-            ele.scrollIntoView({block: "center", inline: "center"})
+            ele.scrollIntoView({block: "end", inline: "center"})
         }
     }
     ,

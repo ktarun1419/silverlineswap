@@ -1,6 +1,6 @@
 <template>
 <div class="teams" id="team">
-<h3 class="teams-text">teams</h3>
+<h3 class="teams-text">Silverline Team</h3>
 <a href="https://www.linkedin.com/in/bala-kumaran-87900121a/" target="_blank"><img src="@/assets/balasir.png" alt="" class="sindhumam"></a>
 <a href="https://www.linkedin.com/in/shancoo/" target="_blank"><img src="@/assets/shaansir.png" alt="" class="sindhumam"></a>
 <a href="" target="_blank"><img src="@/assets/sindhumam.png" alt="" class="sindhumam1"></a>
@@ -34,7 +34,7 @@ margin-top: 0px;
     top: 2000px;
     margin-bottom: 100px;
     text-align: center;
-    margin-top: -200px;
+    margin-top: -400px;
 }.teams-text{
 font-family:moderne;
 font-style: normal;
