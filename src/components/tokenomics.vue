@@ -128,7 +128,7 @@ rgba(142, 0, 255, 0.5);
 }
 @media screen and (max-width: 840px){
     .tokenomics{
-        margin-top: 200px;
+        margin-top: 300px;
         margin-bottom: 200px;
        margin-left: auto;
         margin-right: auto;
