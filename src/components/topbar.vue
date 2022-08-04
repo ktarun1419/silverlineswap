@@ -38,10 +38,12 @@
           <a href="https://www.silverlineswap.org/blog/" target="_blank">Blog</a>
         </li>
         <li>
-          <button class="connect-button" @click="connect">
+           <button class="connect-button" @click="connect">
             {{ getTopbarAcc }}
           </button>
         </li>
+         
+        
       </ul>
     </nav>
   </div>
@@ -127,6 +129,7 @@ export default class Topbar extends Vue {
 .sl-logo {
   margin-top: 0px;
   float: left;
+
   margin-left: 1%;
 }
 .sl-text {
@@ -141,6 +144,8 @@ export default class Topbar extends Vue {
   font-weight: 400;
   font-size: 15.2222px;
   padding: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
   line-height: 15px;
   color: #ffffff;
   width: auto;
@@ -149,9 +154,11 @@ export default class Topbar extends Vue {
   border-radius: 3.05556px;
   background:linear-gradient(93.62deg, #3C0B63 1.06%, #C11BB9 147.09%);;
   color: #ffffff;
+  position: relative;
+  top: 10px;
 }
 #menu {
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.466);
 position: fixed;
 width: 100%;
   color: #ffffff;
@@ -169,10 +176,9 @@ width: 100%;
 #menu li {
   display: inline-block;
   position: relative;
-  margin-top: 0px;
   margin-left: 3.5%;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.404);
+  background-color: rgb(0, 0, 0);
 }
 #menu a {
   cursor: pointer;
@@ -184,13 +190,11 @@ width: 100%;
   line-height: 15px;
   z-index: 2;
   color: #ffffff;
-
 }
 
 #menu li a:hover {
   color: white;
   background: transparent;
-
   text-decoration: underline;
 }
 #menu input {
@@ -306,6 +310,8 @@ width: 100%;
   }
   #menu input:checked ~ ul {
     display: block;
+  }.connect-button{
+    top: 0px;
   }
 }
 </style>
