@@ -120,7 +120,7 @@ export default class Roadmap extends Vue {}
 .roadmap-div1 {
   text-align: center;
   position: relative;
-  width: 40%;
+  width: 500.42px;
   height: 404.44px;
   /* left: 10%; */
   top: 50px;
@@ -155,10 +155,10 @@ export default class Roadmap extends Vue {}
   height: 404.44px;
   top: -100px;
   float: right;
-  margin-right: 10%;
+  margin-right: 13%;
 }
 .roadmap-div4 {
-  margin-left: 10%;
+  margin-left: 13%;
   text-align: center;
   position: relative;
   top: -150px;
@@ -185,7 +185,7 @@ export default class Roadmap extends Vue {}
   height: 404.44px;
   /* left: 10%; */
   top: 150px;
-  margin-left: 10%;
+  margin-left: 13%;
 }
 .roadmap-div6 {
   position: relative;
@@ -193,7 +193,7 @@ export default class Roadmap extends Vue {}
   height: 100px;
   float: right;
   top: -150px;
-  margin-right: 10%;
+  margin-right: 13%;
   /* right: 10%; */
 }
 .roadmap-div6-back {
@@ -214,14 +214,14 @@ export default class Roadmap extends Vue {}
   position: relative;
  width: 500.42px;
   height: 404.44px;
-  left: 60%;
+  left: 55%;
   top: 350px;
 }
 .roadmap-div8 {
   position: relative;
   text-align: center;;
   /* left: 94.73px; */
-  top: 0px;
+  top: -20px;
   margin-left: 10%;
   width: 543.89px;
   height: auto;
