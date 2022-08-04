@@ -105,6 +105,7 @@ border-radius: 15.2778px;
         margin-left: auto;
         margin-right: auto;
         vertical-align: 0;
+        margin-top: 50px;
 
     }.launch-div2{
         margin-top: 50px;
@@ -116,6 +117,8 @@ border-radius: 15.2778px;
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+    }.launch-text{
+        
     }
 }
 </style>

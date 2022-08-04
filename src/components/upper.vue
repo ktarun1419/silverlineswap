@@ -67,7 +67,7 @@
           <img src="@/assets/usdt_logo.png" class="usdt_logo" />USDT
         </span>
         <span class="arrow">
-          <img src="@/assets/arrow.png" alt="" />
+          <img src="@/assets/arrow.png" alt=""/>
         </span>
 
         <input
@@ -102,7 +102,7 @@ import transactions from "@/mixins/transactions";
   watch: {
     usdt_amount(newvalue, oldvalue) {
       
-      this.sln_amt = (newvalue / 0.0013).toString()
+      this.sln_amt = (newvalue / 0.0013).toFixed(4)
       let button = document.getElementById("buy-button");
       let text = document.getElementById("min-text");
       if (button != null && text != null) {
@@ -116,10 +116,10 @@ import transactions from "@/mixins/transactions";
           text.style.color = "red";
         }
       }
-    },
+    }
   },
   mounted() {
-    let countDownDate = new Date("Aug 12, 2022 20:00:00").getTime();
+    let countDownDate = new Date("Sep 5, 2022 20:00:00").getTime();
     setInterval(() => {
       var now = new Date().getTime();
 
@@ -186,6 +186,7 @@ export default class Upper extends Vue {
 .countdown-day {
   display: inline-block;
   margin: 14px;
+  margin-top: 0px;
   width: 60px;
   height: 60px;
   background: linear-gradient(180deg, rgba(217, 217, 217, 0.2) 0%, rgba(217, 217, 217, 0) 100%);
@@ -301,9 +302,12 @@ export default class Upper extends Vue {
   background: rgba(142, 0, 255, 1);
 
   z-index: 2;
-  padding: 8px;
+  
+  padding: 10px;
+  padding-right: 13px;
+  padding-left: 13px;
   left: -10%;
-  border-radius: 30px;
+  border-radius: 25px;
 }
 .input-box-button {
   width: 100%;
@@ -338,6 +342,7 @@ export default class Upper extends Vue {
   font-weight: 800;
   font-size: 15.0972px;
   line-height: 23px;
+  padding-right:30px ;
   color: white;
   cursor: pointer;
 }
@@ -411,7 +416,7 @@ export default class Upper extends Vue {
     margin-top: 100px;
   }
   .div1 {
-    margin-top: 20%;
+    margin-top: 100px;
     margin-bottom: 100px;
     position: static;
     width: 80%;
@@ -424,8 +429,9 @@ export default class Upper extends Vue {
     width: 100%;
   }
   .countdown-day {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
   }
 }
 </style>

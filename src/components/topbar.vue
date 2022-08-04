@@ -62,14 +62,14 @@ import store from "@/store";
         let ele=document.getElementById("about")
         if (ele!=null) {
             console.log(ele)
-            ele.scrollIntoView()
+            ele.scrollIntoView({block: "center", inline: "center"})
         }
     },
     tofeature(){
         let ele=document.getElementById("feature")
         if (ele!=null) {
             console.log(ele)
-            ele.scrollIntoView()
+            ele.scrollIntoView({block: "center", inline: "center"})
         }
     }
     ,
@@ -85,7 +85,7 @@ import store from "@/store";
         let ele=document.getElementById("tokenomics")
         if (ele!=null) {
             console.log(ele)
-            ele.scrollIntoView()
+            ele.scrollIntoView({block: "center", inline: "center"})
         }
     }
     ,
@@ -93,7 +93,7 @@ import store from "@/store";
         let ele=document.getElementById("faq")
         if (ele!=null) {
             console.log(ele)
-            ele.scrollIntoView()
+            ele.scrollIntoView({block: "center", inline: "center"})
         }
     }
     ,
@@ -101,7 +101,7 @@ import store from "@/store";
         let ele=document.getElementById("team")
         if (ele!=null) {
             console.log(ele)
-            ele.scrollIntoView()
+            ele.scrollIntoView({block: "center", inline: "center"})
         }
     }
   },
@@ -147,7 +147,7 @@ export default class Topbar extends Vue {
   height: auto;
   border: 0.763889px solid #943cca;
   border-radius: 3.05556px;
-  background: transparent;
+  background:linear-gradient(93.62deg, #3C0B63 1.06%, #C11BB9 147.09%);;
   color: #ffffff;
 }
 #menu {
@@ -172,7 +172,7 @@ width: 100%;
   margin-top: 0px;
   margin-left: 3.5%;
   z-index: 2;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.404);
 }
 #menu a {
   cursor: pointer;

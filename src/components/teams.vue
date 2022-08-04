@@ -49,9 +49,9 @@ color: #FFFFFF;
 }@media screen and (max-width: 840px){
     .sindhumam1{
         height:270.88px ;
-        width: 60%;
+        width: 50%;
     }.sindhumam{
-        width: 60%;
+        width: 50%;
     }
 }
 </style>

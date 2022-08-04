@@ -248,6 +248,10 @@ text-transform: uppercase;
         font-size: 15px;
     }.br{
         display: none;
+    }.listing{
+        width: 15%;
+    }.listing1{
+        width: 12%;
     }
 }
 </style>

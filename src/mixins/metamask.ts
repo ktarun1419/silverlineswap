@@ -5,7 +5,6 @@ import { Vue, Options } from "vue-class-component";
 import WalletConnectProvider from "@walletconnect/web3-provider";
 @Options({})
 export default class Metamask extends Vue {
-
   public async provider() {
     
     let providerOptions = {

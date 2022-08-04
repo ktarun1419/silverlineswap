@@ -1,14 +1,15 @@
 <template>
-  <div class="about" id="about">
+<div class="about" >
+  <div  id="about">
     <!-- <img src="@/assets/dots_1.png" alt="" class="dots_1" /> -->
     <img src="@/assets/Vector_3.png" alt="" class="vector_3" />
     <img src="@/assets/Vector_2.png" alt="" class="vector2-about" />
     <!-- <img src="@/assets/Vector_4.png" alt="" class="vector_4" /> -->
     <img src="@/assets/bluegem_1.png" alt="" class="bluegem_1" />
-    <h1 class="about-heading">ABOUT SILVERLINE</h1>
+    <h1 class="about-heading" >ABOUT SILVERLINE</h1>
     <div class="about-div1">
-      <span class="about-text"
-        >SilverlineSwap is a decentralized exchange that provides the smoothest
+      <span class="about-text">
+        SilverlineSwap is a decentralized exchange that provides the smoothest
         peer-to-peer trading experience and users can trade any token on the
         Binance Smart Chain network using SilverLineSwap. We have the
         distinctive feature that nobody else has the GUN to protect your crypto
@@ -28,6 +29,7 @@
       >
       </iframe>
     </div>
+  </div>
   </div>
 </template>
 <script lang="ts">
@@ -107,7 +109,6 @@ export default class About extends Vue {}
 .about {
   position: static;
   margin-top: 750px;
-  scroll-behavior: smooth;
 }
 .about-div1 {
   box-sizing: border-box;
@@ -154,12 +155,12 @@ top: 825.76px; */
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0;
+    margin-top: 80px;
     left: 0;
     float: none;
   }
   .about {
-    margin-top: 200px;
+    margin-top: 100px;
   }
   .about-div1 {
     width: 90%;
