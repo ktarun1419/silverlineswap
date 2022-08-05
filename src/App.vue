@@ -18,8 +18,6 @@ export default class App extends Vue{
 #app {
    //font-family: Avenir, Helvetica, Arial, sans-serif;
   font-family: poppins;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   font-weight: 300;
   position: absolute;
