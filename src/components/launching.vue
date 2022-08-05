@@ -42,7 +42,7 @@ margin-right: 50px;
     position:relative;
 width: 84.03px;
 height: 86.32px;
-right: 3%;
+right: 25%;
 top: 179.58px;
 }
 .stone_1{

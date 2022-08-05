@@ -119,20 +119,20 @@ export default class Roadmap extends Vue {}
 }
 .roadmap-div1 {
   text-align: center;
-  position: relative;
-  width: 500.42px;
-  height: 404.44px;
+  position: static;
+  display: inline-block;
+  width: 35%;
   /* left: 10%; */
-  top: 50px;
-  margin-left: 10%;
+  vertical-align: -100px;
+  margin-left: 5%;
 }
 
 .roadmap-div2 {
-  position: relative;
-
-  top: -350px;
+  position: static;
+  display: inline-block;
   left: 50%;
-  width: 490.42px;
+  width: 42%;
+  margin-right: 5%;
   height: auto;
 }
 .roadmap-div2-back {
@@ -150,20 +150,22 @@ export default class Roadmap extends Vue {}
   text-align: left;
 }
 .roadmap-div3 {
-  position: relative;
-  width: 500.42px;
-  height: 404.44px;
+  position: static;
+  display: inline-block;
+  width: 35%;
+  margin-top: 15%;
   top: -100px;
   float: right;
-  margin-right: 13%;
+  margin-right: 10%;
 }
 .roadmap-div4 {
-  margin-left: 13%;
+  margin-left: 12%;
   text-align: center;
-  position: relative;
+  position: static;
+  display: inline-block;
   top: -150px;
-  width: 490.42px;
-  height: 550px;
+  margin-top: 10%;
+  width: 42%;
 }
 .roadmap-div4-back {
   
@@ -180,20 +182,22 @@ export default class Roadmap extends Vue {}
   border-radius: 15.2778px;
 }
 .roadmap-div5 {
-  position: relative;
- width: 500.42px;
-  height: 404.44px;
+  position: static;
+  display: inline-block;
+ width: 35%;
   /* left: 10%; */
-  top: 150px;
-  margin-left: 13%;
+  top: 0px;
+  margin-left: 10%;
+  margin-top: 10%;
 }
 .roadmap-div6 {
-  position: relative;
-  width: 490.42px;
-  height: 100px;
+  position: static;
+  display: inline-block;
+  width: 42%;
+  margin-top: 15%;
   float: right;
-  top: -150px;
-  margin-right: 13%;
+  top: -400px;
+  margin-right: 10%;
   /* right: 10%; */
 }
 .roadmap-div6-back {
@@ -211,19 +215,25 @@ export default class Roadmap extends Vue {}
   text-align: left;
 }
 .roadmap-div7 {
-  position: relative;
- width: 500.42px;
-  height: 404.44px;
+ position: static;
+  display: inline-block;
+ /* width: 500.42px;
+  height: 404.44px; */
+  width: 35%;
   left: 55%;
-  top: 350px;
+  float: right;
+  margin-right: 10%;
+  top: 20px;
+  margin-top: 0;
 }
 .roadmap-div8 {
-  position: relative;
+  position: static;
+  display: inline-block;
   text-align: center;;
   /* left: 94.73px; */
-  top: -20px;
+  top: -400px;
   margin-left: 10%;
-  width: 543.89px;
+  width: 42%;
   height: auto;
 }
 .roadmap-div8-back {
@@ -242,18 +252,23 @@ export default class Roadmap extends Vue {}
   
 }
 .roadmap-div9 {
-  position: relative;
- width: 500.42px;
-  height: 404.44px;
+ position: static;
+  display: inline-block;
+ width: 35%;
+ float: left;
   margin-left: 10%;
-  top: 100.64px;
+  top: 00.64px;
+  margin-top: 5%;
+  margin-bottom: 200px;
 }
 .roadmap-div10 {
   left: 50%;
   top: -200px;
+  margin-top: 5%;
   text-align: center;
-  position: relative;
-  width: 495px;
+  position: static;
+  display: inline-block;
+  width: 42%;
   height: auto;
 }
 .roadmap-div10-back {

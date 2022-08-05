@@ -35,7 +35,7 @@
           <a @click="tofaq">FAQ</a>
         </li>
         <li>
-          <a href="https://www.silverlineswap.org/blog/" target="_blank">Blog</a>
+          <a href="https://blog.silverlineswap.org/" target="_blank">Blog</a>
         </li>
         <li>
            <button class="connect-button" @click="connect">
@@ -158,7 +158,7 @@ export default class Topbar extends Vue {
   top: 10px;
 }
 #menu {
-  background-color: rgba(0, 0, 0, 0.766);
+  background-color: rgba(0, 0, 0, 0.466);
 position: fixed;
 width: 100%;
   color: #ffffff;

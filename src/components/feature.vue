@@ -60,7 +60,7 @@ left: 0%;
     position: absolute;
 width: 112.29px;
 height: 112.29px;
-left: 27%;
+right: 27%;
 top: 5%;
 
 }
