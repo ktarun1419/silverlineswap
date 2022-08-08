@@ -129,12 +129,18 @@ rgba(142, 0, 255, 0.5);
 @media screen and (max-width: 840px){
     .tokenomics{
         margin-top: 300px;
-        margin-bottom: 200px;
+        margin-bottom: 300px;
        margin-left: auto;
         margin-right: auto;
         align-content: center;
     }.token-div2{
-        display: none;   
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        top: 0;
+        position: static; 
+        margin-top: 150px;  
     }
     .token-div1{
         width: 80%;

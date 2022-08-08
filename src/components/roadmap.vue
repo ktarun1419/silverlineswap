@@ -10,7 +10,7 @@
     <img src="@/assets/dots_1.png" alt="" class="dots_3" />
     <img src="@/assets/dots_1.png" alt="" class="dots_4" />
     <div class="roadmap-div2">
-      <h1 class="phase-text">PHASE 1</h1>
+      <h1 class="phase-text">PHASE 1</h1><br>
       <div class="roadmap-div2-back">
         <h4>➼ Website Launch - Completed</h4>
         <h4>➼ Community Build Up - Recurring</h4>
@@ -327,7 +327,7 @@ export default class Roadmap extends Vue {}
     margin-right: auto;
     width: 90%;
     height: auto;
-    margin-top: 100px;
+    margin-top: 50px;
   }
   .roadmap-div6 {
     top: 00px;
@@ -335,17 +335,17 @@ export default class Roadmap extends Vue {}
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    margin-top: 100px;
+    margin-top: 50px;
     float: none;
   }
   .roadmap-div8 {
-    top: 100px;
+    top: 50px;
     position: static;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
     height: auto;
-    margin-top: 200px;
+    margin-top: 50px;
   }
   .roadmap-div10 {
     top: 100px;
@@ -354,18 +354,18 @@ export default class Roadmap extends Vue {}
     margin-right: auto;
     width: 90%;
     height: auto;
-    margin-top: 100px;
+    margin-top: 50px;
   }.phase-text{
-      left: auto;
+ left: auto;
       right: auto;
   }.phase-text2{
-      left: auto;
+     left: auto;
       right: auto;
   }.phase-text4{
-      left: auto;
+     left: auto;
       right: auto;
   }.phase-text5{
-      left: auto;
+     left: auto;
       right: auto;
   }
 }

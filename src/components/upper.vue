@@ -400,29 +400,31 @@ export default class Upper extends Vue {
   }
   .div2 {
     float: none;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-right: 0%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    margin-bottom: 350px;
+    margin-bottom: 250px;
     width: 90%;
 
   }
   .div-input {
     position: static;
     max-height: 400px;
-    margin-top: 100px;
+    margin-top: 50px;
+    border: 1px solid;
+    border-color: linear-gradient(179.84deg, rgb(129, 3, 231) 0.14%, rgb(240, 0, 188) 141.17%);;
   }
   .div1 {
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     position: static;
     width: 80%;
     float: none;
   }
   .presale-text {
-    display: none;
+    display: block;
   }
   .input-box-button {
     width: 100%;

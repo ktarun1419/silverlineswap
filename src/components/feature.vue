@@ -139,6 +139,7 @@ color: #FFFFFF;
          margin-right: 2%;
        margin-left: 2%;
        width: 80%;
+       border: 1px solid linear-gradient(180deg, rgba(175, 77, 255, 1) 0%, rgba(255, 255, 255, 0) 137.15%);;
     }
     .feature-div2{
         margin-top: 100px;

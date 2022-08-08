@@ -88,25 +88,25 @@ text-transform: uppercase;
 @media screen and (max-width: 840px){
     .total-supply-text{
         position: static;
-        margin-top: 50px;
+        margin-top: 00px;
 
     }.total-distribution-text{
         position: static;
-         margin-top: 50px;
+         margin-top: -50px;
     }.token-supply-div{
         position: static;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 50px;
+        margin-top: 00px;
         margin-bottom: 50px;
-        width: 80%;
+        width: 90%;
     }.token-supply-div2{
         position: static;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 50px;
+        margin-top: 00px;
         margin-bottom: 200px;
-        width: 80%;
+        width: 90%;
     }
 }
 </style>

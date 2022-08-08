@@ -205,7 +205,7 @@ width: 100%;
   opacity: 0;
   height: 50px;
   cursor: pointer;
-  float: left;
+  float: right;
 }
 #menu label {
   display: none;
@@ -263,7 +263,7 @@ width: 100%;
     top: -10px;
   }
   .sl-container {
-    float: right;
+    float: left;
   }
   .sl-logo {
     margin-left: 0;
@@ -283,7 +283,7 @@ width: 100%;
   }
   #menu li {
     display: block;
-    float: left;
+    float: right;
     width: 60%;
     padding-top: 10px;
     
@@ -293,10 +293,10 @@ width: 100%;
   #menu label {
     position: absolute;
     top: 30px;
-    left: 0;
+    right: 4%;
     display: block;
     color: white;
-    float: left;
+    float: right;
   }
   #menu input {
     color: white;
