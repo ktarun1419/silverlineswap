@@ -102,7 +102,7 @@ import transactions from "@/mixins/transactions";
   watch: {
     usdt_amount(newvalue, oldvalue) {
       
-      this.sln_amt = (newvalue / 0.0013).toFixed(4)
+      this.sln_amt = (newvalue / 0.0013)
       let button = document.getElementById("buy-button");
       let text = document.getElementById("min-text");
       if (button != null && text != null) {
@@ -116,6 +116,9 @@ import transactions from "@/mixins/transactions";
           text.style.color = "red";
         }
       }
+    },
+    sln_amt(newvalue,oldvalue){
+      this.usdt_amount=newvalue*(0.0013)
     }
   },
   mounted() {
