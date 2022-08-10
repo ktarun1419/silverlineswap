@@ -136,11 +136,12 @@ export default class Footer extends Vue {}
         margin-right: auto;
         margin-left: auto;
         margin-right: 2%;
+        margin-bottom: -20px;
     }.email-box {
     height: 40px;
     width: 80%;
     left: 0;
-    top: -20%;
+    top: -10%;
   }
   .email-box-text {
     padding: 0;
