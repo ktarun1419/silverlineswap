@@ -6,6 +6,7 @@ export default createStore({
     provider:'',
     walletAddress:'',
     chainId:'',
+    usdtbalance:0
 
   },
   getters: {
@@ -22,6 +23,9 @@ export default createStore({
     },
     set_chainId(state,payload){
       state.chainId=payload
+    },
+    set_usdtBalance(state,payload){
+      state.usdtbalance=payload/100000000000000000
     }
   },
   actions: {
