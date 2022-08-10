@@ -334,6 +334,9 @@ export default class Faq extends Vue {}
   }.faq{
     margin-bottom: -150px;
     margin-top: 20px;
+  }.faq-question{
+    top: 10%;
+    font-size: 15px;
   }
   
 }

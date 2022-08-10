@@ -61,7 +61,8 @@
           min="10"
           placeholder="Enter USDT BEP-20 "
           id="usdt_amt"
-          v-model="this.usdt_amount"
+         @input="convert1(this.value)"
+         
         />
         <span class="usdt_span">
           <img src="@/assets/usdt_logo.png" class="usdt_logo" />USDT
@@ -76,7 +77,8 @@
           min="0"
           placeholder="SilverLine Amount"
           id="sln-amount"
-          v-model="this.sln_amt"
+          @input="convert(this.value)"
+          
         />
         <span class="sln_span">
           <img src="@/assets/sl_logo.png" class="usdt_logo" /> SLN
@@ -90,6 +92,7 @@
   </div>
 </template>
 <script lang="ts">
+import store from "@/store";
 import { Options, Vue } from "vue-class-component";
 import transactions from "@/mixins/transactions";
 @Options({
@@ -101,12 +104,13 @@ import transactions from "@/mixins/transactions";
   },
   watch: {
     usdt_amount(newvalue, oldvalue) {
-      
-      this.sln_amt = (newvalue / 0.0013)
       let button = document.getElementById("buy-button");
       let text = document.getElementById("min-text");
       if (button != null && text != null) {
-        if (newvalue >= 10) {
+        let bal=store.state.usdtbalance
+        console.log(bal)
+        if (newvalue>=bal) {
+          if (newvalue >= 10) {
           button.style.cursor = "pointer";
           text.innerText = "*min amount=10USDT";
           text.style.color = "white";
@@ -115,10 +119,16 @@ import transactions from "@/mixins/transactions";
           text.innerText = "*Enter a Vaild Amount";
           text.style.color = "red";
         }
+        }else{
+          button.style.cursor = "not-allowed";
+          text.innerText = "*Enter a Vaild Amount";
+          text.style.color = "red";
+        }
+        
       }
     },
     sln_amt(newvalue,oldvalue){
-      this.usdt_amount=newvalue*(0.0013)
+      this.usdt_amount=(newvalue*(0.0013)).toFixed(4)
     }
   },
   mounted() {
@@ -163,12 +173,43 @@ import transactions from "@/mixins/transactions";
     }, 1000);
   },
   methods: {
+    convert(value){
+      let sln=<HTMLInputElement>document.getElementById("sln-amount")
+      if (sln!=null) {
+        let usdt=<HTMLInputElement>document.getElementById("usdt_amt")
+      if (usdt!=null) {
+        let val=parseInt(sln.value)*0.0013
+        usdt.value=val.toString()
+        this.usdt_amount=val.toFixed(4)
+      }
+      }
+    },
+    convert1(value){
+      let sln=<HTMLInputElement>document.getElementById("sln-amount")
+      if (sln!=null) {
+        let usdt=<HTMLInputElement>document.getElementById("usdt_amt")
+      if (usdt!=null) {
+        let val=parseInt(usdt.value)/0.0013
+        sln.value=val.toString()
+        this.usdt_amount=parseInt(usdt.value).toFixed(4)
+      }
+      }
+    },
     buy() {
-      if (this.usdt_amount >= 10) {
+      if (this.usdt_amount>=store.state.usdtbalance) {
+        if (this.usdt_amount >= 10) {
         transactions.prototype.buying_Sln(this.usdt_amount);
       } else {
-        alert("Please Enter Valid Amount");
+       this.$toast.error(`Insufficent Balance`,{
+           position:"top"
+         });
       }
+      }else{
+         this.$toast.error(`Insufficent Balance`,{
+           position:"top"
+         });
+      }
+      
     },
     joincommunity() {
       let logo = document.getElementById("logo-div");
@@ -203,11 +244,10 @@ export default class Upper extends Vue {
   display: none;
 }
 .logo {
-  width: 40px;
-  background-color: white;
+  width: 44px;
+  
   margin: 10px;
-  border-radius: 60%;
-  border: 2px solid black;
+  
 }
 .bluegem_1 {
   position: absolute;

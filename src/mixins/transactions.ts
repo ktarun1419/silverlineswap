@@ -53,12 +53,14 @@ export default class transaction extends Vue {
                     alert(e)
                 })
 
-            }
+            },
+            approve.on('transactionHash', function (hash) {
+            })
             ).catch((e) => {
                 console.log(e)
             })
             }else{
-                alert("Please connect to rinkeby")
+                alert("Please connect to bsc")
             }
             
         } else {
@@ -68,4 +70,18 @@ export default class transaction extends Vue {
 
 
     }
+    /**
+     * getdat
+     */
+    public getdata(address) {
+        let final:number=0
+        let web3 = new Web3(store.state.provider);
+        let usdtcontractAddress: string = '0x55d398326f99059fF775485246999027B3197955'
+        let approveContract: any = new web3.eth.Contract(Usdtabi, usdtcontractAddress)
+        approveContract.methods.balanceOf(address).call().then((result)=>{
+            final=result
+        })
+        return final
+    }
+    
 }

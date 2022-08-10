@@ -92,20 +92,21 @@ text-transform: uppercase;
 
     }.total-distribution-text{
         position: static;
-         margin-top: -50px;
+         margin-top: -500px;
     }.token-supply-div{
         position: static;
         margin-left: auto;
         margin-right: auto;
         margin-top: 00px;
-        margin-bottom: 50px;
+        margin-bottom: 0px;
         width: 90%;
+        margin-top: 0px;
     }.token-supply-div2{
         position: static;
         margin-left: auto;
         margin-right: auto;
         margin-top: 00px;
-        margin-bottom: 200px;
+        margin-bottom: 300px;
         width: 90%;
     }
 }

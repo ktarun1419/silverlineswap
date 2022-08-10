@@ -3,6 +3,7 @@ import Web3 from "web3/dist/web3.min.js";
 import Web3Modal, { CHAIN_DATA_LIST, Provider } from "web3modal";
 import { Vue, Options } from "vue-class-component";
 import WalletConnectProvider from "@walletconnect/web3-provider";
+import transactions from "@/mixins/transactions";
 @Options({})
 export default class Metamask extends Vue {
   public async provider() {
@@ -34,6 +35,9 @@ export default class Metamask extends Vue {
     let account: any = web3.eth.getAccounts();
     account.then((result) => {
       store.commit("set_WalletAddress", result[0])
+      let balance=transactions.prototype.getdata(result[0])
+      store.commit("set_usdtBalance",balance)
+      console.log(balance)
       let account: string;
       if (result[0] != null) {
         let nim = result[0].split("");

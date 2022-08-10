@@ -1,6 +1,7 @@
 <template>
 <!-- <img src="@/assets/back.jpeg" alt="" class="bg" /> -->
   <router-view class="router"/>
+  <notifications  position="top" />
 </template>
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
@@ -18,6 +19,8 @@ export default class App extends Vue{
 #app {
    //font-family: Avenir, Helvetica, Arial, sans-serif;
   font-family: poppins;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   font-weight: 300;
   position: absolute;
@@ -37,6 +40,8 @@ background: radial-gradient(33.15% 44.58% at 50% 52.98%, #3C0B63 0%, #18002B 99.
     font-family:poppins;
     src: url(Poppins-Regular.ttf);
 }
+
+
 
 #bg {
   position: absolute;
