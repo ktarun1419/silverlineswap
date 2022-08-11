@@ -116,13 +116,12 @@ import transactions from "@/mixins/transactions";
           text.style.color = "white";
         } else {
           button.style.cursor = "not-allowed";
-          text.innerText = "*Enter a Vaild Amount";
-          text.style.color = "red";
+          
         }
         }else{
           button.style.cursor = "not-allowed";
-          text.innerText = "*Insuffient Balance";
-          text.style.color = "red";
+       
+          
         }
         
       }
