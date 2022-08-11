@@ -25,7 +25,7 @@ export default createStore({
       state.chainId=payload
     },
     set_usdtBalance(state,payload){
-      state.usdtbalance=payload/100000000000000000
+      state.usdtbalance=payload/1000000000000000000
     }
   },
   actions: {
