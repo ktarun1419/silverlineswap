@@ -116,12 +116,11 @@ import transactions from "@/mixins/transactions";
           text.style.color = "white";
         } else {
           button.style.cursor = "not-allowed";
-          
+          text.innerText = "*Enter a Vaild Amount";
+          text.style.color = "red";
         }
         }else{
           button.style.cursor = "not-allowed";
-       
-          
         }
         
       }
@@ -195,6 +194,7 @@ import transactions from "@/mixins/transactions";
       }
     },
     buy() {
+      
       if (this.usdt_amount<=store.state.usdtbalance) {
         if (this.usdt_amount >= 10) {
         transactions.prototype.buying_Sln(this.usdt_amount);

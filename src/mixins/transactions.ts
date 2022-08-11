@@ -74,14 +74,18 @@ export default class transaction extends Vue {
      * getdat
      */
     public getdata(address) {
-        let final:number=0
+        
         let web3 = new Web3(store.state.provider);
         let usdtcontractAddress: string = '0x55d398326f99059fF775485246999027B3197955'
         let approveContract: any = new web3.eth.Contract(Usdtabi, usdtcontractAddress)
         approveContract.methods.balanceOf(address).call().then((result)=>{
-            final=result
+            
+            store.commit("set_usdtBalance",result)
+            console.log(store.state.usdtbalance)
+            return result
         })
-        return final
+        
+
     }
     
 }

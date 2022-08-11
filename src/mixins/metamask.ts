@@ -36,7 +36,6 @@ export default class Metamask extends Vue {
     account.then((result) => {
       store.commit("set_WalletAddress", result[0])
       let balance=transactions.prototype.getdata(result[0])
-      store.commit("set_usdtBalance",balance)
       console.log(balance)
       let account: string;
       if (result[0] != null) {

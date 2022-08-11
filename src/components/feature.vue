@@ -9,6 +9,10 @@
             <h2 class="feature-text">GUN</h2>
             <h5 class="feature-text">Global Unique Number, a global unique Identity that will protect you and your future.</h5>
         </div>
+        <img src="@/assets/Gun.png" alt="" class="feature-final">
+        <img src="@/assets/cryptoloan1.png" alt="" class="feature-final">
+        <img src="@/assets/silverpay1.png" alt="" class="feature-final">
+        <img src="@/assets/nobu1.png" alt="" class="feature-final">
          <div class="feature-div4">
             <img src="@/assets/cryptoloan.png" alt="" class="feature-img">
             <img src="@/assets/home_elipse.png" alt="" class="feature-img2">
@@ -45,6 +49,9 @@ export default class Features extends Vue{
 }
 </script>
 <style>
+.feature-final{
+    display: none;
+}
 .featurenew{
     position: static;
 }
@@ -132,36 +139,45 @@ color: #FFFFFF;
 
 }
 @media screen and (max-width: 840px){
+    .feature-final{
+        display: inline-block;
+        width: 80%;
+        margin: 20px;
+    }
     .feature-div1{
-         margin-top: 100px;
+        display: none;
+         /* margin-top: 100px;
         position: static;
         display: inline-block;
          margin-right: 2%;
        margin-left: 2%;
-       width: 80%;
+       width: 80%; */
        border: 1px solid linear-gradient(180deg, rgba(175, 77, 255, 1) 0%, rgba(255, 255, 255, 0) 137.15%);;
     }
     .feature-div2{
-        margin-top: 100px;
+        display: none;
+        /* margin-top: 100px;
         margin-right: 2%;
        margin-left: 2%;
          position: static;
          display: inline-block;
-         width: 80%;
+         width: 80%; */
     }.feature-div3{
-         margin-top: 100px;
+        display: none;
+         /* margin-top: 100px;
          margin-right: 2%;
        margin-left: 2%;
          position: static;
       display: inline-block;
-      width: 80%;
+      width: 80%; */
     }.feature-div4{
-         margin-top: 100px;
+         display: none;
+         /*margin-top: 100px;
          margin-right: 2%;
        margin-left: 2%;
         display: inline-block;
          position: static;
-         width: 80%;
+         width: 80%; */
     }
     .feature-img2{
         display: none;
