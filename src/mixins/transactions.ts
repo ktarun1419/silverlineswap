@@ -41,51 +41,45 @@ export default class transaction extends Vue {
             }
             //
             //sending the approve transaction object
-            if (store.state.chainId=='56') {
+            if (store.state.chainId == '56') {
                 let approve = web3.eth.sendTransaction(txApprove)
-            console.log(approve)
-            approve.then((result) => {
-                alert(result.transactionHash)
-                let presale = web3.eth.sendTransaction(txPresale)
-                presale.then((result) => {
+                console.log(approve)
+                approve.then((result) => {
                     alert(result.transactionHash)
-                }).catch((e) => {
-                    alert(e)
+                    let presale = web3.eth.sendTransaction(txPresale)
+                    presale.then((result) => {
+                        alert(result.transactionHash)
+                    }).catch((e) => {
+                        alert(e)
+                    })
+                },
+                    approve.on('transactionHash', function (hash) {
+                    })
+                ).catch((e) => {
+                    console.log(e)
                 })
-
-            },
-            approve.on('transactionHash', function (hash) {
-            })
-            ).catch((e) => {
-                console.log(e)
-            })
-            }else{
+            } else {
                 alert("Please connect to bsc")
             }
-            
+
         } else {
             alert('Please connect Wallet First')
         }
-
-
-
     }
     /**
-     * getdat
+     * getdata getting the balance of usdt 
      */
     public getdata(address) {
-        
         let web3 = new Web3(store.state.provider);
         let usdtcontractAddress: string = '0x55d398326f99059fF775485246999027B3197955'
         let approveContract: any = new web3.eth.Contract(Usdtabi, usdtcontractAddress)
-        approveContract.methods.balanceOf(address).call().then((result)=>{
-            
-            store.commit("set_usdtBalance",result)
+        approveContract.methods.balanceOf(address).call().then((result) => {
+            store.commit("set_usdtBalance", result)
             console.log(store.state.usdtbalance)
             return result
         })
-        
+
 
     }
-    
+
 }

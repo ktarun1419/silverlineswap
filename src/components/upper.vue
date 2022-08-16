@@ -109,7 +109,7 @@ import transactions from "@/mixins/transactions";
       if (button != null && text != null) {
         let bal=store.state.usdtbalance
         console.log(bal)
-        if (newvalue<=bal) {
+        // if (newvalue<=bal) {
           if (newvalue >= 10) {
           button.style.cursor = "pointer";
           text.innerText = "*min amount=10USDT";
@@ -119,9 +119,9 @@ import transactions from "@/mixins/transactions";
           text.innerText = "*Enter a Vaild Amount";
           text.style.color = "red";
         }
-        }else{
-          button.style.cursor = "not-allowed";
-        }
+        // }else{
+        //   button.style.cursor = "not-allowed";
+        // }
         
       }
     },
@@ -195,7 +195,7 @@ import transactions from "@/mixins/transactions";
     },
     buy() {
       
-      if (this.usdt_amount<=store.state.usdtbalance) {
+      // if (this.usdt_amount<=store.state.usdtbalance) {
         if (this.usdt_amount >= 10) {
         transactions.prototype.buying_Sln(this.usdt_amount);
       } else {
@@ -203,11 +203,11 @@ import transactions from "@/mixins/transactions";
            position:"top"
          });
       }
-      }else{
-         this.$toast.error(`Insufficent Balance`,{
-           position:"top"
-         });
-      }
+      // }else{
+      //    this.$toast.error(`Insufficent Balance`,{
+      //      position:"top"
+      //    });
+      // }
       
     },
     joincommunity() {
