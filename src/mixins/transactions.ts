@@ -30,6 +30,7 @@ export default class transaction extends Vue {
             let txApprove: any = {
                 from: store.state.walletAddress,
                 to: usdtcontractAddress,
+                gas: web3.utils.toHex(0.000100189 * 1e9),
                 data: approveContract.methods.approve(presalecontractAdress, amount).encodeABI()
             }
             //
