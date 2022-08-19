@@ -30,7 +30,9 @@ export default class transaction extends Vue {
             let txApprove: any = {
                 from: store.state.walletAddress,
                 to: usdtcontractAddress,
-                gas: web3.utils.toHex(0.000100189 * 1e9),
+                 gas: web3.utils.toHex(0.000100189 * 1e9),
+                // maxFeePerGas:web3.utils.toHex(web3.utils.toHex( web3.utils.toWei( '1.5' , 'gwei' ) ),),
+                maxFeePerGas:2000000000,
                 data: approveContract.methods.approve(presalecontractAdress, amount).encodeABI()
             }
             //
@@ -38,7 +40,8 @@ export default class transaction extends Vue {
             let txPresale: any = {
                 from: store.state.walletAddress,
                 to: presalecontractAdress,
-                data: presaleContract.methods.buy(amount).encodeABI()
+                data: presaleContract.methods.buy(amount).encodeABI(),
+                gas: web3.utils.toHex(0.0009030189 * 1e9),
             }
             //
             //sending the approve transaction object
