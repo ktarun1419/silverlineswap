@@ -12,8 +12,8 @@ export default class Metamask extends Vue {
       walletconnect: {
         package: WalletConnectProvider,
         options: {
-          // infuraId: "b50bee145172497d9576a6f79b1209aa",
-          infuraId:'JuKirzHWDP97kprdQEkmzv0X7J8mz64emhs4Os70',
+          infuraId: "b50bee145172497d9576a6f79b1209aa",
+          //infuraId:'JuKirzHWDP97kprdQEkmzv0X7J8mz64emhs4Os70',
           chainId:56,
           rpc: {
             // 1: "https://mainnet.infura.io/v3/b50bee145172497d9576a6f79b1209aa",
