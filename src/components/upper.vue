@@ -34,7 +34,7 @@
       </div>
     </div>
     <div class="div2">
-      <h1 class="presale-text" >PRE-SALE</h1>
+      <h1 class="presale-text" >PRE-SALE ENDS IN</h1>
 
       <div class="countdown-day">
         <h3 id="days" style="font-family: Avenir, Helvetica, Arial, sans-serif;">00</h3>
@@ -252,7 +252,7 @@ export default class Upper extends Vue {
   position: absolute;
   left: 13.12%;
   right: 80.77%;
-  top: 550px;
+  top: 640px;
   bottom: 2.48%;
   width: 80px;
 }
@@ -268,7 +268,7 @@ export default class Upper extends Vue {
   width: 69px;
   height: 40px;
   left: 80%;
-  top: 80px;
+  top: 60px;
 }
 .vector_2 {
   position: absolute;

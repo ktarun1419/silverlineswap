@@ -10,7 +10,7 @@
     <img src="@/assets/dots_1.png" alt="" class="dots_3" />
     <img src="@/assets/dots_1.png" alt="" class="dots_4" />
     <div class="roadmap-div2">
-      <h1 class="phase-text" >PHASE 1 <span id="phase1" @click="phase1(phase1)" class="downarrow">&#8595;</span></h1><br>
+      <h1 class="phase-text" >PHASE 1 <!-- <span id="phase1" @click="phase1(phase1)" class="downarrow">&#8595;</span> --></h1><br>
       <div class="roadmap-div2-back" id="phase1-div">
         <h4>➼ Website Launch - Completed</h4>
         <h4>➼ Community Build Up - Recurring</h4>
@@ -339,8 +339,7 @@ export default class Roadmap extends Vue {}
     margin-top: 100px;
   }
   .roadmap-div2-back{
-    display: none;
-    margin-top: 50px;
+    margin-top: 30px;
   }
   .roadmap-div4 {
     top: 100px;
@@ -350,8 +349,9 @@ export default class Roadmap extends Vue {}
     width: 90%;
     height: auto;
     margin-top: 50px;
-  }
-  .roadmap-div6 {
+  }.roadmap-div4-back{
+    margin-top: 50px;
+  }  .roadmap-div6 {
     top: 00px;
     position: static;
     margin-left: auto;
@@ -359,6 +359,8 @@ export default class Roadmap extends Vue {}
     width: 90%;
     margin-top: 50px;
     float: none;
+  }.roadmap-div6-back{
+    margin-top: 50px;
   }
   .roadmap-div8 {
     top: 50px;
@@ -367,6 +369,10 @@ export default class Roadmap extends Vue {}
     margin-right: auto;
     width: 90%;
     height: auto;
+    margin-top: 50px;
+  }.roadmap-div8-back{
+    margin-top: 50px;
+  }.roadmap-div10-back{
     margin-top: 50px;
   }
   .roadmap-div10 {
@@ -380,14 +386,12 @@ export default class Roadmap extends Vue {}
   }.phase-text{
  float: left;
   }.phase-text2{
-     left: auto;
-      right: auto;
+     float: left;
+     margin-left: 30px;
   }.phase-text4{
-     left: auto;
-      right: auto;
+     float: left;
   }.phase-text5{
-     left: auto;
-      right: auto;
+     float: left;
   }
 }
 </style>

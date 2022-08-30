@@ -142,7 +142,9 @@ color: #FFFFFF;
     .feature-final{
         display: inline-block;
         width: 80%;
-        margin: 20px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .feature-div1{
         display: none;

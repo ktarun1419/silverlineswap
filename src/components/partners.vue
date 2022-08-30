@@ -177,6 +177,8 @@ font-style: normal;
 font-weight: 800;
 font-size: 26.7361px;
 line-height: 40px;
+margin-right: auto;
+margin-left: auto;
 text-transform: uppercase;
 color: #FFFFFF;
 }.partners-text3{

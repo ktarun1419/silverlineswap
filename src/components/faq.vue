@@ -11,28 +11,28 @@
         >
         <img src="@/assets/plus1.png" alt="" class="plus-png" @click="ques1" />
       </div>
-      <div class="answer-div" id="answer-div1">
-        <h5 class="ans">
+      <div class="hidden" id="answer-div1">
+        <p class="ans">
           Visit https://www.silverlineswap.org/ and enter USDT Amount that you
           want to purchase
-        </h5>
+        </p>
       </div>
 
       <div class="faq-div1">
         <span class="faq-question">What is the price of the token?</span>
         <img src="@/assets/plus1.png" alt="" class="plus-png" @click="ques2" />
       </div>
-      <div class="answer-div" id="answer-div2">
-        <h5 class="ans">The price of the token is $0.0013(10paise INR)</h5>
+      <div class="hidden" id="answer-div2">
+        <p class="ans">The price of the token is $0.0013(10paise INR)</p>
       </div>
       <div class="faq-div1">
         <span class="faq-question">How do I use my SLN tokens? </span>
         <img src="@/assets/plus1.png" alt="" class="plus-png" @click="ques3" />
       </div>
-      <div class="answer-div" id="answer-div3">
-        <h5 class="ans">
+      <div class="hidden" id="answer-div3">
+        <p class="ans">
           You can Use SLN Tokens for Staking, farming, pooling
-        </h5>
+        </p>
       </div>
       <div class="faq-div1">
         <span class="faq-question"
@@ -40,10 +40,10 @@
         </span>
         <img src="@/assets/plus1.png" alt="" class="plus-png" @click="ques4" />
       </div>
-      <div class="answer-div" id="answer-div4">
-        <h5 class="ans">
+      <div class="hidden" id="answer-div4">
+        <p class="ans">
           Silverline Token Address :- 0x40491520d7BdcdD670cf387902BaD615ab65f43B
-        </h5>
+        </p>
       </div>
       <div class="faq-div1">
         <span class="faq-question"
@@ -51,10 +51,10 @@
         </span>
         <img src="@/assets/plus1.png" alt="" class="plus-png" @click="ques5" />
       </div>
-      <div class="answer-div" id="answer-div5">
-        <h5 class="ans">
+      <div class="hidden" id="answer-div5">
+        <p class="ans">
          A week after completion of presale 
-        </h5>
+        </p>
       </div>
       <div class="faq-div1">
         <span class="faq-question"
@@ -62,7 +62,7 @@
         </span>
         <img src="@/assets/plus1.png" alt="" class="plus-png" @click="ques6" />
       </div>
-      <div class="answer-div" id="answer-div6">
+      <div class="hidden" id="answer-div6">
         <h5 class="ans">
          High Purchase Limit - Purchase a higher number of tokens from Presale
         </h5>
@@ -81,83 +81,79 @@ import { Options, Vue } from "vue-class-component";
 @Options({
   methods: {
     ques1() {
-      let box = document.getElementById("answer-div1");
-      if (box != null) {
-        if (box.style.display != "none") {
-          box.style.display = "none";
-          console.log("ffff222");
-        } else {
-          console.log("ffff22233");
-          box.style.display = "block";
-        }
+      let div = document.getElementById("answer-div1");
+      if (div != null) {
+       if (div.className === "hidden") {
+        div.className = "hidden  active";
+    } else {
+        div.className = "hidden";
+    }
       }
     },
     ques2() {
       let box = document.getElementById("answer-div2");
-      if (box != null) {
-        if (box.style.display != "none") {
-          box.style.display = "none";
-          console.log("ffff222");
-        } else {
-          console.log("ffff22233");
-          box.style.display = "block";
-        }
-      }
+       if (box != null) {
+       if (box.className === "hidden") {
+        box.className = "hidden  active";
+    } else {
+        box.className = "hidden";
+    }
+       }
     },
     ques3() {
       let box = document.getElementById("answer-div3");
       if (box != null) {
-        if (box.style.display != "none") {
-          box.style.display = "none";
-          console.log("ffff222");
-        } else {
-          console.log("ffff22233");
-          box.style.display = "block";
-        }
-      }
+       if (box.className === "hidden") {
+        box.className = "hidden  active";
+    } else {
+        box.className = "hidden";
+    }
+       }
     },
     ques4() {
       let box = document.getElementById("answer-div4");
       if (box != null) {
-        if (box.style.display != "none") {
-          box.style.display = "none";
-          console.log("ffff222");
-        } else {
-          console.log("ffff22233");
-          box.style.display = "block";
-        }
-      }
+       if (box.className === "hidden") {
+        box.className = "hidden  active";
+    } else {
+        box.className = "hidden";
+    }
+       }
     },
     ques5() {
       let box = document.getElementById("answer-div5");
       if (box != null) {
-        if (box.style.display != "none") {
-          box.style.display = "none";
-          console.log("ffff222");
-        } else {
-          console.log("ffff22233");
-          box.style.display = "block";
-        }
-      }
+       if (box.className === "hidden") {
+        box.className = "hidden  active";
+    } else {
+        box.className = "hidden";
+    }
+       }
     },
     ques6() {
       let box = document.getElementById("answer-div6");
      
       if (box != null) {
-        if (box.style.display != "none") {
-          box.style.display = "none";
-          console.log("ffff222");
-        } else {
-          console.log("ffff22233");
-          box.style.display = "block";
-        }
-      }
+       if (box.className === "hidden") {
+        box.className = "hidden  active";
+    } else {
+        box.className = "hidden";
+    }
+       }
     },
   },
 })
 export default class Faq extends Vue {}
 </script>
 <style>
+.hidden { 
+    max-height: 00px; 
+    overflow: hidden; 
+    transition: max-height 500ms;
+}
+.hidden.active {
+    max-height: 1000px;
+}
 .vector2-faq {
   position: absolute;
   top: 9700px;
@@ -173,12 +169,13 @@ export default class Faq extends Vue {}
   width: 85%;
   height: auto;
   top: 0%;
-  background-color: rgb(192, 192, 192);
-  display: none;
-  color: black;
+  /* background-color: rgb(192, 192, 192); */
+  background-color: transparent;
+  max-height: 0;
+  color: rgb(255, 251, 251);
   z-index: 0;
-  padding: 20px;
-  text-align: left;
+  padding: 10px;
+  transition: max-height 500ms ease-in-out;
 }
 
 .faq-question {

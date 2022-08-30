@@ -78,7 +78,7 @@ export default class Footer extends Vue {}
   width: 50%;
   height: 68.47px;
   left: 45%;
-  top: 50px;
+  top: 30px;
   border-width: 2px;
   border-style: solid;
   border-color: rgba(142, 0, 255, 0.5);
@@ -92,7 +92,7 @@ export default class Footer extends Vue {}
 .email-text1{
     
     position: relative;
-    top: 20%;
+    top: 13%;
     left: 20%;
 
 }

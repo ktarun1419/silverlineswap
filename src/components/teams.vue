@@ -11,7 +11,7 @@
 <a href="https://www.linkedin.com/in/allan-dias-454b3517/" target="_blank"><img src="@/assets/ala1.png" alt="" class="sindhumam2"></a>
 <a href="https://www.linkedin.com/in/maheshmohan10/" target="_blank"><img src="@/assets/maheshsir.png" alt="" class="sindhumam"></a>
 <a href="https://www.linkedin.com/in/maheshmohan10/" target="_blank"><img src="@/assets/mah1.png" alt="" class="sindhumam2"></a>
-</div>
+</div><br>
     
 </template>
 <script lang="ts">

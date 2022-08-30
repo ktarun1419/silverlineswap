@@ -176,14 +176,14 @@ width: 100%;
 #menu li {
   display: inline-block;
   position: relative;
-  margin-left: 3.5%;
+  margin-left: 3%;
   z-index: 2;
-  background-color: rgb(0, 0, 0);
+  background-color: transparent;
 }
 #menu a {
   cursor: pointer;
   display: inline-block;
-  font-family: "Inter";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -286,7 +286,7 @@ width: 100%;
     float: right;
     width: 60%;
     padding-top: 10px;
-    
+    background-color: black;
 
   }
   #menu input,
