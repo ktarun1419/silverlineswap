@@ -21,7 +21,7 @@
       </div>
     </div>
     <br>
-    <div class="roadmap-div3">
+     <div class="roadmap-div3">
     
       <img src="@/assets/planet_2.png" alt="" width="100%"/>
     </div>
@@ -42,9 +42,9 @@
         <h5>➼ Decentralized Exchange Platform– August 2022</h5>
         <h5>➼ Stake Silverline Token To Earn Alt-Coins –August 2022</h5>
       </div>
-    </div><br>
+    </div>
+    <br>
     <div class="roadmap-div5">
-      
       <img src="@/assets/planet_3.png" alt="" width="100%" />
     </div>
     <div class="roadmap-div6">
@@ -53,11 +53,8 @@
         <h4>➼ Influencer Marketing - Recurring</h4>
         <h4>➼ Ecosystem Build Up - Ongoing</h4>
       </div>
-    </div><br>
-    <div class="roadmap-div7">
-    
-      <img src="@/assets/planet_4.png" alt=""  width="100%"/>
     </div>
+    <br>
     <div class="roadmap-div8">
           <h1 class="phase-text4">PHASE 4</h1>
       <div class="roadmap-div8-back">
@@ -67,6 +64,10 @@
         <h5>➼ Crypto Loans – Upcoming</h5>
         <h5>➼ Crypto Score - Upcoming</h5>
       </div>
+    </div>
+     <div class="roadmap-div7">
+    
+      <img src="@/assets/planet_4.png" alt=""  width="100%"/>
     </div><br>
     <div class="roadmap-div9">
       
@@ -141,16 +142,17 @@ export default class Roadmap extends Vue {}
   display: inline-block;
   width: 35%;
   /* left: 10%; */
-  vertical-align: -100px;
+  /* vertical-align: -100px; */
   margin-left: 5%;
 }
 
 .roadmap-div2 {
-  position: static;
+  float: right;
   display: inline-block;
   width: 42%;
-  margin-right: 5%;
+  margin-right: 10%;
   height: auto;
+  margin-top: 0%;
 }
 .roadmap-div2-back {
   border-color: rgba(142, 0, 255, 0.5);
@@ -170,9 +172,8 @@ export default class Roadmap extends Vue {}
   position: static;
   display: inline-block;
   width: 35%;
-  margin-top: 15%;
-  top: -100px;
   float: right;
+  margin-top: 15%;
   margin-right: 10%;
 }
 .roadmap-div4 {
@@ -180,8 +181,9 @@ export default class Roadmap extends Vue {}
   text-align: center;
   position: static;
   display: inline-block;
-  top: -150px;
-  margin-top: 10%;
+  /* top: -150px; */
+  margin-top: 15%;
+  
   width: 42%;
 }
 .roadmap-div4-back {
@@ -202,18 +204,20 @@ export default class Roadmap extends Vue {}
   position: static;
   display: inline-block;
  width: 35%;
+ 
   /* left: 10%; */
-  top: 0px;
-  margin-left: 10%;
+  margin-left: 0%;
   margin-top: 10%;
 }
 .roadmap-div6 {
-  position: static;
+  float: right;
+ position: static;
   display: inline-block;
   width: 42%;
-  float: right;
   margin-right: 10%;
   margin-top: 15%;
+  
+
   /* right: 10%; */
 }
 .roadmap-div6-back {
@@ -236,20 +240,20 @@ export default class Roadmap extends Vue {}
  /* width: 500.42px;
   height: 404.44px; */
   width: 35%;
-  float: right;
   margin-right: 11%;
   top: 20px;
-  margin-top: 0;
+  margin-top: 10%;
 }
 .roadmap-div8 {
   position: static;
   display: inline-block;
-  text-align: center;;
+  text-align: center;
   /* left: 94.73px; */
-  top: -400px;
   margin-left: 11%;
   width: 42%;
+  float: left;
   height: auto;
+  margin-top: 10%;
 }
 .roadmap-div8-back {
   border-radius: 15.2778px;
@@ -270,22 +274,21 @@ export default class Roadmap extends Vue {}
  position: static;
   display: inline-block;
  width: 35%;
- float: left;
+ 
   margin-left: 10%;
   top: 00.64px;
   margin-top: 5%;
   margin-bottom: 200px;
 }
 .roadmap-div10 {
-  left: 50%;
-  top: -200px;
-  margin-top: 5%;
+  margin-top: 10%;
   text-align: center;
   position: static;
   display: inline-block;
   width: 42%;
   height: auto;
   margin-right: 10%;
+  float: right;
 }
 .roadmap-div10-back {
   border-width: 2px;
