@@ -80,7 +80,7 @@ top: 5%;
     top: 40px;
     position: relative;
 }.feature-div3{
-    
+     display: none;
       position: absolute; 
 width: 18%;
 height: 291.04px;
@@ -90,6 +90,7 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(142, 0, 25
 border-radius: 30.5556px 15.2778px;
 }
 .feature-div4{
+     display: none;
      position: absolute; 
      /* position: absolute; */
 width: 18%;
@@ -100,6 +101,7 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(142, 0, 25
 border-radius: 30.5556px 15.2778px;
 }
 .feature-div2{
+     display: none;
     position: absolute; 
      /* position: absolute; */
 width: 18%;
@@ -110,6 +112,7 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(142, 0, 25
 border-radius: 30.5556px 15.2778px;
 }
 .feature-div1{
+     display: none;
     /* position: absolute; */
     position: absolute; 
 width: 18%;
@@ -138,6 +141,14 @@ color: #FFFFFF;
 
 
 }
+ .feature-final{
+        display: inline-block;
+        width: 20%;
+        margin: 20px;
+        margin-top: 100px;
+
+       
+    }
 @media screen and (max-width: 840px){
     .feature-final{
         display: inline-block;

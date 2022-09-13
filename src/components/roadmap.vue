@@ -132,7 +132,7 @@ export default class Roadmap extends Vue {}
 }
 .roadmap {
   position: relative;
-  top: 600px;
+  top: 200px;
   text-align: center;
   align-content: center;
 }
