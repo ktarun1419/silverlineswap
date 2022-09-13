@@ -21,10 +21,7 @@
       </div>
     </div>
     <br>
-     <div class="roadmap-div3">
-    
-      <img src="@/assets/planet_2.png" alt="" width="100%"/>
-    </div>
+     
     <div class="roadmap-div4">
           <h1 class="phase-text2">PHASE 2</h1>
       <div class="roadmap-div4-back">
@@ -42,6 +39,10 @@
         <h5>➼ Decentralized Exchange Platform– August 2022</h5>
         <h5>➼ Stake Silverline Token To Earn Alt-Coins –August 2022</h5>
       </div>
+    </div>
+    <div class="roadmap-div3">
+    
+      <img src="@/assets/planet_2.png" alt="" width="100%"/>
     </div>
     <br>
     <div class="roadmap-div5">
@@ -131,23 +132,21 @@ export default class Roadmap extends Vue {}
   font-family: moderne;
 }
 .roadmap {
-  position: relative;
-  top: 200px;
+  position: static;
+  margin-top: 200px;
   text-align: center;
   align-content: center;
 }
 .roadmap-div1 {
-  text-align: center;
-  position: static;
   display: inline-block;
   width: 35%;
   /* left: 10%; */
-  /* vertical-align: -100px; */
+  vertical-align: -100px; 
   margin-left: 5%;
 }
 
 .roadmap-div2 {
-  float: right;
+ 
   display: inline-block;
   width: 42%;
   margin-right: 10%;
@@ -169,21 +168,17 @@ export default class Roadmap extends Vue {}
   text-align: left;
 }
 .roadmap-div3 {
-  position: static;
   display: inline-block;
   width: 35%;
-  float: right;
   margin-top: 15%;
   margin-right: 10%;
 }
 .roadmap-div4 {
   margin-left: 12%;
   text-align: center;
-  position: static;
   display: inline-block;
   /* top: -150px; */
   margin-top: 15%;
-  
   width: 42%;
 }
 .roadmap-div4-back {
@@ -201,24 +196,18 @@ export default class Roadmap extends Vue {}
   border-radius: 15.2778px;
 }
 .roadmap-div5 {
-  position: static;
   display: inline-block;
  width: 35%;
- 
   /* left: 10%; */
   margin-left: 0%;
   margin-top: 10%;
 }
 .roadmap-div6 {
-  float: right;
- position: static;
+  vertical-align: 200px;
   display: inline-block;
-  width: 42%;
-  margin-top:-400px;
-  margin-right: 10%;
+  width: 35%;
+  margin-left: 10%;
   margin-top: 15%;
-  
-
   /* right: 10%; */
 }
 .roadmap-div6-back {
