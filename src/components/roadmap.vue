@@ -7,7 +7,61 @@
     <img src="@/assets/dots_1.png" alt="" class="dots_3" />
     <img src="@/assets/dots_1.png" alt="" class="dots_4" />
     <div class="float-container">
+<div class="roadmap-div-m2">
+      <h1 class="phase-text" >PHASE 1 <!-- <span id="phase1" @click="phase1(phase1)" class="downarrow">&#8595;</span> --></h1><br>
+      <div class="roadmap-div2-back" id="phase1-div">
+        <h4 class="font">➼ Website Launch - Completed</h4>
+        <h4 class="font">➼ Community Build Up - Recurring</h4>
+        <h4 class="font">➼ Community Competitions – Recurring</h4>
+        <h4 class="font">➼ Team Enhancement - Recurring</h4>
+        <h4 class="font">➼ Dashboard Development - Completed</h4>
+        <h4 class="font">➼ Smart Contract Audit (Coinscope) - January 2022</h4>
+      </div>
+    </div>
+    <div class="roadmap-div-m4">
+          <h1 class="phase-text">PHASE 2</h1><br>
+      <div class="roadmap-div2-back">
+        <h5 class="font1">➼ Smart Contract Audit – March 2022</h5>
+        <h5 class="font1">➼ Team KYC – June 2022</h5>
+        <h5 class="font1">➼ Token Presale (PinkSale) – July 2022</h5>
+        <h5 class="font1">➼ Private Sale – July 2022</h5>
+        <h5 class="font1">➼ Distributed Denial Of Service (DDOS)Integration – July</h5>
+        <h5 class="font1">➼ CoinMarketCap & CoinGecko Listing – July 2022</h5>
+        <h5 class="font1">➼ Smart Contract Audit (Techrate) - August 2022</h5>
+        <h5 class="font1">➼ 2022 Insurance For SLN Token -August 2022</h5>
+        <h5 class="font1">➼ Token Launch In Pancakeswap – August 2022</h5>
+        <h5 class="font1">➼ SilverLine Token Staking – August 2022</h5>
+        <h5 class="font1">➼ SilverLine Token Farming –August 2022</h5>
+        <h5 class="font1">➼ Decentralized Exchange Platform– August 2022</h5>
+        <h5 class="font1">➼ Stake Silverline Token To Earn Alt-Coins –August 2022</h5>
+      </div>
+    </div>
+    <div class="roadmap-div-m6">
+        <h1 class="phase-text">PHASE 3</h1><br>
+      <div class="roadmap-div6-back">
+        <h4 class="font">➼ Influencer Marketing - Recurring</h4>
+        <h4 class="font">➼ Ecosystem Build Up - Ongoing</h4>
+      </div>
+    </div>
+    <div class="roadmap-div-m8">
+          <h1 class="phase-text">PHASE 4</h1><br>
+      <div class="roadmap-div8-back">
+        <h5 class="font">➼ Partnerships - Upcoming</h5>
+        <h5 class="font">➼ SilverLine Merchandise - Upcoming</h5>
+        <h5 class="font">➼ SilverPay Crypto Currency Payment Wallet - Upcoming</h5>
+        <h5 class="font">➼ Crypto Loans – Upcoming</h5>
+        <h5 class="font">➼ Crypto Score - Upcoming</h5>
+      </div>
+    </div>
 
+     <div class="roadmap-div-m10">
+        <h1 class="phase-text5">PHASE 5</h1><br>
+        <div class="roadmap-div10-back">
+            <h4 class="font">➼ Nobu Limited Edition NFT Collection - Upcoming</h4>
+      <h4 class="font">➼ NFT MarketPlace – Upcoming</h4>
+      <h4 class="font">➼ Defi Games - Upcoming</h4>
+        </div>
+    </div>
   <div class="flex-container">
 
   <div class="flex-child magenta">
@@ -49,7 +103,7 @@
         <h5 class="font1">➼ SilverLine Token Staking – August 2022</h5>
         <h5 class="font1">➼ SilverLine Token Farming –August 2022</h5>
         <h5 class="font1">➼ Decentralized Exchange Platform– August 2022</h5>
-        <h5>➼ Stake Silverline Token To Earn Alt-Coins –August 2022</h5>
+        <h5 class="font1">➼ Stake Silverline Token To Earn Alt-Coins –August 2022</h5>
       </div>
     </div>
   </div>
@@ -338,7 +392,35 @@ export default class Roadmap extends Vue {}
 
   text-transform: capitalize;
 }
+.roadmap-div-m10{
+  display: none;
+}
+.roadmap-div-m2{
+  display: none;
+}
+.roadmap-div-m4{
+  display: none;
+}
+.roadmap-div-m6{
+  display: none;
+}
+.roadmap-div-m8{
+  display: none;
+}
 @media screen and (max-width: 840px) {
+  .flex-container{
+    display: none;
+  }
+  .font{
+    font-size:15px ;
+  }
+   .font1{
+    font-size:15px ;
+  }
+  .flex-child{
+    width: 100%;
+    flex: 0;
+  }
   .roadmap-div1 {
     display: none;
   }
@@ -357,7 +439,8 @@ export default class Roadmap extends Vue {}
   .roadmap {
     top: 200px;
   }
-  .roadmap-div2 {
+  .roadmap-div-m2 {
+    display: block;
     top: 100px;
     position: static;
     margin-left: auto;
@@ -368,9 +451,10 @@ export default class Roadmap extends Vue {}
     margin-top: 100px;
   }
   .roadmap-div2-back{
-    margin-top: 30px;
+    margin-top: 50px;
   }
-  .roadmap-div4 {
+  .roadmap-div-m4 {
+    display: block;
     top: 100px;
     position: static;
     margin-left: auto;
@@ -379,9 +463,10 @@ export default class Roadmap extends Vue {}
     height: auto;
     margin-top: 50px;
   }.roadmap-div4-back{
-    margin-top: 50px;
-  }  .roadmap-div6 {
+    margin-top: 80px;
+  }  .roadmap-div-m6 {
     top: 00px;
+    display: block;
     position: static;
     margin-left: auto;
     margin-right: auto;
@@ -391,7 +476,8 @@ export default class Roadmap extends Vue {}
   }.roadmap-div6-back{
     margin-top: 50px;
   }
-  .roadmap-div8 {
+  .roadmap-div-m8 {
+    display: block;
     top: 50px;
     position: static;
     margin-left: auto;
@@ -400,11 +486,12 @@ export default class Roadmap extends Vue {}
     height: auto;
     margin-top: 50px;
   }.roadmap-div8-back{
-    margin-top: 50px;
+    margin-top: 80px;
   }.roadmap-div10-back{
     margin-top: 50px;
   }
-  .roadmap-div10 {
+  .roadmap-div-m10 {
+    display: block;
     top: 100px;
     position: static;
     margin-left: auto;
@@ -414,6 +501,7 @@ export default class Roadmap extends Vue {}
     margin-top: 50px;
   }.phase-text{
  float: left;
+ margin-bottom: 50px;
   }.phase-text2{
      float: left;
      margin-left: 30px;
