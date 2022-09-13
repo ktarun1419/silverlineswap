@@ -213,7 +213,7 @@ export default class Roadmap extends Vue {}
   float: right;
  position: static;
   display: inline-block;
-  width: 42%;
+  width: 35%;
   margin-right: 10%;
   margin-top: 15%;
   
