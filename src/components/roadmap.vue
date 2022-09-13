@@ -20,6 +20,7 @@
         <h4>➼ Smart Contract Audit (Coinscope) - January 2022</h4>
       </div>
     </div>
+    <br>
     <div class="roadmap-div3">
     
       <img src="@/assets/planet_2.png" alt="" width="100%"/>
@@ -41,7 +42,7 @@
         <h5>➼ Decentralized Exchange Platform– August 2022</h5>
         <h5>➼ Stake Silverline Token To Earn Alt-Coins –August 2022</h5>
       </div>
-    </div>
+    </div><br>
     <div class="roadmap-div5">
       
       <img src="@/assets/planet_3.png" alt="" width="100%" />
@@ -52,7 +53,7 @@
         <h4>➼ Influencer Marketing - Recurring</h4>
         <h4>➼ Ecosystem Build Up - Ongoing</h4>
       </div>
-    </div>
+    </div><br>
     <div class="roadmap-div7">
     
       <img src="@/assets/planet_4.png" alt=""  width="100%"/>
@@ -66,7 +67,7 @@
         <h5>➼ Crypto Loans – Upcoming</h5>
         <h5>➼ Crypto Score - Upcoming</h5>
       </div>
-    </div>
+    </div><br>
     <div class="roadmap-div9">
       
       <img src="@/assets/planet_5.png" alt="" width="100%" />
@@ -147,7 +148,6 @@ export default class Roadmap extends Vue {}
 .roadmap-div2 {
   position: static;
   display: inline-block;
-  left: 50%;
   width: 42%;
   margin-right: 5%;
   height: auto;
@@ -211,10 +211,9 @@ export default class Roadmap extends Vue {}
   position: static;
   display: inline-block;
   width: 42%;
-  margin-top: 15%;
   float: right;
-  top: -400px;
   margin-right: 10%;
+  margin-top: 15%;
   /* right: 10%; */
 }
 .roadmap-div6-back {
@@ -237,7 +236,6 @@ export default class Roadmap extends Vue {}
  /* width: 500.42px;
   height: 404.44px; */
   width: 35%;
-  left: 55%;
   float: right;
   margin-right: 11%;
   top: 20px;
