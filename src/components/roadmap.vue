@@ -1,15 +1,23 @@
 <template>
   <div class="roadmap" id="roadmap">
     <h1 class="roadmap-text">ROADMAP</h1>
-    <br />
-    <div class="roadmap-div1">
-      <img src="@/assets/planet_1.png" alt="" width="100%"/>
-    </div>
+    
     <img src="@/assets/dots_1.png" alt="" class="dots_1" />
     <img src="@/assets/dots_1.png" alt="" class="dots_2" />
     <img src="@/assets/dots_1.png" alt="" class="dots_3" />
     <img src="@/assets/dots_1.png" alt="" class="dots_4" />
-    <div class="roadmap-div2">
+    <div class="float-container">
+
+  <div class="flex-container">
+
+  <div class="flex-child magenta">
+   <div class="roadmap-div1">
+      <img src="@/assets/planet_1.png" alt="" width="100%"/>
+    </div>
+  </div>
+  
+  <div class="flex-child green">
+  <div class="roadmap-div2">
       <h1 class="phase-text" >PHASE 1 <!-- <span id="phase1" @click="phase1(phase1)" class="downarrow">&#8595;</span> --></h1><br>
       <div class="roadmap-div2-back" id="phase1-div">
         <h4>➼ Website Launch - Completed</h4>
@@ -20,9 +28,13 @@
         <h4>➼ Smart Contract Audit (Coinscope) - January 2022</h4>
       </div>
     </div>
-    <br>
-     
-    <div class="roadmap-div4">
+  </div>
+
+</div>
+  <div class="flex-container">
+
+  <div class="flex-child magenta">
+  <div class="roadmap-div4">
           <h1 class="phase-text2">PHASE 2</h1>
       <div class="roadmap-div4-back">
         <h5>➼ Smart Contract Audit – March 2022</h5>
@@ -40,23 +52,36 @@
         <h5>➼ Stake Silverline Token To Earn Alt-Coins –August 2022</h5>
       </div>
     </div>
-    <div class="roadmap-div3">
-    
+  </div>
+  <div class="flex-child green">
+   <div class="roadmap-div3">
       <img src="@/assets/planet_2.png" alt="" width="100%"/>
     </div>
-    <br>
-    <div class="roadmap-div5">
+  </div>
+</div>
+</div>
+<div class="flex-container">
+
+  <div class="flex-child magenta">
+   <div class="roadmap-div1">
       <img src="@/assets/planet_3.png" alt="" width="100%" />
     </div>
-    <div class="roadmap-div6">
+  </div>
+  
+  <div class="flex-child green">
+   <div class="roadmap-div2">
         <h1 class="phase-text">PHASE 3</h1>
       <div class="roadmap-div6-back">
         <h4>➼ Influencer Marketing - Recurring</h4>
         <h4>➼ Ecosystem Build Up - Ongoing</h4>
       </div>
     </div>
-    <br>
-    <div class="roadmap-div8">
+  </div> 
+</div>
+<div class="flex-container">
+
+  <div class="flex-child magenta">
+   <div class="roadmap-div4">
           <h1 class="phase-text4">PHASE 4</h1>
       <div class="roadmap-div8-back">
         <h5>➼ Partnerships - Upcoming</h5>
@@ -66,15 +91,26 @@
         <h5>➼ Crypto Score - Upcoming</h5>
       </div>
     </div>
-     <div class="roadmap-div7">
-    
+  </div>
+  
+  <div class="flex-child green">
+     <div class="roadmap-div3">
       <img src="@/assets/planet_4.png" alt=""  width="100%"/>
-    </div><br>
-    <div class="roadmap-div9">
+    </div>
+  </div>
+  
+</div>
+<div class="flex-container">
+
+  <div class="flex-child magenta">
+   <div class="roadmap-div1">
       
       <img src="@/assets/planet_5.png" alt="" width="100%" />
     </div>
-    <div class="roadmap-div10">
+  </div>
+  
+  <div class="flex-child green">
+     <div class="roadmap-div2">
         <h1 class="phase-text5">PHASE 5</h1>
         <div class="roadmap-div10-back">
             <h4>➼ Nobu Limited Edition NFT Collection - Upcoming</h4>
@@ -82,6 +118,11 @@
       <h4>➼ Defi Games - Upcoming</h4>
         </div>
     </div>
+  </div>
+  
+</div>
+   
+  
   </div>
 </template>
 <script lang="ts">
@@ -108,6 +149,19 @@ import { Options, Vue } from "vue-class-component";
 export default class Roadmap extends Vue {}
 </script>
 <style>
+.flex-container {
+    display: flex;
+    margin-top: 10%;
+}
+
+.flex-child {
+    flex: 1;
+    
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 
 .phase-text5{
     position: relative;
     font-family: moderne;
@@ -138,20 +192,13 @@ export default class Roadmap extends Vue {}
   align-content: center;
 }
 .roadmap-div1 {
-  display: inline-block;
-  width: 35%;
+  width: 65%;
+  margin-left: 35%;
   /* left: 10%; */
-  vertical-align: -100px; 
-  margin-left: 5%;
 }
 
 .roadmap-div2 {
- 
-  display: inline-block;
-  width: 42%;
-  margin-right: 10%;
-  height: auto;
-  margin-top: 0%;
+  width: 80%;
 }
 .roadmap-div2-back {
   border-color: rgba(142, 0, 255, 0.5);
@@ -168,18 +215,13 @@ export default class Roadmap extends Vue {}
   text-align: left;
 }
 .roadmap-div3 {
-  display: inline-block;
-  width: 35%;
-  margin-top: 15%;
-  margin-right: 10%;
+  
+  width: 65%;
+  margin-right: 35%;
 }
 .roadmap-div4 {
-  margin-left: 12%;
-  text-align: center;
-  display: inline-block;
-  /* top: -150px; */
-  margin-top: 15%;
-  width: 42%;
+  width: 80%;
+  margin-left: 20%;
 }
 .roadmap-div4-back {
   
@@ -196,17 +238,11 @@ export default class Roadmap extends Vue {}
   border-radius: 15.2778px;
 }
 .roadmap-div5 {
-  display: inline-block;
- width: 35%;
-  /* left: 10%; */
-  margin-left: 0%;
-  margin-top: 10%;
 }
 .roadmap-div6 {
-  vertical-align: 200px;
-  display: inline-block;
-  width: 35%;
-  margin-left: 10%;
+  float: right;
+  width: 40%;
+  margin-right: 10%;
   margin-top: 15%;
   /* right: 10%; */
 }
@@ -225,23 +261,19 @@ export default class Roadmap extends Vue {}
   text-align: left;
 }
 .roadmap-div7 {
- position: static;
-  display: inline-block;
+  float: right;
  /* width: 500.42px;
   height: 404.44px; */
-  width: 35%;
-  margin-right: 11%;
-  top: 20px;
+  width: 40%;
+  margin-right: 10%;
   margin-top: 10%;
 }
 .roadmap-div8 {
-  position: static;
-  display: inline-block;
+  float: left;
   text-align: center;
   /* left: 94.73px; */
-  margin-left: 11%;
-  width: 42%;
-  float: left;
+  margin-left: 10%;
+  width: 40%;
   height: auto;
   margin-top: 12%;
 }
@@ -263,7 +295,7 @@ export default class Roadmap extends Vue {}
 .roadmap-div9 {
  position: static;
   display: inline-block;
- width: 35%;
+ width: 40%;
  
   margin-left: 10%;
   top: 00.64px;
@@ -275,7 +307,7 @@ export default class Roadmap extends Vue {}
   text-align: center;
   position: static;
   display: inline-block;
-  width: 42%;
+  width: 40%;
   height: auto;
   margin-right: 10%;
   float: right;
