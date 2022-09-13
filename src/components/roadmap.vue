@@ -166,6 +166,7 @@ export default class Roadmap extends Vue {}
 
 .flex-child:first-child {
     margin-right: 20px;
+    margin-top: -5%;
 } 
 .phase-text5{
     position: relative;
