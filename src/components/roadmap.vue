@@ -164,7 +164,7 @@
   </div>
   
   <div class="flex-child green">
-     <div class="roadmap-div2">
+     <div class="roadmap-div10">
         <h1 class="phase-text5">PHASE 5</h1>
         <div class="roadmap-div10-back">
             <h4 class="font">➼ Nobu Limited Edition NFT Collection - Upcoming</h4>
@@ -364,14 +364,9 @@ export default class Roadmap extends Vue {}
   margin-bottom: 200px;
 }
 .roadmap-div10 {
-  margin-top: 12%;
-  text-align: center;
-  position: static;
-  display: inline-block;
-  width: 40%;
-  height: auto;
-  margin-right: 10%;
-  float: right;
+  width: 80%;
+  position: relative;
+  top: 0px;
 }
 .roadmap-div10-back {
   border-width: 2px;
