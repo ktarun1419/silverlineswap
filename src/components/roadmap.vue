@@ -123,7 +123,7 @@
   </div>
   
   <div class="flex-child green">
-   <div class="roadmap-div2">
+   <div class="roadmap-div6">
         <h1 class="phase-text">PHASE 3</h1>
       <div class="roadmap-div6-back">
         <h4 class="font">➼ Influencer Marketing - Recurring</h4>
@@ -148,7 +148,7 @@
   </div>
   
   <div class="flex-child green">
-     <div class="roadmap-div3">
+     <div class="roadmap-div7">
       <img src="@/assets/planet_4.png" alt=""  width="100%"/>
     </div>
   </div>
@@ -220,7 +220,7 @@ export default class Roadmap extends Vue {}
 
 .flex-child:first-child {
     margin-right: 20px;
-    margin-top: -2.5%;
+    margin-top: -5%;
 } 
 .phase-text5{
     position: relative;
@@ -259,6 +259,8 @@ export default class Roadmap extends Vue {}
 
 .roadmap-div2 {
   width: 80%;
+  position: relative;
+  top: -100px;
 }
 .roadmap-div2-back {
   border-color: rgba(142, 0, 255, 0.5);
@@ -282,6 +284,8 @@ export default class Roadmap extends Vue {}
 .roadmap-div4 {
   width: 80%;
   margin-left: 20%;
+  position: relative;
+  top: 0px;
 }
 .roadmap-div4-back {
   
@@ -300,10 +304,9 @@ export default class Roadmap extends Vue {}
 .roadmap-div5 {
 }
 .roadmap-div6 {
-  float: right;
-  width: 40%;
-  margin-right: 10%;
-  margin-top: 15%;
+  width: 80%;
+  position: relative;
+  top: 00px;
   /* right: 10%; */
 }
 .roadmap-div6-back {
@@ -321,12 +324,10 @@ export default class Roadmap extends Vue {}
   text-align: left;
 }
 .roadmap-div7 {
-  float: right;
- /* width: 500.42px;
-  height: 404.44px; */
-  width: 40%;
-  margin-right: 10%;
-  margin-top: 10%;
+   width: 65%;
+  margin-right: 35%;
+  position: relative;
+  top: -50px;
 }
 .roadmap-div8 {
   float: left;
