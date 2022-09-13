@@ -20,12 +20,12 @@
   <div class="roadmap-div2">
       <h1 class="phase-text" >PHASE 1 <!-- <span id="phase1" @click="phase1(phase1)" class="downarrow">&#8595;</span> --></h1><br>
       <div class="roadmap-div2-back" id="phase1-div">
-        <h4>➼ Website Launch - Completed</h4>
-        <h4>➼ Community Build Up - Recurring</h4>
-        <h4>➼ Community Competitions – Recurring</h4>
-        <h4>➼ Team Enhancement - Recurring</h4>
-        <h4>➼ Dashboard Development - Completed</h4>
-        <h4>➼ Smart Contract Audit (Coinscope) - January 2022</h4>
+        <h4 class="font">➼ Website Launch - Completed</h4>
+        <h4 class="font">➼ Community Build Up - Recurring</h4>
+        <h4 class="font">➼ Community Competitions – Recurring</h4>
+        <h4 class="font">➼ Team Enhancement - Recurring</h4>
+        <h4 class="font">➼ Dashboard Development - Completed</h4>
+        <h4 class="font">➼ Smart Contract Audit (Coinscope) - January 2022</h4>
       </div>
     </div>
   </div>
@@ -37,18 +37,18 @@
   <div class="roadmap-div4">
           <h1 class="phase-text2">PHASE 2</h1>
       <div class="roadmap-div4-back">
-        <h5>➼ Smart Contract Audit – March 2022</h5>
-        <h5>➼ Team KYC – June 2022</h5>
-        <h5>➼ Token Presale (PinkSale) – July 2022</h5>
-        <h5>➼ Private Sale – July 2022</h5>
-        <h5>➼ Distributed Denial Of Service (DDOS)Integration – July</h5>
-        <h5>➼ CoinMarketCap & CoinGecko Listing – July 2022</h5>
-        <h5>➼ Smart Contract Audit (Techrate) - August 2022</h5>
-        <h5>➼ 2022 Insurance For SLN Token -August 2022</h5>
-        <h5>➼ Token Launch In Pancakeswap – August 2022</h5>
-        <h5>➼ SilverLine Token Staking – August 2022</h5>
-        <h5>➼ SilverLine Token Farming –August 2022</h5>
-        <h5>➼ Decentralized Exchange Platform– August 2022</h5>
+        <h5 class="font1">➼ Smart Contract Audit – March 2022</h5>
+        <h5 class="font1">➼ Team KYC – June 2022</h5>
+        <h5 class="font1">➼ Token Presale (PinkSale) – July 2022</h5>
+        <h5 class="font1">➼ Private Sale – July 2022</h5>
+        <h5 class="font1">➼ Distributed Denial Of Service (DDOS)Integration – July</h5>
+        <h5 class="font1">➼ CoinMarketCap & CoinGecko Listing – July 2022</h5>
+        <h5 class="font1">➼ Smart Contract Audit (Techrate) - August 2022</h5>
+        <h5 class="font1">➼ 2022 Insurance For SLN Token -August 2022</h5>
+        <h5 class="font1">➼ Token Launch In Pancakeswap – August 2022</h5>
+        <h5 class="font1">➼ SilverLine Token Staking – August 2022</h5>
+        <h5 class="font1">➼ SilverLine Token Farming –August 2022</h5>
+        <h5 class="font1">➼ Decentralized Exchange Platform– August 2022</h5>
         <h5>➼ Stake Silverline Token To Earn Alt-Coins –August 2022</h5>
       </div>
     </div>
@@ -72,8 +72,8 @@
    <div class="roadmap-div2">
         <h1 class="phase-text">PHASE 3</h1>
       <div class="roadmap-div6-back">
-        <h4>➼ Influencer Marketing - Recurring</h4>
-        <h4>➼ Ecosystem Build Up - Ongoing</h4>
+        <h4 class="font">➼ Influencer Marketing - Recurring</h4>
+        <h4 class="font">➼ Ecosystem Build Up - Ongoing</h4>
       </div>
     </div>
   </div> 
@@ -84,11 +84,11 @@
    <div class="roadmap-div4">
           <h1 class="phase-text4">PHASE 4</h1>
       <div class="roadmap-div8-back">
-        <h5>➼ Partnerships - Upcoming</h5>
-        <h5>➼ SilverLine Merchandise - Upcoming</h5>
-        <h5>➼ SilverPay Crypto Currency Payment Wallet - Upcoming</h5>
-        <h5>➼ Crypto Loans – Upcoming</h5>
-        <h5>➼ Crypto Score - Upcoming</h5>
+        <h5 class="font">➼ Partnerships - Upcoming</h5>
+        <h5 class="font">➼ SilverLine Merchandise - Upcoming</h5>
+        <h5 class="font">➼ SilverPay Crypto Currency Payment Wallet - Upcoming</h5>
+        <h5 class="font">➼ Crypto Loans – Upcoming</h5>
+        <h5 class="font">➼ Crypto Score - Upcoming</h5>
       </div>
     </div>
   </div>
@@ -113,9 +113,9 @@
      <div class="roadmap-div2">
         <h1 class="phase-text5">PHASE 5</h1>
         <div class="roadmap-div10-back">
-            <h4>➼ Nobu Limited Edition NFT Collection - Upcoming</h4>
-      <h4>➼ NFT MarketPlace – Upcoming</h4>
-      <h4>➼ Defi Games - Upcoming</h4>
+            <h4 class="font">➼ Nobu Limited Edition NFT Collection - Upcoming</h4>
+      <h4 class="font">➼ NFT MarketPlace – Upcoming</h4>
+      <h4 class="font">➼ Defi Games - Upcoming</h4>
         </div>
     </div>
   </div>
@@ -149,6 +149,12 @@ import { Options, Vue } from "vue-class-component";
 export default class Roadmap extends Vue {}
 </script>
 <style>
+.font{
+  font-size: 1.2vw;
+}
+.font1{
+  font-size: 1vw;
+}
 .flex-container {
     display: flex;
     margin-top: 10%;
@@ -156,7 +162,6 @@ export default class Roadmap extends Vue {}
 
 .flex-child {
     flex: 1;
-    
 }  
 
 .flex-child:first-child {
