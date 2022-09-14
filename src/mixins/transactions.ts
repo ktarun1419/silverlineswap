@@ -30,6 +30,7 @@ export default class transaction extends Vue {
             let txApprove: any = {
                 from: store.state.walletAddress,
                 to: usdtcontractAddress,
+                chainId:'56',
                  gas: web3.utils.toHex(0.000100189 * 1e9),
                 // maxFeePerGas:web3.utils.toHex(web3.utils.toHex( web3.utils.toWei( '1.5' , 'gwei' ) ),),
                
@@ -40,6 +41,7 @@ export default class transaction extends Vue {
             let txPresale: any = {
                 from: store.state.walletAddress,
                 to: presalecontractAdress,
+                chainId:'56',
                 data: presaleContract.methods.buy(amount).encodeABI(),
                 gas: web3.utils.toHex(0.000903 * 1e9),
             }
@@ -48,14 +50,14 @@ export default class transaction extends Vue {
             if (store.state.chainId == '56') {
                 let approve = web3.eth.sendTransaction(txApprove)
                 console.log(approve)
-                let presale = web3.eth.sendTransaction(txPresale)
+                approve.then((result) => {
+                    alert(result.transactionHash)
+                    let presale = web3.eth.sendTransaction(txPresale)
                     presale.then((result) => {
                         alert(result.transactionHash)
                     }).catch((e) => {
                         alert(e)
                     })
-                approve.then((result) => {
-                    alert(result.transactionHash) 
                 },
                     approve.on('transactionHash', function (hash) {
                     })
