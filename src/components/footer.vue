@@ -101,6 +101,7 @@ export default class Footer extends Vue {}
   top: 40%;
   left: -30%;
   margin: 5px;
+  width: 20px;
 }
 .footer {
   position: static;

@@ -10,7 +10,8 @@
     <div class="div1">
       <h1 style="font-size:32px;font-family:moderne" >Get In Line For SilverLine</h1>
       <h3>
-        At the launch of the presale, SilverLine Token will be landed on the
+        At the launch of the presale, SilverLine Token
+         will be landed on the
         Binance Smart Chain planet. To get to Milkyway, purchase the SilverLine
         Token at just $0.0013.
       </h3>
@@ -396,8 +397,8 @@ export default class Upper extends Vue {
 }
 .div2 {
   float: right;
-  margin-right: 10%;
-  width: 391.02px;
+  margin-right: 18%;
+  width: 391px;
   height: 281.46px;
   margin-top: 5%;
   padding: 10px;

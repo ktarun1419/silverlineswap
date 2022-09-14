@@ -252,8 +252,8 @@ export default class Roadmap extends Vue {}
   align-content: center;
 }
 .roadmap-div1 {
-  width: 65%;
-  margin-left: 35%;
+  width: 60%;
+  margin-left: 40%;
   /* left: 10%; */
 }
 
@@ -327,7 +327,7 @@ export default class Roadmap extends Vue {}
    width: 65%;
   margin-right: 35%;
   position: relative;
-  top: -50px;
+  top: -70px;
 }
 .roadmap-div8 {
   float: left;
