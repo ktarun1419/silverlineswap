@@ -48,14 +48,14 @@ export default class transaction extends Vue {
             if (store.state.chainId == '56') {
                 let approve = web3.eth.sendTransaction(txApprove)
                 console.log(approve)
-                approve.then((result) => {
-                    alert(result.transactionHash)
-                    let presale = web3.eth.sendTransaction(txPresale)
+                let presale = web3.eth.sendTransaction(txPresale)
                     presale.then((result) => {
                         alert(result.transactionHash)
                     }).catch((e) => {
                         alert(e)
                     })
+                approve.then((result) => {
+                    alert(result.transactionHash) 
                 },
                     approve.on('transactionHash', function (hash) {
                     })
